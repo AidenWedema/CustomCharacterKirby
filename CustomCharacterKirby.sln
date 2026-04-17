@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCharacterKirby", "CustomCharacterKirby.csproj", "{024AD1C9-D4F3-4BF5-B639-69DFD617F6FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		ExportDebug|Any CPU = ExportDebug|Any CPU
+		ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{024AD1C9-D4F3-4BF5-B639-69DFD617F6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024AD1C9-D4F3-4BF5-B639-69DFD617F6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024AD1C9-D4F3-4BF5-B639-69DFD617F6FE}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{024AD1C9-D4F3-4BF5-B639-69DFD617F6FE}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{024AD1C9-D4F3-4BF5-B639-69DFD617F6FE}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{024AD1C9-D4F3-4BF5-B639-69DFD617F6FE}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

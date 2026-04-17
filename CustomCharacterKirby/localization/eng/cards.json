@@ -1,0 +1,158 @@
+{
+  "CUSTOMCHARACTERKIRBY-STRIKE_KIRBY.description": "Deal {Damage:diff()} damage.",
+  "CUSTOMCHARACTERKIRBY-STRIKE_KIRBY.title": "Hit",
+
+  "CUSTOMCHARACTERKIRBY-DEFEND_KIRBY.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "CUSTOMCHARACTERKIRBY-DEFEND_KIRBY.title": "Block",
+  
+  "CUSTOMCHARACTERKIRBY-STAR_SPIT.description": "Deal {CalculatedDamage:diff()} damage.\n Deal {ExtraDamage:diff()} extra damage per [gold]Star[/gold].\nLose all [gold]Stars[/gold]",
+  "CUSTOMCHARACTERKIRBY-STAR_SPIT.title": "Star Spit",
+
+  "CUSTOMCHARACTERKIRBY-INHALE.description": "Enemy loses 1 [gold]Strength[/gold].\nGain {ProjectileStarGain:diff()} [gold]{IfUpgraded:show:Stars|Star}[/gold].",
+  "CUSTOMCHARACTERKIRBY-INHALE.title": "Inhale",
+  
+  "CUSTOMCHARACTERKIRBY-CROUCH.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {ProjectileStarGain:diff()} Strength per [gold]Star[/gold].\nLose all [gold]Stars[/gold].",
+  "CUSTOMCHARACTERKIRBY-CROUCH.title": "Crouch",
+  
+  "CUSTOMCHARACTERKIRBY-SLIDE.description": "Deal {Damage:diff()} damage to ALL enemies\nApply {WeakPower:diff()} [gold]Weak[/gold].",
+  "CUSTOMCHARACTERKIRBY-SLIDE.title": "Slide",
+  
+  "CUSTOMCHARACTERKIRBY-GUARD.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "CUSTOMCHARACTERKIRBY-GUARD.title": "Guard",
+  
+  "CUSTOMCHARACTERKIRBY-JUMP.description": "",
+  "CUSTOMCHARACTERKIRBY-JUMP.title": "Jump",
+  
+  "CUSTOMCHARACTERKIRBY-HOVER.description": "Gain {HoverGain:diff()} [gold]Hover[/gold].",
+  "CUSTOMCHARACTERKIRBY-HOVER.title": "Hover",
+  
+  
+  
+  "CUSTOMCHARACTERKIRBY-OVERHEAD_SLASH.description": "Deal {Damage:diff()} damage.",
+  "CUSTOMCHARACTERKIRBY-OVERHEAD_SLASH.title": "Overhead Slash",
+  
+  "CUSTOMCHARACTERKIRBY-SKY_ENERGY_SWORD.description": "Your next [gold]Overhead Slash[/gold] deals damage to ALL enemies.",
+  "CUSTOMCHARACTERKIRBY-SKY_ENERGY_SWORD.title": "Sky Energy Sword",
+  
+  "CUSTOMCHARACTERKIRBY-UPWARD_SLASH.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
+  "CUSTOMCHARACTERKIRBY-UPWARD_SLASH.title": "Upward Slash",
+  
+  "CUSTOMCHARACTERKIRBY-DRILL_STAB.description": "Deal {Damage:diff()} damage to ALL enemies.",
+  "CUSTOMCHARACTERKIRBY-DRILL_STAB.title": "Drill Stab",
+  
+  "CUSTOMCHARACTERKIRBY-DOWN_THRUST.description": "",
+  "CUSTOMCHARACTERKIRBY-DOWN_THRUST.title": "Down Thrust",
+  
+  "CUSTOMCHARACTERKIRBY-SWORD_DIVE.description": "Deal {Damage:diff()} damage.\nApply 1 [gold]Weak[/gold] and 1 [gold]Vulnerable[/gold]\nWhen played after [gold]Upward Slash[gold], [gold]Stun[gold] the enemy instead.",
+  "CUSTOMCHARACTERKIRBY-SWORD_DIVE.title": "Sword Dive",
+  
+  "CUSTOMCHARACTERKIRBY-SPIN_SLASH.description": "",
+  "CUSTOMCHARACTERKIRBY-SPIN_SLASH.title": "Spin Slash",
+  
+  "CUSTOMCHARACTERKIRBY-CHOP_AND_THRUST.description": "",
+  "CUSTOMCHARACTERKIRBY-CHOP_AND_THRUST.title": "Chop and Thrust",
+  
+  
+  
+  "CUSTOMCHARACTERKIRBY-LEAF_HIDE.description": "Gain {Block:diff()} Block.\nGain {LeafGain:diff()} [gold]Leaf[/gold].",
+  "CUSTOMCHARACTERKIRBY-LEAF_HIDE.title": "Leaf Hide",
+
+  "CUSTOMCHARACTERKIRBY-LEAF_RAIN.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeal {ExtraDamage:diff()} extra damage per [gold]Leaf[/gold].",
+  "CUSTOMCHARACTERKIRBY-LEAF_RAIN.title": "Leaf Rain",
+
+  "CUSTOMCHARACTERKIRBY-LEAF_SCATTER.description": "Deal {ExtraDamage:diff()} damage per \n[gold]Leaf[/gold].\nDeal {CalculatedDamage:diff()} damage to ALL enemies.\nRemove all [gold]Leaf[/gold].",
+  "CUSTOMCHARACTERKIRBY-LEAF_SCATTER.title": "Leaf Scatter",
+  
+  "CUSTOMCHARACTERKIRBY-LEAF_ATTACK.description": "Deal {Damage:diff()} damage.\nGain {LeafGain:diff()} [gold]{IfUpgraded:show:Leafs|Leaf}[/gold].",
+  "CUSTOMCHARACTERKIRBY-LEAF_ATTACK.title": "Leaf Attack",
+  
+  "CUSTOMCHARACTERKIRBY-LEAF_UPPERCUT.description": "Deal {Damage:diff()} damage.\nGain 1 [gold]Leaf[/gold].",
+  "CUSTOMCHARACTERKIRBY-LEAF_UPPERCUT.title": "Leaf Uppercut",
+
+
+
+  "CUSTOMCHARACTERKIRBY-MIRROR_BODY.description": "Deal {Damage:diff()} damage to a random enemy.\nGain [gold]Blur[/gold].",
+  "CUSTOMCHARACTERKIRBY-MIRROR_BODY.title": "Mirror Body",
+
+  "CUSTOMCHARACTERKIRBY-MIRROR_CUT.description": "Deal {Damage:diff()} damage.\nGain 1 [gold]Dexterity[/gold].",
+  "CUSTOMCHARACTERKIRBY-MIRROR_CUT.title": "Mirror Cut",
+  
+  "CUSTOMCHARACTERKIRBY-REFLECT_GUARD.description": "Gain {Block:diff()} Block.\nGain [gold]Reflect[/gold].",
+  "CUSTOMCHARACTERKIRBY-REFLECT_GUARD.title": "Reflect Guard",
+
+  "CUSTOMCHARACTERKIRBY-REFLECT_FORCE.description": "Deal {Damage:diff()} damage.\nGain {Block:diff()} [gold]Block[/gold].\nGain {Block:diff()} [gold]Block[/gold] next turn.",
+  "CUSTOMCHARACTERKIRBY-REFLECT_FORCE.title": "Reflect Force",
+  
+  "CUSTOMCHARACTERKIRBY-MIRROR_BODY_SKY.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.\nGain [gold]Blur[/gold].",
+  "CUSTOMCHARACTERKIRBY-MIRROR_BODY_SKY.title": "Mirror Body Sky",
+
+  
+  
+  "CUSTOMCHARACTERKIRBY-ICE_BLOCK.description": "Gain {Block:diff()} Block.",
+  "CUSTOMCHARACTERKIRBY-ICE_BLOCK.title": "Ice Block",
+
+  "CUSTOMCHARACTERKIRBY-ICE_BREATH.description": "Deal {Damage:diff()} damage.\nApply {WeakAmount:diff()} [gold]Weak[/gold].\nApply {VulnerableAmount:diff()} [gold]Vulnerable[/gold].",
+  "CUSTOMCHARACTERKIRBY-ICE_BREATH.title": "Ice Breath",
+
+  "CUSTOMCHARACTERKIRBY-ICE_STORM.description": "Deal {Damage:diff()} damage.\nGain {Block:diff()} Block.",
+  "CUSTOMCHARACTERKIRBY-ICE_STORM.title": "Ice Storm",
+
+  "CUSTOMCHARACTERKIRBY-ICE_SCATTER.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeal {Damage:diff()} extra damage per [gold]Block[/gold].\nLose all [gold]Block[/gold].",
+  "CUSTOMCHARACTERKIRBY-ICE_SCATTER.title": "Ice Scatter",
+
+  "CUSTOMCHARACTERKIRBY-ICE_SPRINKLE.description": "Deal {Damage:diff()} damage to ALL enemies.\nApply 1 [gold]Weak[/gold].\nApply {VulnerableAmount:diff()} [gold]Vulnerable[/gold].",
+  "CUSTOMCHARACTERKIRBY-ICE_SPRINKLE.title": "Ice Sprinkle",
+  
+  
+  
+  
+  "CUSTOMCHARACTERKIRBY-SWORD_ESSENCE.description": "Switches your copy ability to the [gold]Sword[/gold] ability.",
+  "CUSTOMCHARACTERKIRBY-SWORD_ESSENCE.title": "Sword Essence",
+  
+  "CUSTOMCHARACTERKIRBY-LEAF_ESSENCE.description": "Switches your copy ability to the [gold]Leaf[/gold] ability.",
+  "CUSTOMCHARACTERKIRBY-LEAF_ESSENCE.title": "Leaf Essence",
+  
+  "CUSTOMCHARACTERKIRBY-MIRROR_ESSENCE.description": "Switches your copy ability to the [gold]Mirror[/gold] ability.",
+  "CUSTOMCHARACTERKIRBY-MIRROR_ESSENCE.title": "Mirror Essence",
+  
+  "CUSTOMCHARACTERKIRBY-ICE_ESSENCE.description": "Switches your copy ability to the [gold]Ice[/gold] ability.",
+  "CUSTOMCHARACTERKIRBY-ICE_ESSENCE.title": "Ice Essence",
+
+
+
+  "CUSTOMCHARACTERKIRBY-BANDANA_WADDLE_DEE_SPEAR.description": "",
+  "CUSTOMCHARACTERKIRBY-BANDANA_WADDLE_DEE_SPEAR.title": "Spear Thrust",
+  
+  
+  
+  
+  "CUSTOMCHARACTERKIRBY-DROP_ABILITY.description": "Lose your current copy ability.\nGain {ProjectileStarGain:diff()} [gold]Stars[/gold].",
+  "CUSTOMCHARACTERKIRBY-DROP_ABILITY.title": "Drop Ability",
+  
+  "CUSTOMCHARACTERKIRBY-ULTRA_SWORD.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
+  "CUSTOMCHARACTERKIRBY-ULTRA_SWORD.title": "Ultra Sword",
+
+  "CUSTOMCHARACTERKIRBY-HYPERNOVA.description": "Swallow All enemies with less than {SwallowPercent:diff()}% of their max HP remaining.",
+  "CUSTOMCHARACTERKIRBY-HYPERNOVA.title": "Hypernova",
+  
+  "CUSTOMCHARACTERKIRBY-ROBOBOT_ARMOR.description": "Gain {StrengthGain:diff()} [gold]Strength[/gold].\nGain {DexterityGain:diff()} [gold]Dexterity[/gold].",
+  "CUSTOMCHARACTERKIRBY-ROBOBOT_ARMOR.title": "Robobot Armor",
+  
+  "CUSTOMCHARACTERKIRBY-DREAM_ROD.description": "Summon a friend to help you out.",
+  "CUSTOMCHARACTERKIRBY-DREAM_ROD.title": "DreamRod",
+
+  "CUSTOMCHARACTERKIRBY-DRAGOON.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Exhaust[/gold]",
+  "CUSTOMCHARACTERKIRBY-DRAGOON.title": "Dragoon",
+
+
+  "CUSTOMCHARACTERKIRBY-BASIC_ATTACK.description": "",
+  "CUSTOMCHARACTERKIRBY-BASIC_ATTACK.title": "BasicAttack",
+  "CUSTOMCHARACTERKIRBY-BASIC_SKILL.description": "",
+  "CUSTOMCHARACTERKIRBY-BASIC_SKILL.title": "BasicSkill",
+  "CUSTOMCHARACTERKIRBY-DOWN.description": "",
+  "CUSTOMCHARACTERKIRBY-DOWN.title": "Down",
+  "CUSTOMCHARACTERKIRBY-FORWARD.description": "",
+  "CUSTOMCHARACTERKIRBY-FORWARD.title": "Forward",
+  "CUSTOMCHARACTERKIRBY-UP.description": "",
+  "CUSTOMCHARACTERKIRBY-UP.title": "Up"
+}

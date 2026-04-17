@@ -1,0 +1,13 @@
+{
+  "CUSTOMCHARACTERKIRBY-SQUISHY_SKIN.description": "Whenever you get hit by an attack, take 2 less damage.",
+  "CUSTOMCHARACTERKIRBY-SQUISHY_SKIN.flavor": "You're not from around here, are you?",
+  "CUSTOMCHARACTERKIRBY-SQUISHY_SKIN.title": "Squishy Skin",
+  
+  "CUSTOMCHARACTERKIRBY-INVINCIBILITY_CANDY.description": "Start each combat with 1 [gold]Buffer[/gold].",
+  "CUSTOMCHARACTERKIRBY-INVINCIBILITY_CANDY.flavor": "Makes you invincible for a short period of time.",
+  "CUSTOMCHARACTERKIRBY-INVINCIBILITY_CANDY.title": "Invincibility Candy",
+
+  "CUSTOMCHARACTERKIRBY-ABILITY_ESSENCE.description": "Start each combat with a random copy ability",
+  "CUSTOMCHARACTERKIRBY-ABILITY_ESSENCE.flavor": "",
+  "CUSTOMCHARACTERKIRBY-ABILITY_ESSENCE.title": "Copy Essence"
+}

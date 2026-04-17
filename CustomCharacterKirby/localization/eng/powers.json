@@ -1,0 +1,49 @@
+{
+  "CUSTOMCHARACTERKIRBY-NORMAL_ABILITY.description": "Inhale cards to gain Copy Abilities",
+  "CUSTOMCHARACTERKIRBY-NORMAL_ABILITY.smartDescription": "Inhale cards to gain Copy Abilities",
+  "CUSTOMCHARACTERKIRBY-NORMAL_ABILITY.title": "Normal",
+  
+  "CUSTOMCHARACTERKIRBY-SWORD_ABILITY.description": "Don a green hat with your sword in hand! Spin Slash! Do a Sword Dive as your finishing strike! It's all about the flourish",
+  "CUSTOMCHARACTERKIRBY-SWORD_ABILITY.smartDescription": "Don a green hat with your sword in hand! Spin Slash! Do a Sword Dive as your finishing strike! It's all about the flourish",
+  "CUSTOMCHARACTERKIRBY-SWORD_ABILITY.title": "Sword",
+  
+  "CUSTOMCHARACTERKIRBY-LEAF_ABILITY.description": "Time to dance! The Leaf Dance creates a gorgeous swirl of razor-sharp leaves. Guard, and... Huh?! You vanished!",
+  "CUSTOMCHARACTERKIRBY-LEAF_ABILITY.smartDescription": "",
+  "CUSTOMCHARACTERKIRBY-LEAF_ABILITY.title": "Leaf",
+  
+  "CUSTOMCHARACTERKIRBY-MIRROR_ABILITY.description": "Reflect attacks back at your rivals, and make duplicates to confound foes!",
+  "CUSTOMCHARACTERKIRBY-MIRROR_ABILITY.smartDescription": "",
+  "CUSTOMCHARACTERKIRBY-MIRROR_ABILITY.title": "Mirror",
+  
+  "CUSTOMCHARACTERKIRBY-ICE_ABILITY.description": "Frozen foe? Give it a kick! Glide gracefully across the land with Ice-Skate, and even cool down those hot, hot flames!",
+  "CUSTOMCHARACTERKIRBY-ICE_ABILITY.smartDescription": "",
+  "CUSTOMCHARACTERKIRBY-ICE_ABILITY.title": "Ice",
+
+  "CUSTOMCHARACTERKIRBY-PROJECTILE_STAR_POWER.description": "A star, spit it out to hurt foes or swallow them to gain strength.",
+  "CUSTOMCHARACTERKIRBY-PROJECTILE_STAR_POWER.smartDescription": "",
+  "CUSTOMCHARACTERKIRBY-PROJECTILE_STAR_POWER.title": "Star",
+
+  "CUSTOMCHARACTERKIRBY-SKY_ENERGY_SWORD_POWER.description": "The next [gold]Overhead Slash[/gold] deals damage to ALL enemies.",
+  "CUSTOMCHARACTERKIRBY-SKY_ENERGY_SWORD_POWER.smartDescription": "The next Overhead Slash deals damage to ALL enemies",
+  "CUSTOMCHARACTERKIRBY-SKY_ENERGY_SWORD_POWER.title": "Sky Energy Sword",
+  
+  "CUSTOMCHARACTERKIRBY-UPWARD_SLASH_POWER.description": "Your next [gold]Sword Dive[/gold] applies [/gold]Stun[/gold] to the target.",
+  "CUSTOMCHARACTERKIRBY-UPWARD_SLASH_POWER.smartDescription": "",
+  "CUSTOMCHARACTERKIRBY-UPWARD_SLASH_POWER.title": "Upward Slash",
+  
+  "CUSTOMCHARACTERKIRBY-HOVER_POWER.description": "Take 50% less damage from attacks, but get [gold]Stun[/gold] when it runs out.",
+  "CUSTOMCHARACTERKIRBY-HOVER_POWER.smartDescription": "",
+  "CUSTOMCHARACTERKIRBY-HOVER_POWER.title": "Hover",
+  
+  "CUSTOMCHARACTERKIRBY-LEAF_POWER.description": "A leaf, great for hiding or attacking your enemies",
+  "CUSTOMCHARACTERKIRBY-LEAF_POWER.smartDescription": "",
+  "CUSTOMCHARACTERKIRBY-LEAF_POWER.title": "Leaf",
+  
+  "CUSTOMCHARACTERKIRBY-DREAM_ROD_POWER.description": "You made a friend!",
+  "CUSTOMCHARACTERKIRBY-DREAM_ROD_POWER.smartDescription": "",
+  "CUSTOMCHARACTERKIRBY-DREAM_ROD_POWER.title": "Friend Heart",
+  
+  "CUSTOMCHARACTERKIRBY-ROBOBOT_ARMOR_POWER.description": "Gives extra strength and dexterity",
+  "CUSTOMCHARACTERKIRBY-ROBOBOT_ARMOR_POWER.smartDescription": "",
+  "CUSTOMCHARACTERKIRBY-ROBOBOT_ARMOR_POWER.title": "Robobot Armor"
+}
