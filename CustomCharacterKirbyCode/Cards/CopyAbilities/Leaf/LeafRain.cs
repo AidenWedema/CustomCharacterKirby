@@ -38,7 +38,7 @@ public class LeafRain() : AbilityCard (2, CardType.Skill, CardRarity.Basic, Targ
             var leafAmount = 0;
             if (CombatManager.Instance.IsInProgress && card.Owner.Creature.HasPower<LeafPower>())
                 leafAmount = card.Owner.Creature.GetPower<LeafPower>()!.Amount;
-            return (card.DynamicVars.Damage.BaseValue + card.DynamicVars.ExtraDamage.BaseValue * leafAmount);
+            return (card.DynamicVars.Damage.BaseValue + card.DynamicVars.ExtraDamage.BaseValue * (leafAmount - 1)) * 0.5M;
         })
     ];
 
