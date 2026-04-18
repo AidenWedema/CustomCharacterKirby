@@ -18,6 +18,10 @@
   "CUSTOMCHARACTERKIRBY-ICE_ABILITY.description": "Frozen foe? Give it a kick! Glide gracefully across the land with Ice-Skate, and even cool down those hot, hot flames!",
   "CUSTOMCHARACTERKIRBY-ICE_ABILITY.smartDescription": "",
   "CUSTOMCHARACTERKIRBY-ICE_ABILITY.title": "Ice",
+  
+  "CUSTOMCHARACTERKIRBY-SLEEP_ABILITY.description": "Just...five more...minutes. Please...just let me sleep. If you must...wake me... just...shake me... Zzz...zzz...zzz...",
+  "CUSTOMCHARACTERKIRBY-SLEEP_ABILITY.smartDescription": "",
+  "CUSTOMCHARACTERKIRBY-SLEEP_ABILITY.title": "Sleep",
 
   "CUSTOMCHARACTERKIRBY-PROJECTILE_STAR_POWER.description": "A star, spit it out to hurt foes or swallow them to gain strength.",
   "CUSTOMCHARACTERKIRBY-PROJECTILE_STAR_POWER.smartDescription": "",
@@ -38,6 +42,10 @@
   "CUSTOMCHARACTERKIRBY-LEAF_POWER.description": "A leaf, great for hiding or attacking your enemies",
   "CUSTOMCHARACTERKIRBY-LEAF_POWER.smartDescription": "",
   "CUSTOMCHARACTERKIRBY-LEAF_POWER.title": "Leaf",
+
+  "CUSTOMCHARACTERKIRBY-SLEEP_POWER.description": "Heal 5 HP per turn, but you can't play any cards.",
+  "CUSTOMCHARACTERKIRBY-SLEEP_POWER.smartDescription": "",
+  "CUSTOMCHARACTERKIRBY-SLEEP_POWER.title": "Asleep",
   
   "CUSTOMCHARACTERKIRBY-DREAM_ROD_POWER.description": "You made a friend!",
   "CUSTOMCHARACTERKIRBY-DREAM_ROD_POWER.smartDescription": "",
