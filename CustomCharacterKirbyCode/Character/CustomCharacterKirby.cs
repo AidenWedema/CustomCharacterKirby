@@ -36,7 +36,7 @@ public class CustomCharacterKirby : PlaceholderCharacterModel
         ModelDb.Card<StrikeKirby>(),
         ModelDb.Card<Guard>(),
         ModelDb.Card<Guard>(),
-        ModelDb.Card<Guard>(),
+        ModelDb.Card<Hover>(),
         ModelDb.Card<Inhale>(),
         ModelDb.Card<StarSpit>(),
         ModelDb.Card<Crouch>()
