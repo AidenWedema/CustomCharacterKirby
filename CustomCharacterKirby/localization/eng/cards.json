@@ -63,7 +63,7 @@
   "CUSTOMCHARACTERKIRBY-LEAF_SCATTER.description": "Deal {ExtraDamage:diff()} damage per \n[gold]Leaf[/gold].\nDeal {CalculatedDamage:diff()} damage to ALL enemies.\nRemove all [gold]Leaf[/gold].",
   "CUSTOMCHARACTERKIRBY-LEAF_SCATTER.title": "Leaf Scatter",
   
-  "CUSTOMCHARACTERKIRBY-LEAF_ATTACK.description": "Deal {Damage:diff()} damage.\nGain {LeafGain:diff()} [gold]{IfUpgraded:show:Leafs|Leaf}[/gold].",
+  "CUSTOMCHARACTERKIRBY-LEAF_ATTACK.description": "Deal {Damage:diff()} damage.\nGain {LeafGain:diff()} [gold]{IfUpgraded:show:Leaves|Leaf}[/gold].",
   "CUSTOMCHARACTERKIRBY-LEAF_ATTACK.title": "Leaf Attack",
   
   "CUSTOMCHARACTERKIRBY-LEAF_UPPERCUT.description": "Deal {Damage:diff()} damage.\nGain 1 [gold]Leaf[/gold].",
@@ -131,8 +131,54 @@
   "CUSTOMCHARACTERKIRBY-AWAKE.description": "Remove [gold]Asleep[/gold].\nLose your current copy ability.\nDraw 4 cards.",
   "CUSTOMCHARACTERKIRBY-AWAKE.title": "Awake",
   
+  "CUSTOMCHARACTERKIRBY-MIX.description": "Switch to a random copy ability.",
+  "CUSTOMCHARACTERKIRBY-MIX.title": "Mix",
+  
+  "CUSTOMCHARACTERKIRBY-FISHING.description": "Choose a card from your discard pile to put back into your hand.",
+  "CUSTOMCHARACTERKIRBY-FISHING.title": "Fishing",
+
+  "CUSTOMCHARACTERKIRBY-GEM_APPLE.description": "Gain {Energy:diff()} Energy.",
+  "CUSTOMCHARACTERKIRBY-GEM_APPLE.title": "GemApple",
+  
+  "CUSTOMCHARACTERKIRBY-ACTION_STAR.description": "Choose a maximum of 3 cards from your hand and randomize their cost from 0 to {MaxEnergyCost:diff()}.",
+  "CUSTOMCHARACTERKIRBY-ACTION_STAR.title": "Action Star",
+  
+  
+  
+  "CUSTOMCHARACTERKIRBY-HAL_ROOM.description": "Choose 1 of 3 random copy essences to add into your hand, it is free to play this turn.",
+  "CUSTOMCHARACTERKIRBY-HAL_ROOM.title": "Hal Room",
+  
+  "CUSTOMCHARACTERKIRBY-YARN_WHIP.description": "Deal {Damage:diff()} damage.\nIf lethal, deal {Damage:diff()} damage to a random enemy.",
+  "CUSTOMCHARACTERKIRBY-YARN_WHIP.title": "Yarn Whip",
+  
+  "CUSTOMCHARACTERKIRBY-STRAWBERRY_SHORTCAKE.description": "Gain {Energy:diff()} Energy.",
+  "CUSTOMCHARACTERKIRBY-STRAWBERRY_SHORTCAKE.title": "Strawberry Shortcake",
+  
+  "CUSTOMCHARACTERKIRBY-CRACKLER.description": "Deals {CracklerDamage:diff()} damage to a random enemy each turn.\nWears of after {TurnAmount:diff()} turns.",
+  "CUSTOMCHARACTERKIRBY-CRACKLER.title": "Crackler",
+
+  "CUSTOMCHARACTERKIRBY-SUN_STONE.description": "Choose an [gold]Etheral[/gold] card from your hand.\nIt loses [gold]Etheral[/gold], but gains [gold]Exhaust[/gold].",
+  "CUSTOMCHARACTERKIRBY-SUN_STONE.title": "Sun Stone",
+
+  "CUSTOMCHARACTERKIRBY-CODE_CUBE.description": "Choose an [gold]Exhaust[/gold] card from your hand.\nIt loses [gold]Exhaust[/gold], but gains [gold]Etheral[/gold].",
+  "CUSTOMCHARACTERKIRBY-CODE_CUBE.title": "Code Cube",
+
+  "CUSTOMCHARACTERKIRBY-ENERGY_SPHERE.description": "Choose a card from your hand.\nIt gains [gold]Retain[/gold].",
+  "CUSTOMCHARACTERKIRBY-ENERGY_SPHERE.title": "Energy Sphere",
+  
+  "CUSTOMCHARACTERKIRBY-DIMENSION_MIRROR.description": "Choose a card from your hand, lower it's cost by 1 for the rest of combat.\nIt gains [gold]Etheral[/gold].",
+  "CUSTOMCHARACTERKIRBY-DIMENSION_MIRROR.title": "Dimension Mirror",
+  
+  "CUSTOMCHARACTERKIRBY-DIMENSIONAL_RIFT.description": "Exhaust all copy essences in your deck.\nGain {StarGain:diff()} [Gold]Stars[Gold] per essence.",
+  "CUSTOMCHARACTERKIRBY-DIMENSIONAL_RIFT.title": "Dimensional Rift",
+  
+  "CUSTOMCHARACTERKIRBY-DEVOUR.description": "Exhaust a card from your hand.\nGain {StarGain:diff()} [Gold]Stars[Gold].",
+  "CUSTOMCHARACTERKIRBY-DEVOUR.title": "Devour",
+  
   "CUSTOMCHARACTERKIRBY-DROP_ABILITY.description": "Lose your current copy ability.\nGain {ProjectileStarGain:diff()} [gold]Stars[/gold].",
   "CUSTOMCHARACTERKIRBY-DROP_ABILITY.title": "Drop Ability",
+  
+  
   
   "CUSTOMCHARACTERKIRBY-ULTRA_SWORD.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
   "CUSTOMCHARACTERKIRBY-ULTRA_SWORD.title": "Ultra Sword",
@@ -148,6 +194,15 @@
 
   "CUSTOMCHARACTERKIRBY-DRAGOON.description": "Deal {Damage:diff()} damage to ALL enemies.\n[gold]Exhaust[/gold]",
   "CUSTOMCHARACTERKIRBY-DRAGOON.title": "Dragoon",
+  
+  "CUSTOMCHARACTERKIRBY-WARP_STAR.description": "Gain 1 [gold]Intangible[/gold].\nDeal {Damage:diff()} damage to ALL enemies next turn.\nEnd your turn.",
+  "CUSTOMCHARACTERKIRBY-WARP_STAR.title": "Warp Star",
+  
+  "CUSTOMCHARACTERKIRBY-MAXIM_TOMATO.description": "Heal to max HP.\nRemove this card from your deck.",
+  "CUSTOMCHARACTERKIRBY-MAXIM_TOMATO.title": "Maxim Tomato",
+  
+  "CUSTOMCHARACTERKIRBY-GALACTIC_NOVA.description": "{IfUpgraded:show:2 random cards|A random card} in your hand {IfUpgraded:show:are|is} free to play each turn.",
+  "CUSTOMCHARACTERKIRBY-GALACTIC_NOVA.title": "Galactic Nova",
 
 
   "CUSTOMCHARACTERKIRBY-BASIC_ATTACK.description": "",

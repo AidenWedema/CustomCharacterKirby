@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards.CopyAbilities.Sword;
 
-public class ReflectForce() : AbilityCard (3, CardType.Skill, CardRarity.Basic, TargetType.AnyEnemy)
+public class ReflectForce() : AbilityCard (3, CardType.Attack, CardRarity.Basic, TargetType.AnyEnemy)
 {
     protected override AbilityType abilityType => AbilityType.Down;
     

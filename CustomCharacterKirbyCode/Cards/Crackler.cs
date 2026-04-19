@@ -1,0 +1,26 @@
+﻿using CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
+using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
+using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.ValueProps;
+
+namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
+
+public class Crackler() : CustomCharacterKirbyCard(1, CardType.Power, CardRarity.Uncommon, TargetType.Self)
+{
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("CracklerDamage", 4M), new DynamicVar("TurnAmount", 6)];
+
+    protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
+    {
+        Crackler card = this;
+        (await PowerCmd.Apply<CracklerPower>(card.Owner.Creature, DynamicVars["TurnAmount"].BaseValue, card.Owner.Creature, card)).SetDamage(DynamicVars.Damage.BaseValue);
+    }
+
+    protected override void OnUpgrade()
+    {
+        DynamicVars["CracklerDamage"].UpgradeValueBy(2);
+        DynamicVars["TurnAmount"].UpgradeValueBy(1);
+    }
+}
