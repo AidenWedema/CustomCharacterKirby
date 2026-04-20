@@ -8,14 +8,14 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 
-public class HalRoom() : CustomCharacterKirbyCard(2, CardType.Attack, CardRarity.Uncommon, TargetType.Self)
+public class HalRoom() : CustomCharacterKirbyCard(2, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         HalRoom card = this;
-        CardModel? choice = await CardSelectCmd.FromChooseACardScreen(choiceContext, CardFactory.GetDistinctForCombat(card.Owner, card.Owner.Character.CardPool.GetUnlockedCards(card.Owner.UnlockState, card.Owner.RunState.CardMultiplayerConstraint).Where(c => c.GetType() == typeof(CopyEssenceCard)), 3, card.Owner.RunState.Rng.CombatCardGeneration).ToList(), card.Owner, true);
+        CardModel? choice = await CardSelectCmd.FromChooseACardScreen(choiceContext, CardFactory.GetDistinctForCombat(card.Owner, card.Owner.Character.CardPool.GetUnlockedCards(card.Owner.UnlockState, card.Owner.RunState.CardMultiplayerConstraint).Where(c => c is CopyEssenceCard), 3, card.Owner.RunState.Rng.CombatCardGeneration).ToList(), card.Owner, true);
         if (choice == null)
             return;
         choice.SetToFreeThisTurn();

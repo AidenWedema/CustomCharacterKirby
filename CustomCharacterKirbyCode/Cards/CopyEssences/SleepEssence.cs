@@ -2,6 +2,7 @@
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
@@ -9,6 +10,8 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 public class SleepEssence() : CopyEssenceCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     public override CopyAbility CopyAbility => ModelDb.Power<SleepAbility>();
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<SleepPower>()];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {

@@ -19,7 +19,17 @@ public class Hypernova() : CustomCharacterKirbyCard(3, CardType.Skill, CardRarit
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("SwallowPercent", 20M)];
 
-    protected override bool IsPlayable => SwallowableEnemies.Count > 0;
+    protected override bool IsPlayable
+    {
+        get
+        {
+            // var enemies = this.CombatState.HittableEnemies;
+            // enemies[0].ModelId.Category;
+            // enemies[0].Monster.
+            
+            return SwallowableEnemies.Count > 0;
+        }
+    }
 
     private IReadOnlyList<Creature> SwallowableEnemies
     {
@@ -50,5 +60,5 @@ public class Hypernova() : CustomCharacterKirbyCard(3, CardType.Skill, CardRarit
         }
     }
 
-    protected override void OnUpgrade() => DynamicVars["SwallowPercent"].UpgradeValueBy(20M);
+    protected override void OnUpgrade() => DynamicVars["SwallowPercent"].UpgradeValueBy(10M);
 }

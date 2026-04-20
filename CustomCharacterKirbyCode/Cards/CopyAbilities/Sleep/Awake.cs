@@ -4,14 +4,17 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards.CopyAbilities.Sleep;
 
-public class Awake() : CopyEssenceCard(0, CardType.Status, CardRarity.Token, TargetType.Self)
+public class Awake() : CopyEssenceCard(0, CardType.Skill, CardRarity.Token, TargetType.Self)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Ethereal, CardKeyword.Exhaust];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<SleepPower>()];
 
     public override CopyAbility CopyAbility => ModelDb.Power<NormalAbility>();
 

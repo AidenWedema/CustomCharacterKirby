@@ -12,6 +12,15 @@ public class CodeCube() : CustomCharacterKirbyCard(2, CardType.Skill, CardRarity
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
+    protected override bool IsPlayable
+    {
+        get
+        {
+            var hand = this.Owner.PlayerCombatState?.Hand.Cards;
+            return hand != null && hand.Any(c => c.Keywords.Contains(CardKeyword.Exhaust));
+        }
+    }
+    
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         CodeCube card = this;

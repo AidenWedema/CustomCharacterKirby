@@ -16,7 +16,7 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 [Pool(typeof(CustomCharacterKirbyCardPool))]
 public class UltraSword() : CustomCharacterKirbyCard(3, CardType.Attack, CardRarity.Rare, TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(12M, ValueProp.Move), new RepeatVar(4)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10M, ValueProp.Move), new RepeatVar(3)];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {

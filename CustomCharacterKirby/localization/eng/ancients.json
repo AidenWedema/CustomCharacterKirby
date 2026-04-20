@@ -2,5 +2,30 @@
   "THE_ARCHITECT.talk.CUSTOMCHARACTERKIRBY-CUSTOM_CHARACTER_KIRBY.0-0r.char": "I am angry at the architect",
   "THE_ARCHITECT.talk.CUSTOMCHARACTERKIRBY-CUSTOM_CHARACTER_KIRBY.0-0r.next": "Continue",
   "THE_ARCHITECT.talk.CUSTOMCHARACTERKIRBY-CUSTOM_CHARACTER_KIRBY.0-1r.ancient": "You die",
-  "THE_ARCHITECT.talk.CUSTOMCHARACTERKIRBY-CUSTOM_CHARACTER_KIRBY.0-attack": "Both"
+  "THE_ARCHITECT.talk.CUSTOMCHARACTERKIRBY-CUSTOM_CHARACTER_KIRBY.0-attack": "Both",
+
+
+  "CUSTOMCHARACTERKIRBY-MAGOLOR.epithet": "The Interdimensional Traveler",
+  "CUSTOMCHARACTERKIRBY-MAGOLOR.talk.ANY.0-0r.ancient": "Reusable generic greeting.",
+  "CUSTOMCHARACTERKIRBY-MAGOLOR.talk.CUSTOMCHARACTERKIRBY-CUSTOM_CHARACTER_KIRBY.0-0.ancient": "Kirby! You're back again.\nHow can i help you my friend?",
+  "CUSTOMCHARACTERKIRBY-MAGOLOR.talk.CUSTOMCHARACTERKIRBY-CUSTOM_CHARACTER_KIRBY.0-0.next": "Answer",
+  "CUSTOMCHARACTERKIRBY-MAGOLOR.talk.CUSTOMCHARACTERKIRBY-CUSTOM_CHARACTER_KIRBY.0-1.char": "[i]Poyo![i]",
+  "CUSTOMCHARACTERKIRBY-MAGOLOR.talk.CUSTOMCHARACTERKIRBY-CUSTOM_CHARACTER_KIRBY.0-1.next": "Continue",
+  "CUSTOMCHARACTERKIRBY-MAGOLOR.talk.CUSTOMCHARACTERKIRBY-CUSTOM_CHARACTER_KIRBY.0-2.ancient": "I have these trinkets laying around.\nPick whichever you like!",
+  "CUSTOMCHARACTERKIRBY-MAGOLOR.talk.firstVisitEver.0-0.ancient": "[sine]Sigh[/sine] ... Not again... Guess I'll have to fix you up myself this time, Lor.",
+  "CUSTOMCHARACTERKIRBY-MAGOLOR.title": "Magolor",
+
+  
+  "CUSTOMCHARACTERKIRBY-THREE_MAGE_SISTERS.epithet": "The Three Mage-Sisters",
+  "CUSTOMCHARACTERKIRBY-THREE_MAGE_SISTERS.talk.ANY.0-0r.ancient": "Reusable generic greeting.",
+  "CUSTOMCHARACTERKIRBY-THREE_MAGE_SISTERS.talk.CUSTOMCHARACTERKIRBY-CUSTOM_CHARACTER_KIRBY.0-0r.ancient": "Reusable generic greeting.",
+  "CUSTOMCHARACTERKIRBY-THREE_MAGE_SISTERS.talk.firstVisitEver.0-0.ancient": "[i]Whispering to eachother.[/i]",
+  "CUSTOMCHARACTERKIRBY-THREE_MAGE_SISTERS.title": "Francisca, Flamberge and Zan Partizanne",
+  
+  
+  "CUSTOMCHARACTERKIRBY-ELFILIN.epithet": "Friend From a Forgotten Land",
+  "CUSTOMCHARACTERKIRBY-ELFILIN.talk.ANY.0-0r.ancient": "Reusable generic greeting.",
+  "CUSTOMCHARACTERKIRBY-ELFILIN.talk.CUSTOMCHARACTERKIRBY-CUSTOM_CHARACTER_KIRBY.0-0r.ancient": "Reusable generic greeting.",
+  "CUSTOMCHARACTERKIRBY-ELFILIN.talk.firstVisitEver.0-0.ancient": "First time greeting.",
+  "CUSTOMCHARACTERKIRBY-ELFILIN.title": "Elfilin"
 }

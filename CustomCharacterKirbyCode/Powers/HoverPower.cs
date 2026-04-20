@@ -43,7 +43,7 @@ public class HoverPower : CustomCharacterKirbyPower
     public override async Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
     {
         HoverPower power = this;
-        if (side != CombatSide.Player && power.Amount > 0) return;
+        if (side != CombatSide.Player || power.Amount > 0) return;
         await PowerCmd.Remove(power);
     }
     

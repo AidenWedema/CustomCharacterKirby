@@ -8,14 +8,15 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 
-public class Crackler() : CustomCharacterKirbyCard(1, CardType.Power, CardRarity.Uncommon, TargetType.Self)
+public class Crackler() : CustomCharacterKirbyCard(1, CardType.Power, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("CracklerDamage", 4M), new DynamicVar("TurnAmount", 6)];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         Crackler card = this;
-        (await PowerCmd.Apply<CracklerPower>(card.Owner.Creature, DynamicVars["TurnAmount"].BaseValue, card.Owner.Creature, card)).SetDamage(DynamicVars.Damage.BaseValue);
+        var crackler = await PowerCmd.Apply<CracklerPower>(card.Owner.Creature, DynamicVars["TurnAmount"].BaseValue, card.Owner.Creature, card);
+        crackler?.SetDamage(DynamicVars.Damage.BaseValue);
     }
 
     protected override void OnUpgrade()

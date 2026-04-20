@@ -2,18 +2,12 @@
 using BaseLib.Utils.NodeFactories;
 using CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 using CustomCharacterKirby.CustomCharacterKirbyCode.Extensions;
-using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 using CustomCharacterKirby.CustomCharacterKirbyCode.Relics;
 using Godot;
-using MegaCrit.Sts2.Core.Combat;
-using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Cards;
-using MegaCrit.Sts2.Core.Models.Relics;
-using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Character;
