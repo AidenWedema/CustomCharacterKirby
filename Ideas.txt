@@ -1,0 +1,154 @@
+Needed: ~85 cards
+
+current: 35 cards (58 total)
+
+
+Copy Abilities:
+
+Normal:
+- Basic attack: Hit (1, attack): Deal 6 damage.
+
+- Basic skill: Inhale (1, skill): Enemy loses 1 strength, gain 1 star.
+
+- Up: Hover (1, skill): Gain 1 hover.
+
+- Forward: Star Spit (1, attack): Deal 5 damage per star. Lose all stars.
+
+- Down: Crouch (1, skill): Gain 3 Block. gain 1 Strength per star. Lose all stars.
+
+Sword:
+- Basic attack: Overhead Slash (1, attack): Deal 8 damage.
+
+- Basic skill: Sky energy sword (1, skill): Your next Overhead Slash deals damage to ALL enemies.
+
+- Up: Upward Slash (1, attack): Deal 3 damage 3 times
+
+- Forward: Drill stab (1, attack): Deal 7 damage to ALL enemies.
+
+- Down: Sword Dive (1, attack): Deal 6 damage. Apply 1 Weak and 1 Vulnerable. When played after Upward Slash, Stun the enemy instead.
+
+Leaf:
+- Basic attack: Leaf Attack (1, attack): Deal 6 damage, gain 1 Leaf.
+
+- Basic skill: Leaf Hide (1, skill): Gain 5 block, gain 3 Leaf.
+
+- Up:  Leaf Uppercut (1, attack): Deal 8 damage, gain 1 Leaf.
+
+- Forward: Leaf Scatter (2, attack): Deal 3 damage per Leaf to ALL enemies. Lose all Leaves.
+
+- Down: Leaf Rain (2, attack): Deal 2 damage per Leaf to ALL enemies.
+
+
+Ice:
+- Basic attack: Ice Breath (1, attack): Deal 2 damage, apply 1 Weak and 1 Vulnerable.
+
+- Basic skill: Ice Block (1, skill): Gain 9 block.
+
+- Up: Ice Sprinkle (1, attack): Deal 3 damage to ALL enemies, apply 1 Weak and 1 Vulnerable.
+
+- Forward: Ice Storm (1, attack): Deal 6 damage. Gain 2 block.
+
+- Down: Ice Scatter (2, attack): Deal 3 damage for each block you have to ALL enemies. Lose all block.
+
+
+Mirror:
+- Basic attack: Mirror Cut (1, attack): Deal 2 damage, gain 1 Dexterity.
+
+- Basic skill: Reflect Guard (2, skill): Gain 4 block. Gain Reflect.
+
+- Up: Mirror Body Sky (2, attack): Deal 1 damage to ALL enemies 4 times. Gain Blur.
+
+- Forward: Mirror Body (2, attack): Deal 6 damage to a random enemy. Gain Blur.
+
+- Down: Reflect Force (3, attack): Deal 2 damage, gain 3 block, gain 3 block next turn.
+
+
+Poison:
+- Basic attack:
+- Basic skill:
+- Up:
+- Forward:
+- Down:
+
+
+Beam:
+- Basic attack:
+- Basic skill:
+- Up:
+- Forward:
+- Down:
+
+
+Needle:
+- Basic attack:
+- Basic skill:
+- Up:
+- Forward:
+- Down:
+
+
+Parasol:
+- Basic attack:
+- Basic skill:
+- Up:
+- Forward:
+- Down:
+
+
+---
+
+Card ideas:
+
+Mix (1, common, skill): switch to a random copy ability.
+
+Hal room (1, Uncommon, skill): pick one of 3 random copy abilities, it is free to play this turn.
+
+Yarn Whip (2, Uncommon, attack): Deals 12 damage to an enemy, if lethal, deal double the damage dealt to a random enemy.
+
+Warp Star (3, Rare, skill): Gain 1 Intangible, deal 10 damage to all enemies next turn, end your turn. (use 'the bomb' buff)
+
+Fishing (1, common, skill): put a card from your discard pile into your hand.
+
+Gem Apple (0, common, skill): Gain 1 energy. Exhaust
+
+Strawberry Shortcake (1, uncommon, skill): Gain 2 energy next turn. Exhaust
+
+Maxim tomato (3, rare, skill): Heal to full HP, When played remove from deck. Retain.
+
+Crackler (1, uncommon, power): Deals 4 damage to a random enemy each turn, wears of after 6 turns
+
+Action star (1, common, skill): Randomize the energy cost of maximum 3 cards in your hand to 0-3 energy. Exhaust.
+
+Galactic Nova (3, rare, power): A random card in your hand is free to play each turn.
+
+- Ninja Dojo (2, uncommon, attack): Deal 9 damage to ALL enemies.
+
+- Galaxia (2, uncommon, skill): Summon meta knight. Exhaust
+
+- Claycia (2, common, skill): Your next card is played a second time.
+
+- Whispy Woods (2, rare, skill): Gain 20 Block, heal 7 HP. Exhaust.
+
+- Landia (2, uncommon, attack): Deal 6 damage to a random enemy 4 times.
+
+Devour (2, uncommon, skill): Exhaust a card from your hand, gain 1 strength.
+
+Dimensional rift (2, common, skill): Exhaust all copy essences in your deck, gain 2 stars per essence.
+
+Dimension Mirror (2, uncommon, skill): Choose a card from your hand, lower it's cost by 1 for the rest of combat, it gains Etheral.
+
+Sun Stone (2, common, skill): Choose an Etheral card from your hand, it loses Etheral, it gains Exhaust.
+
+Code Cube (2, common, skill): Choose an Exhaust card from your hand, it looses Exhaust, it gains Etheral.
+
+Energy Sphere (2, common, skill): Choose a card from your hand, it gains retain.
+
+---
+
+Anchient ideas:
+
+Magolor:
+
+Elfilin:
+
+Three mage sisters:

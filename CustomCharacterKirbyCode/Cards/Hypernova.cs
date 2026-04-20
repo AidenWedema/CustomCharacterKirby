@@ -10,6 +10,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
+using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
@@ -19,17 +20,7 @@ public class Hypernova() : CustomCharacterKirbyCard(3, CardType.Skill, CardRarit
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("SwallowPercent", 20M)];
 
-    protected override bool IsPlayable
-    {
-        get
-        {
-            // var enemies = this.CombatState.HittableEnemies;
-            // enemies[0].ModelId.Category;
-            // enemies[0].Monster.
-            
-            return SwallowableEnemies.Count > 0;
-        }
-    }
+    protected override bool IsPlayable => SwallowableEnemies.Count > 0 && this.CombatState?.Encounter?.RoomType != RoomType.Boss;
 
     private IReadOnlyList<Creature> SwallowableEnemies
     {

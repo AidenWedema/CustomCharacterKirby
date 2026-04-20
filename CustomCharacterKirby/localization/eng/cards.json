@@ -183,7 +183,7 @@
   "CUSTOMCHARACTERKIRBY-ULTRA_SWORD.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
   "CUSTOMCHARACTERKIRBY-ULTRA_SWORD.title": "Ultra Sword",
 
-  "CUSTOMCHARACTERKIRBY-HYPERNOVA.description": "Swallow All enemies with less than {SwallowPercent:diff()}% of their max HP remaining.",
+  "CUSTOMCHARACTERKIRBY-HYPERNOVA.description": "Swallow All enemies with less than {SwallowPercent:diff()}% of their max HP remaining. Does not work on bosses.",
   "CUSTOMCHARACTERKIRBY-HYPERNOVA.title": "Hypernova",
   
   "CUSTOMCHARACTERKIRBY-ROBOBOT_ARMOR.description": "Gain {StrengthGain:diff()} [gold]Strength[/gold].\nGain {DexterityGain:diff()} [gold]Dexterity[/gold].",

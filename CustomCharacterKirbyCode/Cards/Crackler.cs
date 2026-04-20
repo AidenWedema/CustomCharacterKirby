@@ -3,6 +3,7 @@ using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 
@@ -12,6 +13,8 @@ public class Crackler() : CustomCharacterKirbyCard(1, CardType.Power, CardRarity
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("CracklerDamage", 4M), new DynamicVar("TurnAmount", 6)];
 
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<CracklerPower>()];
+    
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         Crackler card = this;
