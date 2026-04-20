@@ -1,6 +1,6 @@
 Needed: ~85 cards
 
-current: 35 cards (58 total)
+current: 36 cards (59 total)
 
 
 Copy Abilities:
@@ -99,6 +99,12 @@ Parasol:
 
 Card ideas:
 
+Slide (2, Uncommon, attack): Deal 8 damage to ALL enemies. Apply 2 Weak.
+
+Drop Ability (1, common, skill): Lose your current copy ability, gain 2 Stars.
+
+Guard (1, basic, skill): gain 5 Block.
+
 Mix (1, common, skill): switch to a random copy ability.
 
 Hal room (1, Uncommon, skill): pick one of 3 random copy abilities, it is free to play this turn.
@@ -142,6 +148,18 @@ Sun Stone (2, common, skill): Choose an Etheral card from your hand, it loses Et
 Code Cube (2, common, skill): Choose an Exhaust card from your hand, it looses Exhaust, it gains Etheral.
 
 Energy Sphere (2, common, skill): Choose a card from your hand, it gains retain.
+
+Ultra Sword (3, rare, attack): Deal 10 damage 3 times.
+
+Robobot Armor (3, rare, power): Gain 4 Strength and 4 Dexterity.
+
+Hypernova (3, rare, skill): Swallow All enemies with less than 20% of their max HP remaining. Does not work on bosses.
+
+Dream Rod (3, rare, skill): Summon a friend to help you out.
+
+Dragoon (3, rare, attack): Deal 28 damage to ALL enemies. Exhaust.
+
+Mass Attack (2, Uncommon, attack): Deal 4 damage 4 times.
 
 ---
 

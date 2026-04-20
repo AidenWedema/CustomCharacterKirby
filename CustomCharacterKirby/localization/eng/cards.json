@@ -175,6 +175,9 @@
   "CUSTOMCHARACTERKIRBY-DEVOUR.description": "[gold]Exhaust[/gold] a card from your hand.\nGain {StarGain:diff()} [gold]Stars[/gold].",
   "CUSTOMCHARACTERKIRBY-DEVOUR.title": "Devour",
   
+  "CUSTOMCHARACTERKIRBY-MASS_ATTACK.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
+  "CUSTOMCHARACTERKIRBY-MASS_ATTACK.title": "Mass Attack",
+  
   "CUSTOMCHARACTERKIRBY-DROP_ABILITY.description": "Lose your current copy ability.\nGain {ProjectileStarGain:diff()} [gold]Stars[/gold].",
   "CUSTOMCHARACTERKIRBY-DROP_ABILITY.title": "Drop Ability",
   
