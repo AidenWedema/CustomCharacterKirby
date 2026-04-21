@@ -170,6 +170,17 @@ Prism Shield (2, common, power): Gain 5 Plating.
 
 ---
 
+Relic ideas:
+
+Squishy Skin (starting relic): Take 2 less damage from any attack.
+
+AbilityEssence (uncommon): Start each combat with a random copy ability.
+
+InvincibilityCandy (rare): start each combat with 1 buffer.
+
+---
+
+
 Anchient ideas:
 
 Magolor:
