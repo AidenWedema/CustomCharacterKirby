@@ -138,10 +138,16 @@
   "CUSTOMCHARACTERKIRBY-FISHING.title": "Fishing",
 
   "CUSTOMCHARACTERKIRBY-GEM_APPLE.description": "Gain {Energy:diff()} Energy.",
-  "CUSTOMCHARACTERKIRBY-GEM_APPLE.title": "GemApple",
+  "CUSTOMCHARACTERKIRBY-GEM_APPLE.title": "Gem Apple",
   
   "CUSTOMCHARACTERKIRBY-ACTION_STAR.description": "Choose a maximum of 3 cards from your hand and randomize their cost from 0 to {MaxEnergyCost:diff()}.",
   "CUSTOMCHARACTERKIRBY-ACTION_STAR.title": "Action Star",
+
+  "CUSTOMCHARACTERKIRBY-TREASURE_CHEST.description": "Put a random uncommon card in your hand, it is free to play this turn.",
+  "CUSTOMCHARACTERKIRBY-TREASURE_CHEST.title": "Treasure Chest",
+  
+  "CUSTOMCHARACTERKIRBY-PRISM_SHIELD.description": "Gain {Block:diff()} [gold]Plating[/gold]",
+  "CUSTOMCHARACTERKIRBY-PRISM_SHIELD.title": "Prism Shield",
   
   
   
@@ -180,6 +186,9 @@
   
   "CUSTOMCHARACTERKIRBY-DROP_ABILITY.description": "Lose your current copy ability.\nGain {ProjectileStarGain:diff()} [gold]Stars[/gold].",
   "CUSTOMCHARACTERKIRBY-DROP_ABILITY.title": "Drop Ability",
+  
+  "CUSTOMCHARACTERKIRBY-BIG_SWITCH.description": "Put a random uncommon card in your hand, it is free to play this turn.",
+  "CUSTOMCHARACTERKIRBY-BIG_SWITCH.title": "Big Switch",
   
   
   

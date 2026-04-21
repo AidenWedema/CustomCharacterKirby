@@ -1,6 +1,6 @@
 Needed: ~85 cards
 
-current: 36 cards (59 total)
+current: 39 cards (62 total)
 
 
 Copy Abilities:
@@ -159,7 +159,14 @@ Dream Rod (3, rare, skill): Summon a friend to help you out.
 
 Dragoon (3, rare, attack): Deal 28 damage to ALL enemies. Exhaust.
 
-Mass Attack (2, Uncommon, attack): Deal 4 damage 4 times.
+Mass Attack (2, uncommon, attack): Deal 4 damage 4 times.
+
+Treasure Chest (1, common, skill): Get a random common card, it is free to play this turn.
+
+Big Switch (2, uncommon, skill): Get a random uncommon card, it is free to play this turn.
+
+Prism Shield (2, common, power): Gain 5 Plating.
+
 
 ---
 
