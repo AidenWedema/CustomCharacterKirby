@@ -44,7 +44,7 @@ public class DreamRod() : CustomCharacterKirbyCard(3, CardType.Power, CardRarity
         // Check if max is friends reached
         if (existingFriends.Count == FriendPositions.Length)
         {
-            var r = Rng.Chaotic.NextInt(0, existingFriends.Count);
+            var r = card.Owner.RunState.Rng.Niche.NextInt(0, existingFriends.Count);
             friend = existingFriends[r];
             newFriend = false;
         }
@@ -65,7 +65,7 @@ public class DreamRod() : CustomCharacterKirbyCard(3, CardType.Power, CardRarity
                 newFriend = false;
             }
         
-            var r = Rng.Chaotic.NextInt(0, possibleFriends.Count);
+            var r = card.Owner.RunState.Rng.Niche.NextInt(0, possibleFriends.Count);
             friend = possibleFriends[r];
         }
         var creature = await DreamFriendCmd.Summon(friend, choiceContext, card.Owner, friend.MaxInitialHp, card, true, false);

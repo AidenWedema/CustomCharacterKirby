@@ -28,7 +28,7 @@ public class GalacticNovaPower : CustomCharacterKirbyPower
             var hand = PileType.Hand.GetPile(power.Owner.Player).Cards.Where(c => c.EnergyCost.Canonical > 0).ToList();
             if (hand.Count == 0) break;
             // Set the cost of a random card to 0
-            var r = Rng.Chaotic.NextInt(0, hand.Count);
+            var r = power.Owner.Player.RunState.Rng.CombatCardSelection.NextInt(0, hand.Count);
             hand[r].EnergyCost.SetThisTurn(0);
         }
         

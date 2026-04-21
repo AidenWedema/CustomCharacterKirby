@@ -30,22 +30,11 @@ public class HoverPower : CustomCharacterKirbyPower
     {
         HoverPower power = this;
         if (target != power.Owner || result.UnblockedDamage == 0 || !IsPoweredAttack(props)) return;
-        await PowerCmd.Decrement(power);
         power.Flash();
+        var amount = await PowerCmd.ModifyAmount(power, -1M, null, null);
+        if (amount <= 0)
+            await PowerCmd.Apply<StunnedPower>(power.Owner, 1, power.Owner, null);
     }
 
-    public override decimal ModifyHandDraw(Player player, decimal count)
-    {
-        HoverPower power = this;
-        return power.Amount > 0 ? count : 0;
-    }
-
-    public override async Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
-    {
-        HoverPower power = this;
-        if (side != CombatSide.Player || power.Amount > 0) return;
-        await PowerCmd.Remove(power);
-    }
-    
     private bool IsPoweredAttack(ValueProp props) => props.HasFlag(ValueProp.Move) && !props.HasFlag(ValueProp.Unpowered);
 }

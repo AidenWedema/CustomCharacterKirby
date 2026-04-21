@@ -17,7 +17,7 @@ public class CracklerPower : CustomCharacterKirbyPower
 
     public override bool AllowNegative => false;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("CracklerDamage", 4)];
 
     public override async Task BeforeTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
     {
@@ -37,6 +37,6 @@ public class CracklerPower : CustomCharacterKirbyPower
     public void SetDamage(decimal newDamage)
     {
         this.AssertMutable();
-        this.DynamicVars.Damage.BaseValue = newDamage;
+        this.DynamicVars["CracklerDamage"].BaseValue = newDamage;
     }
 }

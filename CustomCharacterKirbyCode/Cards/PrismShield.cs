@@ -1,4 +1,5 @@
-﻿using CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
+﻿using BaseLib.Extensions;
+using CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -11,7 +12,7 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 
 public class PrismShield() : CustomCharacterKirbyCard(2, CardType.Power, CardRarity.Common, TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5M, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<PlatingPower>(5M)];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<PlatingPower>()];
 
@@ -22,5 +23,5 @@ public class PrismShield() : CustomCharacterKirbyCard(2, CardType.Power, CardRar
         await PowerCmd.Apply<PlatingPower>(card.Owner.Creature, DynamicVars.Block.BaseValue, card.Owner.Creature, card);
     }
 
-    protected override void OnUpgrade() => DynamicVars.Block.UpgradeValueBy(2M);
+    protected override void OnUpgrade() => DynamicVars.Power<PlatingPower>().UpgradeValueBy(2M);
 }

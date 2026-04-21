@@ -39,6 +39,10 @@
   "CUSTOMCHARACTERKIRBY-HOVER_POWER.smartDescription": "Take 50% less damage from attacks, but skip your turn when it runs out.",
   "CUSTOMCHARACTERKIRBY-HOVER_POWER.title": "Hover",
   
+  "CUSTOMCHARACTERKIRBY-STUNNED_POWER.description": "Your turn is skipped.",
+  "CUSTOMCHARACTERKIRBY-STUNNED_POWER.smartDescription": "Your turn is skipped.",
+  "CUSTOMCHARACTERKIRBY-STUNNED_POWER.title": "Stunned",
+  
   "CUSTOMCHARACTERKIRBY-LEAF_POWER.description": "A leaf, great for hiding or attacking your enemies",
   "CUSTOMCHARACTERKIRBY-LEAF_POWER.smartDescription": "A leaf, great for hiding or attacking your enemies",
   "CUSTOMCHARACTERKIRBY-LEAF_POWER.title": "Leaf",
@@ -47,12 +51,12 @@
   "CUSTOMCHARACTERKIRBY-SLEEP_POWER.smartDescription": "Heal 5 HP per turn, but you can't play any cards.",
   "CUSTOMCHARACTERKIRBY-SLEEP_POWER.title": "Asleep",
 
-  "CUSTOMCHARACTERKIRBY-CRACKLER_POWER.description": "Deals {Damage:diff()} damage to a random enemy.",
-  "CUSTOMCHARACTERKIRBY-CRACKLER_POWER.smartDescription": "Deals {Damage:diff()} damage to a random enemy.",
+  "CUSTOMCHARACTERKIRBY-CRACKLER_POWER.description": "Deals damage to a random enemy at the end of your turn.",
+  "CUSTOMCHARACTERKIRBY-CRACKLER_POWER.smartDescription": "Deals damage to a random enemy at the end of your turn.",
   "CUSTOMCHARACTERKIRBY-CRACKLER_POWER.title": "Crackler",
   
-  "CUSTOMCHARACTERKIRBY-GALACTIC_NOVA_POWER.description": "",
-  "CUSTOMCHARACTERKIRBY-GALACTIC_NOVA_POWER.smartDescription": "",
+  "CUSTOMCHARACTERKIRBY-GALACTIC_NOVA_POWER.description": "A random card in your hand is free to play each turn.",
+  "CUSTOMCHARACTERKIRBY-GALACTIC_NOVA_POWER.smartDescription": "A random card in your hand is free to play each turn.",
   "CUSTOMCHARACTERKIRBY-GALACTIC_NOVA_POWER.title": "Galactic Nova",
   
   "CUSTOMCHARACTERKIRBY-DREAM_ROD_POWER.description": "You made a friend!",

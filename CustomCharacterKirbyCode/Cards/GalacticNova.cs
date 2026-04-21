@@ -18,7 +18,7 @@ public class GalacticNova() : CustomCharacterKirbyCard(3, CardType.Power, CardRa
     {
         GalacticNova card = this;
 
-        await PowerCmd.Apply<GalacticNovaPower>(card.Owner.Creature, 1, card.Owner.Creature, card);
+        await PowerCmd.Apply<GalacticNovaPower>(card.Owner.Creature, DynamicVars["CardAmount"].BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => DynamicVars["CardAmount"].UpgradeValueBy(1);

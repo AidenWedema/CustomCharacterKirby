@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 
-public class EnergySphere() : CustomCharacterKirbyCard(2, CardType.Skill, CardRarity.Common, TargetType.Self)
+public class EnergySphere() : CustomCharacterKirbyCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
 

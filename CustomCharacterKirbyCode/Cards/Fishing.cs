@@ -17,8 +17,7 @@ public class Fishing() : CustomCharacterKirbyCard(1, CardType.Skill, CardRarity.
         Fishing card = this;
         CardSelectorPrefs prefs = new CardSelectorPrefs(card.SelectionScreenPrompt, 1);
         CardModel? choice = (await CardSelectCmd.FromSimpleGrid(choiceContext, PileType.Discard.GetPile(card.Owner).Cards, card.Owner, prefs)).FirstOrDefault();
-        if (choice == null)
-            return;
+        if (choice == null) return;
         await CardPileCmd.Add(choice, PileType.Hand);
     }
 

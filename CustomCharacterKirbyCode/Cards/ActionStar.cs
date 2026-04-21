@@ -20,12 +20,12 @@ public class ActionStar() : CustomCharacterKirbyCard(1, CardType.Skill, CardRari
         ActionStar card = this;
         
         // Choose 3 cards from hand
-        var cards = await CardSelectCmd.FromHand(choiceContext, card.Owner, new CardSelectorPrefs(CardSelectorPrefs.DiscardSelectionPrompt, 3), null, card);
+        var cards = await CardSelectCmd.FromHand(choiceContext, card.Owner, new CardSelectorPrefs(CardSelectorPrefs.UpgradeSelectionPrompt, 3), null, card);
         
         // Randomize the cost of the chosen cards
         foreach (var cardModel in cards)
         {
-            var r = Rng.Chaotic.NextInt(0, DynamicVars["MaxEnergyCost"].IntValue + 1);
+            var r = card.Owner.RunState.Rng.CombatEnergyCosts.NextInt(0, DynamicVars["MaxEnergyCost"].IntValue + 1);
             cardModel.EnergyCost.SetThisCombat(r);
         }
     }

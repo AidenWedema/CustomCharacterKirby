@@ -5,7 +5,7 @@
   "CUSTOMCHARACTERKIRBY-DEFEND_KIRBY.description": "Gain {Block:diff()} [gold]Block[/gold].",
   "CUSTOMCHARACTERKIRBY-DEFEND_KIRBY.title": "Block",
   
-  "CUSTOMCHARACTERKIRBY-STAR_SPIT.description": "Deal {CalculatedDamage:diff()} damage.\n Deal {ExtraDamage:diff()} extra damage per [gold]Star[/gold].\nLose all [gold]Stars[/gold]",
+  "CUSTOMCHARACTERKIRBY-STAR_SPIT.description": "Deal {Damage:diff()} damage.\n Deal {ExtraDamage:diff()} extra damage per [gold]Star[/gold].\nLose all [gold]Stars[/gold]\n(Deal {CalculatedDamage:diff()} damage)",
   "CUSTOMCHARACTERKIRBY-STAR_SPIT.title": "Star Spit",
 
   "CUSTOMCHARACTERKIRBY-INHALE.description": "Enemy loses 1 [gold]Strength[/gold].\nGain {ProjectileStarGain:diff()} [gold]{IfUpgraded:show:Stars|Star}[/gold].",
@@ -57,7 +57,7 @@
   "CUSTOMCHARACTERKIRBY-LEAF_HIDE.description": "Gain {Block:diff()} Block.\nGain {LeafGain:diff()} [gold]Leaf[/gold].",
   "CUSTOMCHARACTERKIRBY-LEAF_HIDE.title": "Leaf Hide",
 
-  "CUSTOMCHARACTERKIRBY-LEAF_RAIN.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeal {ExtraDamage:diff()} extra damage per [gold]Leaf[/gold].",
+  "CUSTOMCHARACTERKIRBY-LEAF_RAIN.description": "Deal {Damage:diff()} damage to ALL enemies.\nDeal {ExtraDamage:diff()} extra damage per [gold]Leaf[/gold].\n(Deal {CalculatedDamage:diff()} damage)",
   "CUSTOMCHARACTERKIRBY-LEAF_RAIN.title": "Leaf Rain",
 
   "CUSTOMCHARACTERKIRBY-LEAF_SCATTER.description": "Deal {ExtraDamage:diff()} damage per \n[gold]Leaf[/gold].\nDeal {CalculatedDamage:diff()} damage to ALL enemies.\nRemove all [gold]Leaf[/gold].",
@@ -146,7 +146,7 @@
   "CUSTOMCHARACTERKIRBY-TREASURE_CHEST.description": "Put a random uncommon card in your hand, it is free to play this turn.",
   "CUSTOMCHARACTERKIRBY-TREASURE_CHEST.title": "Treasure Chest",
   
-  "CUSTOMCHARACTERKIRBY-PRISM_SHIELD.description": "Gain {Block:diff()} [gold]Plating[/gold]",
+  "CUSTOMCHARACTERKIRBY-PRISM_SHIELD.description": "Gain {Plating:diff()} [gold]Plating[/gold]",
   "CUSTOMCHARACTERKIRBY-PRISM_SHIELD.title": "Prism Shield",
   
   

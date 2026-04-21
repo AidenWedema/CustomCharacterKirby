@@ -20,7 +20,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 
 [Pool(typeof(CustomCharacterKirbyCardPool))]
-public class Slide() : CustomCharacterKirbyCard(2, CardType.Attack, CardRarity.Uncommon, TargetType.AllEnemies)
+public class Slide() : CustomCharacterKirbyCard(1, CardType.Attack, CardRarity.Uncommon, TargetType.AllEnemies)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(5M, ValueProp.Move), new PowerVar<WeakPower>(2M)];
     

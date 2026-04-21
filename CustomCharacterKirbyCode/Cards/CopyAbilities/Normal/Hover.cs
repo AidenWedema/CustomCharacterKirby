@@ -7,6 +7,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
@@ -18,8 +19,8 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 public class Hover() : AbilityCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> ExtraCanonicalVars => [new DynamicVar("HoverGain", 1M)];
-
-    protected override HashSet<CardTag> CanonicalTags => new HashSet<CardTag>() { CardTag.None };
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<HoverPower>()];
 
     protected override AbilityType abilityType => AbilityType.Up;
 
