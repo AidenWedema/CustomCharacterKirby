@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards.CopyAbilities.Sleep;
 
-public class Awake() : CopyEssenceCard(0, CardType.Skill, CardRarity.Token, TargetType.Self)
+public class Awake() : CopyEssenceCard(0, CardType.Status, CardRarity.Token, TargetType.Self)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Ethereal, CardKeyword.Exhaust];
     

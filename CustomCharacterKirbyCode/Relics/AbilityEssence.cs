@@ -62,7 +62,7 @@ public class AbilityEssence() : CustomCharacterKirbyRelic
         for (var i = 0; i < abilityCards.Count; i++)
         {
             var card = abilityCards[i];
-            await card.OnAbilityChanged(essenceCard, essenceCard.CopyAbility);
+            await card.OnAbilityChanged(this.Owner.Creature.CombatState, this.Owner, essenceCard.CopyAbility);
         }
     }
 }

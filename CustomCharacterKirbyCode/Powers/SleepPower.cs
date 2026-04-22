@@ -22,7 +22,11 @@ public class SleepPower : CustomCharacterKirbyPower
         await CreatureCmd.Heal(Owner, 5);
     }
 
-    public override decimal ModifyHandDrawLate(Player player, decimal count) => 0; // While asleep, don't draw cards
+    public override decimal ModifyHandDrawLate(Player player, decimal count)
+    {
+        SleepPower power = this;
+        return power.Owner.Player == player ? 0 : count; // only apply to the player the power is owned by
+    }
 
     public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {

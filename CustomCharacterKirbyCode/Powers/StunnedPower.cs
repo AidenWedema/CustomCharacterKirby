@@ -24,7 +24,7 @@ public class StunnedPower : CustomCharacterKirbyPower
     public override decimal ModifyHandDraw(Player player, decimal count)
     {
         StunnedPower power = this;
-        return 0;
+        return power.Owner.Player == player ? 0 : count; // only apply to the player the power is owned by
     }
 
     public override async Task AfterModifyingHandDraw()

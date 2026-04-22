@@ -1,0 +1,42 @@
+hover has incorect tooltip						-	FIXED
+
+hover still does not work... yay...					-	FIXED
+
+fishing doesn't work
+
+Prism Shield scales with Weak and Frail					-	FIXED
+
+Make slide 1 energy							-	FIXED
+
+Crackler tooltip shows "{Damage:diff()}" instead of actual damage	-	FIXED
+
+Star spit card description						-	FIXED
+
+Energy sphere								-	FIXED
+
+Strike and Defend softlocked						-	FIXED
+
+Upward Slash power shows [/gold]					-	FIXED
+
+Sleep ability applies to all players					-	FIXED??
+
+Upward slash power stays
+
+Çopy ability switching race contition					-	FIXED???
+
+Ability essence relic doesn't work					-	FIXED
+
+prism shield description shows {Plating:diff()}				-	FIXED
+
+Stunned applies to all players (only if client get's stunned)		-	FIXED????
+
+Awake can be pulled from skill potion					-	FIXED
+
+Things that crash multiplayer:						-	FIXED??
+- Attack potion???
+- Power potion???
+- Skill potion???
+- Colorless potion???
+- Dream rod								-	FIXED
+- Mix									-	FIXED
+- probably everything that advances RNG

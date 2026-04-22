@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.Random;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 
-public class Mix() : CustomCharacterKirbyCard(1, CardType.Attack, CardRarity.Common, TargetType.Self)
+public class Mix() : CopyEssenceCard(1, CardType.Attack, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
@@ -22,9 +22,10 @@ public class Mix() : CustomCharacterKirbyCard(1, CardType.Attack, CardRarity.Com
         ModelDb.Card<MirrorEssence>(),
     ];
 
+    public override CopyAbility CopyAbility => null!;
+
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
-        
         // Chose a random card
         var r = this.Owner.RunState.Rng.Niche.NextInt(0, EssenceCards.Count);
         var essenceCard = (CopyEssenceCard)EssenceCards[r].MutableClone();
@@ -63,7 +64,7 @@ public class Mix() : CustomCharacterKirbyCard(1, CardType.Attack, CardRarity.Com
         for (var i = 0; i < abilityCards.Count; i++)
         {
             var card = abilityCards[i];
-            await card.OnAbilityChanged(essenceCard, essenceCard.CopyAbility);
+            await card.OnAbilityChanged(this.Owner.Creature.CombatState, this.Owner, essenceCard.CopyAbility);
         }
     }
 

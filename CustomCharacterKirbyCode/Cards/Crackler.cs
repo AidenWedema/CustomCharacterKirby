@@ -19,7 +19,7 @@ public class Crackler() : CustomCharacterKirbyCard(1, CardType.Power, CardRarity
     {
         Crackler card = this;
         var crackler = await PowerCmd.Apply<CracklerPower>(card.Owner.Creature, DynamicVars["TurnAmount"].BaseValue, card.Owner.Creature, card);
-        crackler?.SetDamage(DynamicVars.Damage.BaseValue);
+        crackler?.SetDamage(DynamicVars["CracklerDamage"].BaseValue);
     }
 
     protected override void OnUpgrade()

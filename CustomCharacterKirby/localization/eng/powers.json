@@ -31,8 +31,8 @@
   "CUSTOMCHARACTERKIRBY-SKY_ENERGY_SWORD_POWER.smartDescription": "The next Overhead Slash deals damage to ALL enemies",
   "CUSTOMCHARACTERKIRBY-SKY_ENERGY_SWORD_POWER.title": "Sky Energy Sword",
   
-  "CUSTOMCHARACTERKIRBY-UPWARD_SLASH_POWER.description": "Your next [gold]Sword Dive[/gold] applies [/gold]Stun[/gold] to the target.",
-  "CUSTOMCHARACTERKIRBY-UPWARD_SLASH_POWER.smartDescription": "Your next [gold]Sword Dive[/gold] applies [/gold]Stun[/gold] to the target.",
+  "CUSTOMCHARACTERKIRBY-UPWARD_SLASH_POWER.description": "Your next [gold]Sword Dive[/gold] applies [gold]Stun[/gold] to the target.",
+  "CUSTOMCHARACTERKIRBY-UPWARD_SLASH_POWER.smartDescription": "Your next [gold]Sword Dive[/gold] applies [gold]Stun[/gold] to the target.",
   "CUSTOMCHARACTERKIRBY-UPWARD_SLASH_POWER.title": "Upward Slash",
   
   "CUSTOMCHARACTERKIRBY-HOVER_POWER.description": "Take 50% less damage from attacks, but skip your turn when it runs out.",

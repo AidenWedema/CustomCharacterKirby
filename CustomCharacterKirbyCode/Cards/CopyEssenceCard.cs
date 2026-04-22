@@ -52,8 +52,10 @@ public abstract class CopyEssenceCard(int cost, CardType type, CardRarity rarity
         for (int i = 0; i < abilityCards.Count; i++)
         {
             var card = abilityCards[i];
-            await card.OnAbilityChanged(cardSource, CopyAbility);
+            await card.OnAbilityChanged(cardSource.CombatState, cardSource.Owner, CopyAbility);
         }
+        // Lazy race condition fix incoming
+        await Cmd.Wait(3);
     }
 
     protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);

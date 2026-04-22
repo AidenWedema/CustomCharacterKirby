@@ -1,6 +1,8 @@
 ﻿using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
+using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.CommonUi;
@@ -62,7 +64,7 @@ public abstract class AbilityCard(int cost, CardType type, CardRarity rarity, Ta
 
     protected abstract AbilityType abilityType { get; }
 
-    public async Task OnAbilityChanged(CopyEssenceCard cardSource, CopyAbility ability)
+    public async Task OnAbilityChanged(CombatState combatState, Player owner, CopyAbility ability)
     {
         AbilityCard newCard = abilityType switch
         {
@@ -73,7 +75,7 @@ public abstract class AbilityCard(int cost, CardType type, CardRarity rarity, Ta
             AbilityType.Down => ability.DownCard,
             _ => throw new ArgumentOutOfRangeException(nameof(abilityType), abilityType, null)
         };
-        newCard = (AbilityCard)cardSource.CombatState.CreateCard(newCard, cardSource.Owner);
+        newCard = (AbilityCard)combatState.CreateCard(newCard, owner);
         
         // If this card is upgraded, the replacement should be as well
         if (IsUpgraded)

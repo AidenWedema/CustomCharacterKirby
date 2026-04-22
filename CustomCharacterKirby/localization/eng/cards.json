@@ -143,10 +143,10 @@
   "CUSTOMCHARACTERKIRBY-ACTION_STAR.description": "Choose a maximum of 3 cards from your hand and randomize their cost from 0 to {MaxEnergyCost:diff()}.",
   "CUSTOMCHARACTERKIRBY-ACTION_STAR.title": "Action Star",
 
-  "CUSTOMCHARACTERKIRBY-TREASURE_CHEST.description": "Put a random uncommon card in your hand, it is free to play this turn.",
+  "CUSTOMCHARACTERKIRBY-TREASURE_CHEST.description": "Put a random common card in your hand, it is free to play this turn.",
   "CUSTOMCHARACTERKIRBY-TREASURE_CHEST.title": "Treasure Chest",
   
-  "CUSTOMCHARACTERKIRBY-PRISM_SHIELD.description": "Gain {Plating:diff()} [gold]Plating[/gold]",
+  "CUSTOMCHARACTERKIRBY-PRISM_SHIELD.description": "Gain {PlatingPower:diff()} [gold]Plating[/gold]",
   "CUSTOMCHARACTERKIRBY-PRISM_SHIELD.title": "Prism Shield",
   
   
