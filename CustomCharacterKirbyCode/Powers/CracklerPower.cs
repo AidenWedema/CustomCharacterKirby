@@ -26,7 +26,7 @@ public class CracklerPower : CustomCharacterKirbyPower
         
         power.Flash();
         var enemies = power.CombatState.HittableEnemies;
-        var r = Rng.Chaotic.NextInt(0, enemies.Count);
+        var r = power.Owner.Player.RunState.Rng.CombatTargets.NextInt(0, enemies.Count);
         var target = enemies[r];
         await CreatureCmd.Damage(choiceContext, target, power.DynamicVars["CracklerDamage"].BaseValue, ValueProp.Move, power.Owner);
         

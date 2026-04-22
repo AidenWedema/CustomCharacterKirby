@@ -24,7 +24,7 @@ public class StrikeKirby() : AbilityCard(1, CardType.Attack, CardRarity.Basic, T
     
     protected override HashSet<CardTag> CanonicalTags
     {
-        get => new HashSet<CardTag>() { CardTag.None };
+        get => new HashSet<CardTag>() { CardTag.Strike };
     }
 
 

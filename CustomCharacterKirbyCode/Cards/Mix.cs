@@ -66,7 +66,9 @@ public class Mix() : CopyEssenceCard(1, CardType.Attack, CardRarity.Common, Targ
             var card = abilityCards[i];
             await card.OnAbilityChanged(this.Owner.Creature.CombatState, this.Owner, essenceCard.CopyAbility);
         }
+        // Lazy race condition fix incoming
+        await Cmd.Wait(3);
     }
 
-    protected override void OnUpgrade() => this.AddKeyword(CardKeyword.Retain);
+    protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);
 }

@@ -2,7 +2,7 @@ hover has incorect tooltip						-	FIXED
 
 hover still does not work... yay...					-	FIXED
 
-fishing doesn't work
+fishing doesn't work'							-	FIXED
 
 Prism Shield scales with Weak and Frail					-	FIXED
 
@@ -18,7 +18,7 @@ Strike and Defend softlocked						-	FIXED
 
 Upward Slash power shows [/gold]					-	FIXED
 
-Sleep ability applies to all players					-	FIXED??
+Sleep ability applies to all players					-	FIXED?
 
 Upward slash power stays
 
@@ -31,6 +31,10 @@ prism shield description shows {Plating:diff()}				-	FIXED
 Stunned applies to all players (only if client get's stunned)		-	FIXED????
 
 Awake can be pulled from skill potion					-	FIXED
+
+Ice scatter deals 0 damage
+
+Mix upgrade doesn't add anything					-	FIXED
 
 Things that crash multiplayer:						-	FIXED??
 - Attack potion???
