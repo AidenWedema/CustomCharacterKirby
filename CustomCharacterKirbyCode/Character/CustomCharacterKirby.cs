@@ -7,6 +7,7 @@ using Godot;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
@@ -29,7 +30,7 @@ public class CustomCharacterKirby : PlaceholderCharacterModel
         ModelDb.Card<StrikeKirby>(),
         ModelDb.Card<StrikeKirby>(),
         ModelDb.Card<StrikeKirby>(),
-        ModelDb.Card<StrikeKirby>(),
+        ModelDb.Card<Guard>(),
         ModelDb.Card<Guard>(),
         ModelDb.Card<Guard>(),
         ModelDb.Card<Hover>(),
@@ -65,6 +66,11 @@ public class CustomCharacterKirby : PlaceholderCharacterModel
     public override string CustomCharacterSelectIconPath => "char_select_char_name.png".CharacterUiPath();
     public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
     public override string CustomMapMarkerPath => "map_marker_char_name.png".CharacterUiPath();
+
+    public override string CustomArmPointingTexturePath => ImageHelper.GetImagePath($"ui/hands/multiplayer_hand_{PlaceholderID}_arm_point.png");
+    public override string CustomArmRockTexturePath => ImageHelper.GetImagePath($"ui/hands/multiplayer_hand_{PlaceholderID}_arm_rock.png");
+    public override string CustomArmPaperTexturePath => ImageHelper.GetImagePath($"ui/hands/multiplayer_hand_{PlaceholderID}_arm_paper.png");
+    public override string CustomArmScissorsTexturePath => ImageHelper.GetImagePath($"ui/hands/multiplayer_hand_{PlaceholderID}_arm_scissors.png");
 
     public override Task AfterDamageReceived(PlayerChoiceContext choiceContext, Creature target, DamageResult result, ValueProp props, Creature? dealer, CardModel? cardSource)
     {

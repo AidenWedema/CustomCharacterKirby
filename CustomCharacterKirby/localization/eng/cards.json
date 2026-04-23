@@ -89,7 +89,7 @@
   
   
   "CUSTOMCHARACTERKIRBY-ICE_BLOCK.description": "Gain {Block:diff()} [gold]Block[/gold].",
-  "CUSTOMCHARACTERKIRBY-ICE_BLOCK.title": "Ice [gold]Block[/gold]",
+  "CUSTOMCHARACTERKIRBY-ICE_BLOCK.title": "Ice Block",
 
   "CUSTOMCHARACTERKIRBY-ICE_BREATH.description": "Deal {Damage:diff()} damage.\nApply {WeakAmount:diff()} [gold]Weak[/gold].\nApply {VulnerableAmount:diff()} [gold]Vulnerable[/gold].",
   "CUSTOMCHARACTERKIRBY-ICE_BREATH.title": "Ice Breath",
