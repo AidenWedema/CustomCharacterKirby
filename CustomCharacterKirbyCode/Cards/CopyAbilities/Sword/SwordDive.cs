@@ -33,6 +33,10 @@ public class SwordDive() : AbilityCard (2, CardType.Skill, CardRarity.Basic, Tar
     {
         SwordDive card = this;
         ArgumentNullException.ThrowIfNull((object) play.Target, "cardPlay.Target");
+        
+        // Deal damage
+        await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard((CardModel) card).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
+        
         if (card.HasUpwardSlash)
         {
             // Apply stunned to the target
