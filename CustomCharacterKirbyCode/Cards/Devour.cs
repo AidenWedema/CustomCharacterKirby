@@ -14,7 +14,7 @@ public class Devour() : CustomCharacterKirbyCard(2, CardType.Skill, CardRarity.U
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("StarGain", 2M)];
 
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Exhaust)];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Exhaust), HoverTipFactory.FromPower<ProjectileStarPower>()];
     
     
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)

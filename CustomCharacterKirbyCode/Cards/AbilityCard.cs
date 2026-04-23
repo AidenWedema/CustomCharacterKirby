@@ -50,6 +50,10 @@ public abstract class AbilityCard(int cost, CardType type, CardRarity rarity, Ta
             // Add extras
             foreach (var v in ExtraCanonicalVars)
                 dict[v.Name] = v;
+            
+            // Remove BlockVar if it is 0
+            if (dict.TryGetValue("Block",  out var block) && block.BaseValue == 0M)
+                dict.Remove("Block");
 
             return dict.Values;
         }
