@@ -4,6 +4,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
@@ -16,7 +17,8 @@ public class IceSprinkle() : AbilityCard (1, CardType.Attack, CardRarity.Basic, 
 {
     protected override IEnumerable<DynamicVar> OverrideCanonicalVars => [new DamageVar(3M, ValueProp.Move)];
     protected override IEnumerable<DynamicVar> ExtraCanonicalVars => [new DynamicVar("WeakAmount", 1M), new DynamicVar("VulnerableAmount", 1M)];
-
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<Copy>(), HoverTipFactory.FromPower<WeakPower>(), HoverTipFactory.FromPower<VulnerablePower>()];
 
     protected override AbilityType abilityType => AbilityType.Up;
 

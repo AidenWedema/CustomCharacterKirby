@@ -2,6 +2,7 @@
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 
@@ -11,6 +12,8 @@ public class LeafHide() : AbilityCard(1, CardType.Skill, CardRarity.Basic, Targe
 {
     protected override IEnumerable<DynamicVar> OverrideCanonicalVars => [new BlockVar(5M, ValueProp.Move)];
     protected override IEnumerable<DynamicVar> ExtraCanonicalVars => [new DynamicVar("LeafGain", 3M)];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<Copy>(), HoverTipFactory.FromPower<LeafPower>()];
 
     protected override HashSet<CardTag> CanonicalTags => new HashSet<CardTag>() { CardTag.None };
 

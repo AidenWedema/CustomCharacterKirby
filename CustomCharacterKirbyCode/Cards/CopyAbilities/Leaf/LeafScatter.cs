@@ -14,6 +14,7 @@ using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 using Godot;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
@@ -22,7 +23,8 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 
 public class LeafScatter() : AbilityCard(2, CardType.Attack, CardRarity.Basic, TargetType.AllEnemies)
 {
-    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<Copy>(), HoverTipFactory.FromPower<LeafPower>()];
+
     private int LeafAmount
     {
         get

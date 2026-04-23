@@ -4,6 +4,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 using MegaCrit.Sts2.Core.Models;
@@ -15,6 +16,8 @@ public class LeafAttack() : AbilityCard(1, CardType.Attack, CardRarity.Basic, Ta
     protected override IEnumerable<DynamicVar> OverrideCanonicalVars => [new DamageVar(6M, ValueProp.Move)];
     protected override IEnumerable<DynamicVar> ExtraCanonicalVars => [new DynamicVar("LeafGain", 1M)];
 
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<Copy>(), HoverTipFactory.FromPower<LeafPower>()];
+    
     protected override AbilityType abilityType => AbilityType.BasicAttack;
     
     protected override HashSet<CardTag> CanonicalTags

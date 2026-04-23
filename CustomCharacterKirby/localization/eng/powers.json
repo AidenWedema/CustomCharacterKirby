@@ -65,5 +65,9 @@
   
   "CUSTOMCHARACTERKIRBY-ROBOBOT_ARMOR_POWER.description": "Gives extra strength and dexterity",
   "CUSTOMCHARACTERKIRBY-ROBOBOT_ARMOR_POWER.smartDescription": "Gives extra strength and dexterity",
-  "CUSTOMCHARACTERKIRBY-ROBOBOT_ARMOR_POWER.title": "Robobot Armor"
+  "CUSTOMCHARACTERKIRBY-ROBOBOT_ARMOR_POWER.title": "Robobot Armor",
+  
+  "CUSTOMCHARACTERKIRBY-COPY.description": "This card transforms when using a copy ability.",
+  "CUSTOMCHARACTERKIRBY-COPY.smartDescription": "This card transforms when using a copy ability.",
+  "CUSTOMCHARACTERKIRBY-COPY.title": "Copy"
 }

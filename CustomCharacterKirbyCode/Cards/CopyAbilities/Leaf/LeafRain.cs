@@ -5,6 +5,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
@@ -14,6 +15,8 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards.CopyAbilities.Swor
 
 public class LeafRain() : AbilityCard (2, CardType.Skill, CardRarity.Basic, TargetType.AllEnemies)
 {
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<Copy>(), HoverTipFactory.FromPower<LeafPower>()];
+    
     private int LeafAmount
     {
         get

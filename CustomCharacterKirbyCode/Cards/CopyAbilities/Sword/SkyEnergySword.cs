@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 
@@ -14,6 +15,8 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards.CopyAbilities.Swor
 public class SkyEnergySword() : AbilityCard (1, CardType.Skill, CardRarity.Basic, TargetType.Self)
 {
     protected override AbilityType abilityType => AbilityType.BasicSkill;
+
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<Copy>(), HoverTipFactory.FromCard(ModelDb.Card<OverheadSlash>())];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {

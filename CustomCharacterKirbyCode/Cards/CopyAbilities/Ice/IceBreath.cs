@@ -14,6 +14,7 @@ using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 using Godot;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Powers;
@@ -28,6 +29,7 @@ public class IceBreath() : AbilityCard(1, CardType.Attack, CardRarity.Basic, Tar
     protected override IEnumerable<DynamicVar> OverrideCanonicalVars => [new DamageVar(2M, ValueProp.Move)];
     protected override IEnumerable<DynamicVar> ExtraCanonicalVars => [new DynamicVar("WeakAmount", 1M), new DynamicVar("VulnerableAmount", 1M)];
 
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<Copy>(), HoverTipFactory.FromPower<WeakPower>(), HoverTipFactory.FromPower<VulnerablePower>()];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {

@@ -22,7 +22,7 @@ Sleep ability applies to all players					-	FIXED?
 
 Upward slash power stays
 
-Çopy ability switching race contition					-	FIXED???
+Çopy ability switching race contition					-	FIXED
 
 Ability essence relic doesn't work					-	FIXED
 
@@ -32,11 +32,11 @@ Stunned applies to all players (only if client get's stunned)		-	FIXED????
 
 Awake can be pulled from skill potion					-	FIXED
 
-Ice scatter deals 0 damage
+Ice scatter deals 0 damage						-	FIXED??
 
 Mix upgrade doesn't add anything					-	FIXED
 
-Things that crash multiplayer:						-	FIXED??
+Things that crash multiplayer:
 - Attack potion???
 - Power potion???
 - Skill potion???

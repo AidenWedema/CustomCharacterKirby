@@ -17,11 +17,9 @@ public class IceScatter() : AbilityCard (2, CardType.Skill, CardRarity.Basic, Ta
     protected override AbilityType abilityType => AbilityType.Down;
     
     protected override IEnumerable<DynamicVar> OverrideCanonicalVars => [
-        new DamageVar(3M, ValueProp.Move),
-        new ExtraDamageVar(0M),
         new CalculationBaseVar(0M),
-        new CalculationExtraVar(1M),
-        new CalculatedDamageVar(ValueProp.Move).WithMultiplier((card, _) => card.DynamicVars.Damage.BaseValue * card.Owner.Creature.Block + card.DynamicVars.Damage.BaseValue)
+        new ExtraDamageVar(1M),
+        new CalculatedDamageVar(ValueProp.Move).WithMultiplier((card, _) => (decimal) card.Owner.Creature.Block * 2)
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
@@ -36,5 +34,5 @@ public class IceScatter() : AbilityCard (2, CardType.Skill, CardRarity.Basic, Ta
         await CreatureCmd.LoseBlock(card.Owner.Creature, blockAmount);
     }
 
-    protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(3M);
+    protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);
 }

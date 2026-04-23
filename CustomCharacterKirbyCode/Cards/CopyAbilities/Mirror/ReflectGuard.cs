@@ -3,6 +3,7 @@ using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -14,6 +15,8 @@ public class ReflectGuard() : AbilityCard(2, CardType.Skill, CardRarity.Basic, T
     protected override IEnumerable<DynamicVar> OverrideCanonicalVars => [ new BlockVar(4M, ValueProp.Move)];
 
     protected override HashSet<CardTag> CanonicalTags => new HashSet<CardTag>() { CardTag.None };
+
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<Copy>(), HoverTipFactory.FromPower<ReflectPower>()];
 
     protected override AbilityType abilityType => AbilityType.BasicSkill;
 

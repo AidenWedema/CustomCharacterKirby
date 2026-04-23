@@ -3,6 +3,7 @@ using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.CommonUi;
@@ -31,6 +32,8 @@ public abstract class AbilityCard(int cost, CardType type, CardRarity rarity, Ta
     protected virtual IEnumerable<DynamicVar> OverrideCanonicalVars => [];
 
     protected virtual IEnumerable<DynamicVar> ExtraCanonicalVars => [];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<Copy>()];
 
     // Seal CanonicalVars so AbilityCards have to use this enchantment-proof system
     protected sealed override IEnumerable<DynamicVar> CanonicalVars

@@ -17,6 +17,7 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using CustomCharacterKirby.CustomCharacterKirbyCode;
+using MegaCrit.Sts2.Core.HoverTips;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 
@@ -33,6 +34,8 @@ public class StarSpit() : AbilityCard(1, CardType.Attack, CardRarity.Common, Tar
         }
     }
     protected override AbilityType abilityType => AbilityType.Forward;
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<Copy>(), HoverTipFactory.FromPower<ProjectileStarPower>()];
     
     protected override bool IsPlayable => AmountOfStars > 0;
     

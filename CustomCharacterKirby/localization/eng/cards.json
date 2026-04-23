@@ -97,7 +97,7 @@
   "CUSTOMCHARACTERKIRBY-ICE_STORM.description": "Deal {Damage:diff()} damage.\nGain {Block:diff()} Block.",
   "CUSTOMCHARACTERKIRBY-ICE_STORM.title": "Ice Storm",
 
-  "CUSTOMCHARACTERKIRBY-ICE_SCATTER.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeal {Damage:diff()} extra damage per [gold]Block[/gold].\nLose all [gold]Block[/gold].",
+  "CUSTOMCHARACTERKIRBY-ICE_SCATTER.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeal 2 damage per [gold]Block[/gold].\nLose all [gold]Block[/gold].",
   "CUSTOMCHARACTERKIRBY-ICE_SCATTER.title": "Ice Scatter",
 
   "CUSTOMCHARACTERKIRBY-ICE_SPRINKLE.description": "Deal {Damage:diff()} damage to ALL enemies.\nApply 1 [gold]Weak[/gold].\nApply {VulnerableAmount:diff()} [gold]Vulnerable[/gold].",
