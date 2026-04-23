@@ -36,6 +36,8 @@ Ice scatter deals 0 damage						-	FIXED??
 
 Mix upgrade doesn't add anything					-	FIXED
 
+AbilityCards show a block hovertip even if they don't give block
+
 Things that crash multiplayer:
 - Attack potion???
 - Power potion???

@@ -3,7 +3,7 @@
   "CUSTOMCHARACTERKIRBY-STRIKE_KIRBY.title": "Hit",
 
   "CUSTOMCHARACTERKIRBY-DEFEND_KIRBY.description": "Gain {Block:diff()} [gold]Block[/gold].",
-  "CUSTOMCHARACTERKIRBY-DEFEND_KIRBY.title": "Block",
+  "CUSTOMCHARACTERKIRBY-DEFEND_KIRBY.title": "[gold]Block[/gold]",
   
   "CUSTOMCHARACTERKIRBY-STAR_SPIT.description": "Deal {Damage:diff()} damage.\n Deal {ExtraDamage:diff()} extra damage per [gold]Star[/gold].\nLose all [gold]Stars[/gold]\n(Deal {CalculatedDamage:diff()} damage)",
   "CUSTOMCHARACTERKIRBY-STAR_SPIT.title": "Star Spit",
@@ -54,7 +54,7 @@
   
   
   
-  "CUSTOMCHARACTERKIRBY-LEAF_HIDE.description": "Gain {Block:diff()} Block.\nGain {LeafGain:diff()} [gold]Leaf[/gold].",
+  "CUSTOMCHARACTERKIRBY-LEAF_HIDE.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {LeafGain:diff()} [gold]Leaf[/gold].",
   "CUSTOMCHARACTERKIRBY-LEAF_HIDE.title": "Leaf Hide",
 
   "CUSTOMCHARACTERKIRBY-LEAF_RAIN.description": "Deal {Damage:diff()} damage to ALL enemies.\nDeal {ExtraDamage:diff()} extra damage per [gold]Leaf[/gold].\n(Deal {CalculatedDamage:diff()} damage)",
@@ -77,7 +77,7 @@
   "CUSTOMCHARACTERKIRBY-MIRROR_CUT.description": "Deal {Damage:diff()} damage.\nGain 1 [gold]Dexterity[/gold].",
   "CUSTOMCHARACTERKIRBY-MIRROR_CUT.title": "Mirror Cut",
   
-  "CUSTOMCHARACTERKIRBY-REFLECT_GUARD.description": "Gain {Block:diff()} Block.\nGain [gold]Reflect[/gold].",
+  "CUSTOMCHARACTERKIRBY-REFLECT_GUARD.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain [gold]Reflect[/gold].",
   "CUSTOMCHARACTERKIRBY-REFLECT_GUARD.title": "Reflect Guard",
 
   "CUSTOMCHARACTERKIRBY-REFLECT_FORCE.description": "Deal {Damage:diff()} damage.\nGain {Block:diff()} [gold]Block[/gold].\nGain {Block:diff()} [gold]Block[/gold] next turn.",
@@ -88,13 +88,13 @@
 
   
   
-  "CUSTOMCHARACTERKIRBY-ICE_BLOCK.description": "Gain {Block:diff()} Block.",
-  "CUSTOMCHARACTERKIRBY-ICE_BLOCK.title": "Ice Block",
+  "CUSTOMCHARACTERKIRBY-ICE_BLOCK.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "CUSTOMCHARACTERKIRBY-ICE_BLOCK.title": "Ice [gold]Block[/gold]",
 
   "CUSTOMCHARACTERKIRBY-ICE_BREATH.description": "Deal {Damage:diff()} damage.\nApply {WeakAmount:diff()} [gold]Weak[/gold].\nApply {VulnerableAmount:diff()} [gold]Vulnerable[/gold].",
   "CUSTOMCHARACTERKIRBY-ICE_BREATH.title": "Ice Breath",
 
-  "CUSTOMCHARACTERKIRBY-ICE_STORM.description": "Deal {Damage:diff()} damage.\nGain {Block:diff()} Block.",
+  "CUSTOMCHARACTERKIRBY-ICE_STORM.description": "Deal {Damage:diff()} damage.\nGain {Block:diff()} [gold]Block[/gold].",
   "CUSTOMCHARACTERKIRBY-ICE_STORM.title": "Ice Storm",
 
   "CUSTOMCHARACTERKIRBY-ICE_SCATTER.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeal 2 damage per [gold]Block[/gold].\nLose all [gold]Block[/gold].",
