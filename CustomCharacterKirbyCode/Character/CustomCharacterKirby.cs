@@ -16,9 +16,11 @@ public class CustomCharacterKirby : PlaceholderCharacterModel
 {
     public const string CharacterId = "CustomCharacterKirby";
 
-    public static readonly Color Color = new("F799FF");
+    public static readonly Color Color = new("fea0bb");
 
     public override Color NameColor => Color;
+    public override Color DialogueColor => Color;
+    public override Color MapDrawingColor => Color;
     public override CharacterGender Gender => CharacterGender.Neutral;
     public override int StartingHp => 70;
 

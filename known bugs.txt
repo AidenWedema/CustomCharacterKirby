@@ -20,7 +20,7 @@ Upward Slash power shows [/gold]					-	FIXED
 
 Sleep ability applies to all players					-	FIXED?
 
-Upward slash power stays
+Upward slash power stays						-	FIXED
 
 Çopy ability switching race contition					-	FIXED
 
