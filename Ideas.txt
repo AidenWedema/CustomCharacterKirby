@@ -167,6 +167,11 @@ Big Switch (2, uncommon, skill): Get a random uncommon card, it is free to play 
 
 Prism Shield (2, common, power): Gain 5 Plating.
 
+- Star rod (1, uncommon, attack): Deal 12 damage to ALL enemies. 
+
+- Magical Paintbrush (1, uncommon, skill): Gain 12 block.
+
+- Dodge (2, uncommon, skill): Double your block.
 
 ---
 
@@ -174,9 +179,29 @@ Relic ideas:
 
 Squishy Skin (starting relic): Take 2 less damage from any attack.
 
-AbilityEssence (uncommon): Start each combat with a random copy ability.
+Ability Essence (uncommon): Start each combat with a random copy ability.
 
-InvincibilityCandy (rare): start each combat with 1 buffer.
+Invincibility Candy (rare): start each combat with 1 buffer.
+
+- Food (uncommon): All dream friends heal 2 at the start of each turn.
+
+- Galaxia (rare): Summon Meta knight at the start of each combat.
+
+- Point Star (common): Start each combat with 1 Star.
+
+- Big Point Star (uncommon): Gain 1 Star at the start of each turn.
+
+- Butterfly (event): Change the Act 3 boss...
+
+- keeby (uncommon): Deal 6 damage to a random enemy whenever you play a copy essence.
+
+
+---
+
+Event ideas:
+
+- Meta knight fight: Win against a duel with meta knight to get the Galaxia relic or choose to decline and go on.
+
 
 ---
 

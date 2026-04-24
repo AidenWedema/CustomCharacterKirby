@@ -1,3 +1,15 @@
+Legend:
+On the left is the bug/problem.
+If there is "FIXED" writen after the bug is fixed.
+If the bug has one or more trailing question marks, the bug is probably fixed, but untested.
+The more question marks the more uncertain i am if the problem is actualy fixed.
+So:
+- "FIXED" = tested and fixed
+- "FIXED?" = untested, but 99% sure it's fixed
+- "FIXED????" = untested, i don't know if this even helps
+- nothing = not fixed
+
+
 hover has incorect tooltip						-	FIXED
 
 hover still does not work... yay...					-	FIXED
@@ -32,11 +44,17 @@ Stunned applies to all players (only if client get's stunned)		-	FIXED????
 
 Awake can be pulled from skill potion					-	FIXED
 
-Ice scatter deals 0 damage						-	FIXED??
+Ice scatter deals 0 damage						-	FIXED
 
 Mix upgrade doesn't add anything					-	FIXED
 
 AbilityCards show a block hovertip even if they don't give block
+
+Multiplayer hands don't show up in treasure chest rooms
+
+Awake can be pulled from HAL Room					-	FIXED?
+
+Dream friend damage doesn't scale with vulnerable
 
 Things that crash multiplayer:
 - Attack potion???
