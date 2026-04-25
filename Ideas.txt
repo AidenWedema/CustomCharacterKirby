@@ -173,11 +173,15 @@ Prism Shield (2, common, power): Gain 5 Plating.
 
 - Dodge (2, uncommon, skill): Double your block.
 
+- Dodge Roll (2, uncommon, skill): Gain 1 energy for each fully blocked attack this turn.
+
 ---
 
 Relic ideas:
 
 Squishy Skin (starting relic): Take 2 less damage from any attack.
+
+Cushiony Skin (Upgraded starting relic): Take 6 less damage from any attack.
 
 Ability Essence (uncommon): Start each combat with a random copy ability.
 

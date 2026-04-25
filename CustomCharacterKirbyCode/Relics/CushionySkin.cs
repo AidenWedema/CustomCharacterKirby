@@ -13,11 +13,11 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Relics;
 
-public class SquishySkin() : CustomCharacterKirbyRelic
+public class CushionySkin() : CustomCharacterKirbyRelic
 {
     public override RelicRarity Rarity => RelicRarity.Starter;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new HpLossVar("HpLossReduction", 2M)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new HpLossVar("HpLossReduction", 6M)];
     
     public override Decimal ModifyHpLostAfterOsty(Creature target, Decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)
     {
@@ -32,7 +32,7 @@ public class SquishySkin() : CustomCharacterKirbyRelic
     
     public override async Task AfterRoomEntered(AbstractRoom room)
     {
-        SquishySkin squishySkin = this;
+        CushionySkin squishySkin = this;
         if (room is not CombatRoom)
             return;
         // In combat, silently apply the normal ability

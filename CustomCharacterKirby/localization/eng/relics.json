@@ -3,6 +3,10 @@
   "CUSTOMCHARACTERKIRBY-SQUISHY_SKIN.flavor": "You're not from around here, are you?",
   "CUSTOMCHARACTERKIRBY-SQUISHY_SKIN.title": "Squishy Skin",
   
+  "CUSTOMCHARACTERKIRBY-CUSHIONY_SKIN.description": "Whenever you get hit by an attack, take 6 less damage.",
+  "CUSTOMCHARACTERKIRBY-CUSHIONY_SKIN.flavor": "You're not from around here, are you?",
+  "CUSTOMCHARACTERKIRBY-CUSHIONY_SKIN.title": "CushionySkin",
+  
   "CUSTOMCHARACTERKIRBY-INVINCIBILITY_CANDY.description": "Start each combat with 1 [gold]Buffer[/gold].",
   "CUSTOMCHARACTERKIRBY-INVINCIBILITY_CANDY.flavor": "Makes you invincible for a short period of time.",
   "CUSTOMCHARACTERKIRBY-INVINCIBILITY_CANDY.title": "Invincibility Candy",
