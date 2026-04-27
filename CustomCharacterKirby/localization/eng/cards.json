@@ -190,6 +190,15 @@
   "CUSTOMCHARACTERKIRBY-BIG_SWITCH.description": "Put a random uncommon card in your hand, it is free to play this turn.",
   "CUSTOMCHARACTERKIRBY-BIG_SWITCH.title": "Big Switch",
   
+  "CUSTOMCHARACTERKIRBY-STAR_ROD.description": "Deal {Damage:diff()} damage to ALL enemies.",
+  "CUSTOMCHARACTERKIRBY-STAR_ROD.title": "Star Rod",
+  
+  "CUSTOMCHARACTERKIRBY-MAGICAL_PAINTBRUSH.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "CUSTOMCHARACTERKIRBY-MAGICAL_PAINTBRUSH.title": "Magical Paintbrush",
+  
+  "CUSTOMCHARACTERKIRBY-DODGE.description": "Double your block.",
+  "CUSTOMCHARACTERKIRBY-DODGE.title": "Dodge",
+  
   
   
   "CUSTOMCHARACTERKIRBY-ULTRA_SWORD.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
