@@ -105,6 +105,23 @@
   
   
   
+  "CUSTOMCHARACTERKIRBY-NEEDLE_ATTACK.description": "Deal {Damage:diff()} Damage.\nGain {ThornsPower:diff()} [gold]Thorns[/gold].",
+  "CUSTOMCHARACTERKIRBY-NEEDLE_ATTACK.title": "Needle Attack",
+
+  "CUSTOMCHARACTERKIRBY-WALL_STICK.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {ThornsPower:diff()} [gold]Thorns[/gold].",
+  "CUSTOMCHARACTERKIRBY-WALL_STICK.title": "Wall Stick",
+
+  "CUSTOMCHARACTERKIRBY-MEGA_NEEDLE.description": "Deal {Damage:diff()} Damage.",
+  "CUSTOMCHARACTERKIRBY-MEGA_NEEDLE.title": "Mega Needle",
+
+  "CUSTOMCHARACTERKIRBY-ROLLING_NEEDLE.description": "Deal {Damage:diff()} Damage to ALL enemies.\nGain {Block:diff()} [gold]Block[/gold].",
+  "CUSTOMCHARACTERKIRBY-ROLLING_NEEDLE.title": "Rolling Needle",
+
+  "CUSTOMCHARACTERKIRBY-NEEDLE_BURST.description": "Deal {Damage:diff()} damage.\nDeal {ExtraDamage:diff()} extra damage per [gold]Thorns[/gold].\n(Deal {CalculatedDamage:diff()} damage)",
+  "CUSTOMCHARACTERKIRBY-NEEDLE_BURST.title": "Needle Burst",
+  
+  
+  
   
   "CUSTOMCHARACTERKIRBY-SWORD_ESSENCE.description": "Switches your copy ability to the [gold]Sword[/gold] ability.",
   "CUSTOMCHARACTERKIRBY-SWORD_ESSENCE.title": "Sword Essence",
@@ -120,9 +137,13 @@
   
   "CUSTOMCHARACTERKIRBY-SLEEP_ESSENCE.description": "Switches your copy ability to the [gold]Sleep[/gold] ability.\n End your turn.",
   "CUSTOMCHARACTERKIRBY-SLEEP_ESSENCE.title": "Sleep Essence",
+  
+  "CUSTOMCHARACTERKIRBY-NEEDLE_ESSENCE.description": "Switches your copy ability to the [gold]Needle[/gold] ability.",
+  "CUSTOMCHARACTERKIRBY-NEEDLE_ESSENCE.title": "Needle Essence",
 
 
 
+  
   "CUSTOMCHARACTERKIRBY-BANDANA_WADDLE_DEE_SPEAR.description": "",
   "CUSTOMCHARACTERKIRBY-BANDANA_WADDLE_DEE_SPEAR.title": "Spear Thrust",
 

@@ -1,6 +1,6 @@
 Needed: ~85 cards
 
-current: 39 cards (62 total)
+current: 43 cards (71 total)
 
 
 Copy Abilities:
@@ -80,11 +80,15 @@ Beam:
 
 
 Needle:
-- Basic attack:
-- Basic skill:
-- Up:
-- Forward:
-- Down:
+- Basic attack: Needle Attack (1, attack): Deal 7 Damage. Gain 1 Thorns this turn.
+
+- Basic skill: Wall Stick (1, skill): Gain 3 Thorns this turn.
+
+- Up: Mega Needle (1, attack): Deal 12 Damage.
+
+- Forward: Rolling Needle (2, attack): Deal 7 Damage to ALL enemies. Gain 7 Block.
+
+- Down: Needle Burst (1, attack): Deal 4 Damage to ALL enemies. Deal 3 Extra Damage for each Thorns.
 
 
 Parasol:
