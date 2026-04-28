@@ -55,6 +55,10 @@
   "CUSTOMCHARACTERKIRBY-CRACKLER_POWER.smartDescription": "Deals damage to a random enemy at the end of your turn.",
   "CUSTOMCHARACTERKIRBY-CRACKLER_POWER.title": "Crackler",
   
+  "CUSTOMCHARACTERKIRBY-DODGE_ROLL_POWER.description": "Gain 1 energy for each fully blocked attack.",
+  "CUSTOMCHARACTERKIRBY-DODGE_ROLL_POWER.smartDescription": "Gain 1 energy for each fully blocked attack.",
+  "CUSTOMCHARACTERKIRBY-DODGE_ROLL_POWER.title": "Dodge Roll",
+  
   "CUSTOMCHARACTERKIRBY-GALACTIC_NOVA_POWER.description": "A random card in your hand is free to play each turn.",
   "CUSTOMCHARACTERKIRBY-GALACTIC_NOVA_POWER.smartDescription": "A random card in your hand is free to play each turn.",
   "CUSTOMCHARACTERKIRBY-GALACTIC_NOVA_POWER.title": "Galactic Nova",

@@ -199,6 +199,9 @@
   "CUSTOMCHARACTERKIRBY-DODGE.description": "Double your block.",
   "CUSTOMCHARACTERKIRBY-DODGE.title": "Dodge",
   
+  "CUSTOMCHARACTERKIRBY-DODGE_ROLL.description": "Gain 1 energy for each fully blocked attack. {IfUpgraded:show:Gain {Block:diff()} [gold]Block[/gold]|}",
+  "CUSTOMCHARACTERKIRBY-DODGE_ROLL.title": "Dodge Roll",
+  
   
   
   "CUSTOMCHARACTERKIRBY-ULTRA_SWORD.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
