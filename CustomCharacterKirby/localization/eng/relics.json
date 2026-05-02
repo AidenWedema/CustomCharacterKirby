@@ -5,13 +5,17 @@
   
   "CUSTOMCHARACTERKIRBY-CUSHIONY_SKIN.description": "Whenever you get hit by an attack, take 6 less damage.",
   "CUSTOMCHARACTERKIRBY-CUSHIONY_SKIN.flavor": "You're not from around here, are you?",
-  "CUSTOMCHARACTERKIRBY-CUSHIONY_SKIN.title": "CushionySkin",
+  "CUSTOMCHARACTERKIRBY-CUSHIONY_SKIN.title": "Cushiony Skin",
   
   "CUSTOMCHARACTERKIRBY-INVINCIBILITY_CANDY.description": "Start each combat with 1 [gold]Buffer[/gold].",
   "CUSTOMCHARACTERKIRBY-INVINCIBILITY_CANDY.flavor": "Makes you invincible for a short period of time.",
   "CUSTOMCHARACTERKIRBY-INVINCIBILITY_CANDY.title": "Invincibility Candy",
 
   "CUSTOMCHARACTERKIRBY-ABILITY_ESSENCE.description": "Start each combat with a random copy ability",
-  "CUSTOMCHARACTERKIRBY-ABILITY_ESSENCE.flavor": "",
-  "CUSTOMCHARACTERKIRBY-ABILITY_ESSENCE.title": "Copy Essence"
+  "CUSTOMCHARACTERKIRBY-ABILITY_ESSENCE.flavor": "Start each combat with a random copy ability",
+  "CUSTOMCHARACTERKIRBY-ABILITY_ESSENCE.title": "Copy Essence",
+  
+  "CUSTOMCHARACTERKIRBY-KEEBY.description": "Deal 6 damage to a random enemy whenever you play a copy essence",
+  "CUSTOMCHARACTERKIRBY-KEEBY.flavor": "Deal 6 damage to a random enemy whenever you play a copy essence",
+  "CUSTOMCHARACTERKIRBY-KEEBY.title": "Keeby"
 }

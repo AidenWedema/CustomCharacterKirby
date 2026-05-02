@@ -201,7 +201,7 @@ Invincibility Candy (rare): start each combat with 1 buffer.
 
 - Butterfly (event): Change the Act 3 boss...
 
-- keeby (uncommon): Deal 6 damage to a random enemy whenever you play a copy essence.
+keeby (uncommon): Deal 6 damage to a random enemy whenever you play a copy essence.
 
 
 ---
