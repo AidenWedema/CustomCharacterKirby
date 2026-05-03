@@ -9,6 +9,7 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Nodes.Combat;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Character;
@@ -76,5 +77,10 @@ public class CustomCharacterKirby : PlaceholderCharacterModel
     {
         
         return Task.CompletedTask;
+    }
+
+    public override NCreatureVisuals? CreateCustomVisuals()
+    {
+        return NodeFactory<NCreatureVisuals>.CreateFromScene("CustomCharacterKirby/animations/characters/kirby/kirby.tscn");
     }
 }

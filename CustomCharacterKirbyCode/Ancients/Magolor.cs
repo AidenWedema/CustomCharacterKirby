@@ -18,7 +18,7 @@ public class Magolor : CustomAncientModel
         ]
     );
     
-    public override string? CustomScenePath => null;
+    public override string? CustomScenePath => "scenes/events/background_scenes/customcharacterkirby-magolor.tscn";
 
     public override string? CustomMapIconPath => null;
 

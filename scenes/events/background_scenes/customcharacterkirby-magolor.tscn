@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://fs7hpwiqck2y"]
+
+[ext_resource type="Texture2D" uid="uid://d2b48pacx2vkd" path="res://CustomCharacterKirby/images/anchients/magolor.png" id="1_55fln"]
+
+[node name="CustomcharacterkirbyMagolor" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -304.0
+offset_top = -66.0
+offset_right = 2256.0
+offset_bottom = 1134.0
+texture = ExtResource("1_55fln")
+flip_h = true

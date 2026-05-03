@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddwe0pnwaslju"]
+
+[ext_resource type="Texture2D" uid="uid://dxtaav2jy6fp8" path="res://CustomCharacterKirby/animations/characters/kirby/kirby.png" id="1_qw4b1"]
+
+[node name="Visuals" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = -159.0
+offset_right = 173.0
+offset_bottom = 39.0
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_qw4b1")
+
+[node name="Bounds" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 11.000004
+offset_top = -141.0
+offset_right = 159.0
+offset_bottom = 21.0
+scale = Vector2(0.8, 0.8)
+
+[node name="IntentPosition" type="Marker2D" parent="."]
+position = Vector2(61.000004, -140)
+scale = Vector2(0.8, 0.8)
+
+[node name="CenterPos" type="Marker2D" parent="."]
+position = Vector2(66, -85)
+scale = Vector2(0.8, 0.8)

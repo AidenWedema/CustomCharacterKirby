@@ -60,6 +60,8 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Folder Include="CustomCharacterKirby\animations\characters\kirby\" />
+        <Folder Include="CustomCharacterKirby\images\anchients\" />
         <Folder Include="CustomCharacterKirby\images\powers\big\"/>
         <Folder Include="CustomCharacterKirby\images\relics\big\"/>
     </ItemGroup>
