@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.Random;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 
-public class Mix() : CopyEssenceCard(1, CardType.Attack, CardRarity.Common, TargetType.Self)
+public class Mix() : CopyEssenceCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
