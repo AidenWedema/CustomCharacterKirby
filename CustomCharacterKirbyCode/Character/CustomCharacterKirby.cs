@@ -23,6 +23,8 @@ public class CustomCharacterKirby : PlaceholderCharacterModel
     public override Color NameColor => Color;
     public override Color DialogueColor => Color;
     public override Color MapDrawingColor => Color;
+    public override Color EnergyLabelOutlineColor => new("eb7295");
+    
     public override CharacterGender Gender => CharacterGender.Neutral;
     public override int StartingHp => 70;
 
@@ -67,7 +69,8 @@ public class CustomCharacterKirby : PlaceholderCharacterModel
     public override string CustomCharacterSelectIconPath => "char_select_char_name.png".CharacterUiPath();
     public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
     public override string CustomMapMarkerPath => "map_marker_char_name.png".CharacterUiPath();
-
+    public override string CustomEnergyCounterPath  => "CustomCharacterKirby/animations/energy counter/energy_counter.tscn";
+    
     public override string CustomArmPointingTexturePath => ImageHelper.GetImagePath($"ui/hands/multiplayer_hand_{PlaceholderID}_arm_point.png");
     public override string CustomArmRockTexturePath => ImageHelper.GetImagePath($"ui/hands/multiplayer_hand_{PlaceholderID}_arm_rock.png");
     public override string CustomArmPaperTexturePath => ImageHelper.GetImagePath($"ui/hands/multiplayer_hand_{PlaceholderID}_arm_paper.png");
