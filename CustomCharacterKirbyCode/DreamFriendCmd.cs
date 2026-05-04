@@ -6,6 +6,8 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Hooks;
+using MegaCrit.Sts2.Core.Localization.Fonts;
+using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Monsters;
 using MegaCrit.Sts2.Core.Models.Powers;
@@ -19,44 +21,8 @@ public static class DreamFriendCmd
 {
     public static async Task<Creature> Summon<T>(PlayerChoiceContext ctx, Player summoner, int hp, AbstractModel? source, bool allowRevive = true, bool raiseMaxHp = true) where T : MonsterModel
     {
-        var combatState = summoner.Creature.CombatState;
-        ArgumentNullException.ThrowIfNull(combatState);
-        ArgumentNullException.ThrowIfNull(summoner.PlayerCombatState);
-        var existing = combatState.Allies.FirstOrDefault(c => c.Monster is T && c.PetOwner == summoner);
-    
-        var isReviving = existing is { IsAlive: false };
-    
-        if (existing is { IsAlive: true })
-        {
-            if (raiseMaxHp)
-                await CreatureCmd.GainMaxHp(existing, hp);
-            else
-                await CreatureCmd.Heal(existing,  hp);
-            return existing;
-        }
-    
-        if (isReviving)
-        {
-            // Return if revive is not allowed
-            if (!allowRevive) return existing!;
-            summoner.PlayerCombatState.AddPetInternal(existing!);
-        }
-        else
-        {
-            existing = await PlayerCmd.AddPet<T>(summoner);
-            
-            var node = SetPositionRelativeToOwner(existing, summoner, new Vector2(250f, -75f));
-
-            await PowerCmd.Apply<DieForYouPower>(existing, 1M, null, null);
-            node?.TrackBlockStatus(summoner.Creature);
-            node?.ToggleIsInteractable(true); 
-        }
-
-        ArgumentNullException.ThrowIfNull(existing);
-        await CreatureCmd.SetMaxHp(existing, hp);
-        await CreatureCmd.Heal(existing, hp, isReviving);
-    
-        return existing;
+        var monster = ModelDb.Monster<T>().ToMutable();
+        return await Summon(monster, ctx, summoner, hp, source, allowRevive, raiseMaxHp);
     }
     
     
@@ -92,7 +58,7 @@ public static class DreamFriendCmd
             existing = summoner.Creature.CombatState.CreateCreature(monster.ToMutable(), summoner.Creature.Side, null);
             await PlayerCmd.AddPet(existing, summoner);
 
-            var node = SetPositionRelativeToOwner(existing, summoner, new Vector2(250f, -75f));
+            var node = SetPositionRelativeToOwner(existing, summoner, new Vector2(0f, -1000f));
 
             await PowerCmd.Apply<DieForYouPower>(existing, 1M, null, null);
             node?.TrackBlockStatus(summoner.Creature);

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2b48pacx2vkd"
-path="res://.godot/imported/magolor.png-35c1487e1fec7f2f3d3603c752946b3d.ctex"
+path="res://.godot/imported/scene_background.png-e57c8bcce372bea1a8f314ecb265649c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CustomCharacterKirby/images/anchients/magolor.png"
-dest_files=["res://.godot/imported/magolor.png-35c1487e1fec7f2f3d3603c752946b3d.ctex"]
+source_file="res://CustomCharacterKirby/images/ancients/magolor/scene_background.png"
+dest_files=["res://.godot/imported/scene_background.png-e57c8bcce372bea1a8f314ecb265649c.ctex"]
 
 [params]
 
