@@ -223,6 +223,9 @@
   "CUSTOMCHARACTERKIRBY-DODGE_ROLL.description": "Gain 1 energy for each fully blocked attack.\n{IfUpgraded:show:Gain {Block:diff()} [gold]Block[/gold]|}",
   "CUSTOMCHARACTERKIRBY-DODGE_ROLL.title": "Dodge Roll",
   
+  "CUSTOMCHARACTERKIRBY-KIRBY_CAFE.description": "Gain {ProjectileStarPower:diff()} [gold]{IfUpgraded:show:stars|star}[/gold] per copy essence in your exhaust pile.\n(Gain {CalculatedStars:diff()} stars)",
+  "CUSTOMCHARACTERKIRBY-KIRBY_CAFE.title": "Kirby Café",
+  
   
   
   "CUSTOMCHARACTERKIRBY-ULTRA_SWORD.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.",
