@@ -1,6 +1,6 @@
 Needed: ~85 cards
 
-current: 43 cards (71 total)
+current: 44 cards (77 total)
 
 
 Copy Abilities:
@@ -72,11 +72,15 @@ Poison:
 
 
 Beam:
-- Basic attack:
-- Basic skill:
-- Up:
-- Forward:
-- Down:
+- Basic attack: Beam Whip (1, attack): Deal 4 Damage 2 times.
+
+- Basic skill: Capture Beam (1, skill): Gain 5 block, Apply 1 weak and vulnarable.
+
+- Up: Beam Blast (1, attack): Deal 4 damage to ALL enemies 3 times.
+
+- Forward: Cycle Beam (2, attack): Deal 6 damage 3 times.
+
+- Down: Wave Beam (1, attack): Deal 12 damage ALL enemies.
 
 
 Needle:
