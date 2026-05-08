@@ -1,21 +1,11 @@
-﻿using BaseLib.Utils;
-using CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
-using CustomCharacterKirby.CustomCharacterKirbyCode.Character;
-using CustomCharacterKirby.CustomCharacterKirbyCode.DreamFriends;
+﻿using CustomCharacterKirby.CustomCharacterKirbyCode.DreamFriends;
 using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
-using CustomCharacterKirby.CustomCharacterKirbyCode.Extensions;
 using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Nodes.Rooms;
-using MegaCrit.Sts2.Core.Nodes.Vfx;
-using MegaCrit.Sts2.Core.Random;
-using MegaCrit.Sts2.Core.ValueProps;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 
