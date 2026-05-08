@@ -225,6 +225,9 @@
   
   "CUSTOMCHARACTERKIRBY-KIRBY_CAFE.description": "Gain {ProjectileStarPower:diff()} [gold]{IfUpgraded:show:stars|star}[/gold] per copy essence in your exhaust pile.\n(Gain {CalculatedStars:diff()} stars)",
   "CUSTOMCHARACTERKIRBY-KIRBY_CAFE.title": "Kirby Café",
+
+  "CUSTOMCHARACTERKIRBY-CALL_FOR_HELP.description": "Deal {Damage:diff()} damage to a random enemy {Count:diff()} times.",
+  "CUSTOMCHARACTERKIRBY-CALL_FOR_HELP.title": "Call For Help",
   
   
   

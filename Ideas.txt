@@ -181,8 +181,18 @@ Dodge Roll (2, uncommon, skill): Gain 1 energy for each fully blocked attack thi
 
 Kirby Café (2, uncommon, skill): Gain 1 Star for each copy essence in your exhaust pile.
 
+Call for help (2, uncommon, attack): Deal 6 damage to a random enemy 4 times.
+
 
 ---
+
+Multiplayer Cards:
+
+- Suck up (1, common, attack): Choose an ally to spit at the enemies, end their turn and deal 20 damage to a random enemy.
+
+
+---
+
 
 Relic ideas:
 
