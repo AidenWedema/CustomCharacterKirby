@@ -43,7 +43,7 @@ public class LeafScatter() : AbilityCard(2, CardType.Attack, CardRarity.Basic, T
     
     protected override IEnumerable<DynamicVar> OverrideCanonicalVars => [
         new DamageVar(0M, ValueProp.Move),
-        new ExtraDamageVar(3M),
+        new ExtraDamageVar(4M),
         new CalculationBaseVar(0M),
         new CalculationExtraVar(1M),
         new CalculatedDamageVar(ValueProp.Move).WithMultiplier((card, _) =>
