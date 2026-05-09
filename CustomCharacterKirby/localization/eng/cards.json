@@ -119,6 +119,23 @@
 
   "CUSTOMCHARACTERKIRBY-NEEDLE_BURST.description": "Deal {Damage:diff()} damage.\nDeal {ExtraDamage:diff()} extra damage per [gold]Thorns[/gold].\n(Deal {CalculatedDamage:diff()} damage)",
   "CUSTOMCHARACTERKIRBY-NEEDLE_BURST.title": "Needle Burst",
+
+
+
+  "CUSTOMCHARACTERKIRBY-PARASOL_SWING.description": "Deal {Damage:diff()} Damage.\nGain {SpeedPotionPower:diff()} Dexterity this turn.",
+  "CUSTOMCHARACTERKIRBY-PARASOL_SWING.title": "Parasol Swing",
+
+  "CUSTOMCHARACTERKIRBY-PARASOL_SHIELD.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {} [gold][/gold] this turn.",
+  "CUSTOMCHARACTERKIRBY-PARASOL_SHIELD.title": "Parasol Shield",
+
+  "CUSTOMCHARACTERKIRBY-CIRCUS_THROW.description": "Deal {Damage:diff()} Damage.\nIf not [gold]fatal[/gold] and another enemy is present, deal another {Damage:diff()} damage to both.",
+  "CUSTOMCHARACTERKIRBY-CIRCUS_THROW.title": "Circus Throw",
+
+  "CUSTOMCHARACTERKIRBY-PARASOL_DRILL.description": "Deal {Damage:diff()} Damage to ALL enemies.\nGain  {Block:diff()} [gold]Block[/gold].",
+  "CUSTOMCHARACTERKIRBY-PARASOL_DRILL.title": "Parasol Drill",
+
+  "CUSTOMCHARACTERKIRBY-PARASOL_TWIRL.description": "Deal {Damage:diff()} Damage {Count:diff()} times, gain {Block:diff()} [gold]Block[/gold].",
+  "CUSTOMCHARACTERKIRBY-PARASOL_TWIRL.title": "Parasol Twirl",
   
   
   
@@ -143,6 +160,9 @@
   
   "CUSTOMCHARACTERKIRBY-BEAM_ESSENCE.description": "Switches your copy ability to the [gold]Beam[/gold] ability.",
   "CUSTOMCHARACTERKIRBY-BEAM_ESSENCE.title": "Beam Essence",
+  
+  "CUSTOMCHARACTERKIRBY-PARASOL_ESSENCE.description": "Switches your copy ability to the [gold]Parasol[/gold] ability.",
+  "CUSTOMCHARACTERKIRBY-PARASOL_ESSENCE.title": "Parasol Essence",
   
   
   

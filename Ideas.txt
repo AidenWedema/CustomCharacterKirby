@@ -1,6 +1,6 @@
 Needed: ~85 cards
 
-current: 44 cards (77 total)
+current: 46 cards (83 total)
 
 
 Copy Abilities:
@@ -96,11 +96,15 @@ Needle:
 
 
 Parasol:
-- Basic attack:
-- Basic skill:
-- Up:
-- Forward:
-- Down:
+- Basic attack: Parasol Swing (1, attack): Deal 6 damage. Gain 2 dexterity this turn.
+
+- Basic skill: Parasol Shield (1, skill): Gain 6 Block, Gain 2 Thorns this turn.
+
+- Up: Circus Throw (1, attack): Deal 8 Damage. If not lethal and another enemy is present, deal another 8 damage to both.
+
+- Forward: Parasol Drill (2, attack): Deal 7 Damage to ALL enemies, Gain 4 Block.
+
+- Down: Parasol Twirl (2, attack): Deal 4 Damage 4 times, gain 4 Block
 
 
 ---
