@@ -5,6 +5,7 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Random;
+using MegaCrit.Sts2.Core.Runs;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Relics;
 
@@ -20,12 +21,15 @@ public class AbilityEssence() : CustomCharacterKirbyRelic
         ModelDb.Card<LeafEssence>(),
         ModelDb.Card<IceEssence>(),
         ModelDb.Card<MirrorEssence>(),
+        ModelDb.Card<NeedleEssence>(),
+        ModelDb.Card<BeamEssence>(),
+        ModelDb.Card<ParasolEssence>()
     ];
 
     public override async Task BeforeCombatStart()
     {
         // Chose a random card
-        var r = Rng.Chaotic.NextInt(0, EssenceCards.Count);
+        var r = Owner.RunState.Rng.Niche.NextInt(0, EssenceCards.Count);
         var essenceCard = EssenceCards[r];
         
         // Copy the power

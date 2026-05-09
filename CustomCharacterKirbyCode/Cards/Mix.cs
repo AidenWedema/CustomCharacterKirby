@@ -20,6 +20,9 @@ public class Mix() : CopyEssenceCard(1, CardType.Skill, CardRarity.Common, Targe
         ModelDb.Card<LeafEssence>(),
         ModelDb.Card<IceEssence>(),
         ModelDb.Card<MirrorEssence>(),
+        ModelDb.Card<NeedleEssence>(),
+        ModelDb.Card<BeamEssence>(),
+        ModelDb.Card<ParasolEssence>()
     ];
 
     public override CopyAbility CopyAbility => null!;

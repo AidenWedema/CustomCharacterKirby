@@ -84,6 +84,9 @@ public abstract class AbilityCard(int cost, CardType type, CardRarity rarity, Ta
         };
         newCard = (AbilityCard)combatState.CreateCard(newCard, owner);
         
+        // Check if the card and the new card are the same type, if they are, there's no need to transform
+        if (this.GetType() == newCard.GetType()) return;
+        
         // If this card is upgraded, the replacement should be as well
         if (IsUpgraded)
             CardCmd.Upgrade(newCard);

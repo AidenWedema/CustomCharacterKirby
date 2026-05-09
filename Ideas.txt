@@ -34,7 +34,7 @@ Leaf:
 
 - Up:  Leaf Uppercut (1, attack): Deal 8 damage, gain 1 Leaf.
 
-- Forward: Leaf Scatter (2, attack): Deal 3 damage per Leaf to ALL enemies. Lose all Leaves.
+- Forward: Leaf Scatter (2, attack): Deal 4 damage per Leaf to ALL enemies. Lose all Leaves.
 
 - Down: Leaf Rain (2, attack): Deal 2 damage per Leaf to ALL enemies.
 
