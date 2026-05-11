@@ -3,6 +3,7 @@ using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 
@@ -14,6 +15,8 @@ public class StickyToxin() : AbilityCard(1, CardType.Attack, CardRarity.Basic, T
     protected override IEnumerable<DynamicVar> ExtraCanonicalVars => [];
 
     protected override AbilityType abilityType => AbilityType.BasicAttack;
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<ToxinPower>()];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {

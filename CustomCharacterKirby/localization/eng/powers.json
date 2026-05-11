@@ -57,8 +57,8 @@
   "CUSTOMCHARACTERKIRBY-PARASOL_SHIELD_POWER.smartDescription": "Whenever you get hit by an attack this turn, deal 2 damage back.",
   "CUSTOMCHARACTERKIRBY-PARASOL_SHIELD_POWER.title": "Parasol Shield",
 
-  "CUSTOMCHARACTERKIRBY-TOXIN_POWER.description": "Apply [gold]Poison[gold] at the start of it's turn.",
-  "CUSTOMCHARACTERKIRBY-TOXIN_POWER.smartDescription": "Apply [blue]{Amount}[/blue] [gold]Poison[gold] at the start of it's turn.",
+  "CUSTOMCHARACTERKIRBY-TOXIN_POWER.description": "Apply [gold]Poison[/gold] at the start of it's turn.",
+  "CUSTOMCHARACTERKIRBY-TOXIN_POWER.smartDescription": "Apply [blue]{Amount}[/blue] [gold]Poison[/gold] at the start of it's turn.",
   "CUSTOMCHARACTERKIRBY-TOXIN_POWER.title": "Toxin",
   
   "CUSTOMCHARACTERKIRBY-HOVER_POWER.description": "Take 50% less damage from attacks, but skip your turn when it runs out.",

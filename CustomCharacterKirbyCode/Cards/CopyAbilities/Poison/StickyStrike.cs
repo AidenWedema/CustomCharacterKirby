@@ -3,6 +3,7 @@ using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards.CopyAbilities.Sword;
@@ -13,7 +14,9 @@ public class StickyStrike() : AbilityCard (2, CardType.Skill, CardRarity.Basic, 
     protected override IEnumerable<DynamicVar> ExtraCanonicalVars => [];
 
     protected override AbilityType abilityType => AbilityType.Down;
-    
+
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<ToxinPower>()];
+
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         StickyStrike card = this;
