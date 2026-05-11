@@ -64,11 +64,15 @@ Mirror:
 
 
 Poison:
-- Basic attack:
-- Basic skill:
-- Up:
-- Forward:
-- Down:
+- Basic attack: Sticky Toxin (1, attack): Deal 6 Damage, Apply 1 Toxin.
+
+- Basic skill: Toxic Smog (1, skill): Apply 3 Toxin.
+
+- Up: Toxic Tower (1, attack): Deal 3 Damage 3 times, Apply 1 Toxin.
+
+- Forward: Toxic Slide (2, attack): Deal 4 damage and apply 1 Toxin to ALL enemies.
+
+- Down: Sticky Strike (2, skill): Apply 2 Toxin to ALL enemies.
 
 
 Beam:

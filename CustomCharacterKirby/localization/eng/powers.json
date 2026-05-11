@@ -35,6 +35,10 @@
   "CUSTOMCHARACTERKIRBY-PARASOL_ABILITY.smartDescription": "Block falling objects. Fill your parasol with wind, and go for a stroll through the sky. The best comes last! That's right - Circus Throw!",
   "CUSTOMCHARACTERKIRBY-PARASOL_ABILITY.title": "Parasol",
   
+  "CUSTOMCHARACTERKIRBY-POISON_ABILITY.description": "This dangerous ability can be used to attack enemies with a corrosive liquid that damages organic and inorganic forms alike.",
+  "CUSTOMCHARACTERKIRBY-POISON_ABILITY.smartDescription": "This dangerous ability can be used to attack enemies with a corrosive liquid that damages organic and inorganic forms alike.",
+  "CUSTOMCHARACTERKIRBY-POISON_ABILITY.title": "Poison",
+  
   
 
   "CUSTOMCHARACTERKIRBY-PROJECTILE_STAR_POWER.description": "A star, spit it out to hurt foes or swallow them to gain strength.",
@@ -52,6 +56,10 @@
   "CUSTOMCHARACTERKIRBY-PARASOL_SHIELD_POWER.description": "Gain 2 thorns this turn.",
   "CUSTOMCHARACTERKIRBY-PARASOL_SHIELD_POWER.smartDescription": "Gain 2 thorns this turn.",
   "CUSTOMCHARACTERKIRBY-PARASOL_SHIELD_POWER.title": "Parasol Shield",
+
+  "CUSTOMCHARACTERKIRBY-TOXIN_POWER.description": "Apply [gold]Poison[gold] at the start of it's turn.",
+  "CUSTOMCHARACTERKIRBY-TOXIN_POWER.smartDescription": "Apply [blue]{Amount}[/blue] [gold]Poison[gold] at the start of it's turn.",
+  "CUSTOMCHARACTERKIRBY-TOXIN_POWER.title": "Toxin",
   
   "CUSTOMCHARACTERKIRBY-HOVER_POWER.description": "Take 50% less damage from attacks, but skip your turn when it runs out.",
   "CUSTOMCHARACTERKIRBY-HOVER_POWER.smartDescription": "Take 50% less damage from attacks, but skip your turn when it runs out.",

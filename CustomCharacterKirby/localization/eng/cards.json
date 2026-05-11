@@ -136,6 +136,23 @@
 
   "CUSTOMCHARACTERKIRBY-PARASOL_TWIRL.description": "Deal {Damage:diff()} Damage {Count:diff()} times, gain {Block:diff()} [gold]Block[/gold].",
   "CUSTOMCHARACTERKIRBY-PARASOL_TWIRL.title": "Parasol Twirl",
+
+
+
+  "CUSTOMCHARACTERKIRBY-STICKY_TOXIN.description": "Deal {Damage:diff()} Damage.\nApply {ToxinPower:diff()} Toxin.",
+  "CUSTOMCHARACTERKIRBY-STICKY_TOXIN.title": "Sticky Toxin",
+
+  "CUSTOMCHARACTERKIRBY-TOXIC_SMOG.description": "Apply {ToxinPower:diff()} Toxin.",
+  "CUSTOMCHARACTERKIRBY-TOXIC_SMOG.title": "Toxic Smog",
+
+  "CUSTOMCHARACTERKIRBY-TOXIC_TOWER.description": "Deal {Damage:diff()} Damage {Count:diff()} times.\nApply {ToxinPower:diff()} Toxin.",
+  "CUSTOMCHARACTERKIRBY-TOXIC_TOWER.title": "Toxic Tower",
+
+  "CUSTOMCHARACTERKIRBY-TOXIC_SLIDE.description": "Deal {Damage:diff()} Damage and Apply {ToxinPower:diff()} Toxin to ALL enemies.",
+  "CUSTOMCHARACTERKIRBY-TOXIC_SLIDE.title": "Toxic Slide",
+
+  "CUSTOMCHARACTERKIRBY-STICKY_STRIKE.description": "Apply {ToxinPower:diff()} Toxin to ALL enemies.",
+  "CUSTOMCHARACTERKIRBY-STICKY_STRIKE.title": "Sticky Strike",
   
   
   
@@ -163,6 +180,9 @@
   
   "CUSTOMCHARACTERKIRBY-PARASOL_ESSENCE.description": "Switches your copy ability to the [gold]Parasol[/gold] ability.",
   "CUSTOMCHARACTERKIRBY-PARASOL_ESSENCE.title": "Parasol Essence",
+  
+  "CUSTOMCHARACTERKIRBY-POISON_ESSENCE.description": "Switches your copy ability to the [gold]Poison[/gold] ability.",
+  "CUSTOMCHARACTERKIRBY-POISON_ESSENCE.title": "Poison Essence",
   
   
   
