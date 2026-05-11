@@ -22,5 +22,5 @@ public class StickyStrike() : AbilityCard (2, CardType.Skill, CardRarity.Basic, 
         await PowerCmd.Apply<ToxinPower>(card.CombatState.Enemies, DynamicVars.Power<ToxinPower>().BaseValue, card.Owner.Creature, card);
     }
 
-    protected override void OnUpgrade() => DynamicVars.ExtraDamage.UpgradeValueBy(2M);
+    protected override void OnUpgrade() => DynamicVars.Power<ToxinPower>().UpgradeValueBy(2M);
 }

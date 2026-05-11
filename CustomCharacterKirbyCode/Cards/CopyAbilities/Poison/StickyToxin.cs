@@ -27,5 +27,5 @@ public class StickyToxin() : AbilityCard(1, CardType.Attack, CardRarity.Basic, T
         await PowerCmd.Apply<ToxinPower>(cardPlay.Target, DynamicVars.Power<ToxinPower>().BaseValue, card.Owner.Creature, card);
     }
 
-    protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(2M);
+    protected override void OnUpgrade() => DynamicVars.Power<ToxinPower>().UpgradeValueBy(1M);
 }

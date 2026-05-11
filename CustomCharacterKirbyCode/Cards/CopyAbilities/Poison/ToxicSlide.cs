@@ -18,14 +18,17 @@ public class ToxicSlide() : AbilityCard(2, CardType.Attack, CardRarity.Basic, Ta
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         ToxicSlide card = this;
-        ArgumentNullException.ThrowIfNull((object)cardPlay.Target, "cardPlay.Target");
         
         // Deal damage
         await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard(card).TargetingAllOpponents(card.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         
         // Apply Toxin
-        await PowerCmd.Apply<ToxinPower>(cardPlay.Target, DynamicVars.Power<ToxinPower>().BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<ToxinPower>(card.CombatState.Enemies, DynamicVars.Power<ToxinPower>().BaseValue, card.Owner.Creature, card);
     }
 
-    protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(2M);
+    protected override void OnUpgrade()
+    {
+        DynamicVars.Damage.UpgradeValueBy(2M);
+        DynamicVars.Power<ToxinPower>().UpgradeValueBy(1M);
+    }
 }

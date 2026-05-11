@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.Models;
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 
 [Pool(typeof(CustomCharacterKirbyCardPool))]
-public class PoisonEssence() : CopyEssenceCard(1, CardType.Skill, CardRarity.Common, TargetType.Self)
+public class PoisonEssence() : CopyEssenceCard(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
 {
     public override CopyAbility CopyAbility => ModelDb.Power<PoisonAbility>();
 }

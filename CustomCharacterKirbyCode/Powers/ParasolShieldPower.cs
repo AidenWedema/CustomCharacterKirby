@@ -10,39 +10,23 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 
-public class ParasolShieldPower : CustomCharacterKirbyPower, ITemporaryPower
+public class ParasolShieldPower : CustomCharacterKirbyPower
 {
-    private bool _shouldIgnoreNextInstance;
-    
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;
-
-    public override async Task BeforeApplied(Creature target, Decimal amount, Creature? applier, CardModel? cardSource)
-    {
-        if (_shouldIgnoreNextInstance) _shouldIgnoreNextInstance = false;
-        else
-            await PowerCmd.Apply<DexterityPower>(target, amount, applier, cardSource, true);
-    }
-    
-    public override async Task AfterPowerAmountChanged(PowerModel power, Decimal amount, Creature? applier, CardModel? cardSource)
-    {
-        ParasolShieldPower parasolShieldPower = this;
-        if (amount == parasolShieldPower.Amount || power != parasolShieldPower) return;
-        if (parasolShieldPower._shouldIgnoreNextInstance) parasolShieldPower._shouldIgnoreNextInstance = false;
-        else
-            await PowerCmd.Apply<DexterityPower>(parasolShieldPower.Owner, amount, applier, cardSource, true);
-    }
 
     public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {
         ParasolShieldPower power = this;
-        var thornsPower = power.Owner.Powers.OfType<ThornsPower>().FirstOrDefault();
-        if (thornsPower == null) return;
-        await PowerCmd.ModifyAmount(thornsPower, power.Amount, null, null);
+        await PowerCmd.Remove(power);
     }
-
-    public void IgnoreNextInstance() => _shouldIgnoreNextInstance = true;
-
-    public AbstractModel OriginModel => ModelDb.Card<ParasolShield>();
-    public PowerModel InternallyAppliedPower => ModelDb.Power<ThornsPower>();
+    
+    public override async Task BeforeDamageReceived(PlayerChoiceContext choiceContext, Creature target, Decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)
+    {
+        ParasolShieldPower power = this;
+        if (target != power.Owner || dealer == null || !props.IsPoweredAttack())
+            return;
+        power.Flash();
+        await CreatureCmd.Damage(choiceContext, dealer, power.Amount, ValueProp.Unpowered | ValueProp.SkipHurtAnim, power.Owner, null);
+    }
 }

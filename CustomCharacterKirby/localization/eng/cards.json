@@ -125,7 +125,7 @@
   "CUSTOMCHARACTERKIRBY-PARASOL_SWING.description": "Deal {Damage:diff()} Damage.\nGain {SpeedPotionPower:diff()} Dexterity this turn.",
   "CUSTOMCHARACTERKIRBY-PARASOL_SWING.title": "Parasol Swing",
 
-  "CUSTOMCHARACTERKIRBY-PARASOL_SHIELD.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {} [gold][/gold] this turn.",
+  "CUSTOMCHARACTERKIRBY-PARASOL_SHIELD.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {ParasolShieldPower:diff()} [gold]Parasol Shield[/gold] this turn.",
   "CUSTOMCHARACTERKIRBY-PARASOL_SHIELD.title": "Parasol Shield",
 
   "CUSTOMCHARACTERKIRBY-CIRCUS_THROW.description": "Deal {Damage:diff()} Damage.\nIf not [gold]fatal[/gold] and another enemy is present, deal another {Damage:diff()} damage to both.",

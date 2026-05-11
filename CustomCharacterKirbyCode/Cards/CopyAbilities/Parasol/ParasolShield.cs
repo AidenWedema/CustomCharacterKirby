@@ -3,6 +3,7 @@ using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 
@@ -16,6 +17,8 @@ public class ParasolShield() : AbilityCard(1, CardType.Skill, CardRarity.Basic, 
     protected override HashSet<CardTag> CanonicalTags => new HashSet<CardTag>() { CardTag.None };
 
     protected override AbilityType abilityType => AbilityType.BasicSkill;
+
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<ParasolShieldPower>()];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {

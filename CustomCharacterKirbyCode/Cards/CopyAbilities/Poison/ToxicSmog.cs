@@ -25,5 +25,5 @@ public class ToxicSmog() : AbilityCard(1, CardType.Skill, CardRarity.Basic, Targ
         await PowerCmd.Apply<ToxinPower>(cardPlay.Target, DynamicVars.Power<ToxinPower>().BaseValue, card.Owner.Creature, card);
     }
 
-    protected override void OnUpgrade() => DynamicVars.Block.UpgradeValueBy(2M);
+    protected override void OnUpgrade() => DynamicVars.Power<ToxinPower>().UpgradeValueBy(2M);
 }
