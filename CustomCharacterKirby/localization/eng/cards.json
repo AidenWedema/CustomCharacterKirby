@@ -119,6 +119,23 @@
 
   "CUSTOMCHARACTERKIRBY-NEEDLE_BURST.description": "Deal {Damage:diff()} damage.\nDeal {ExtraDamage:diff()} extra damage per [gold]Thorns[/gold].\n(Deal {CalculatedDamage:diff()} damage)",
   "CUSTOMCHARACTERKIRBY-NEEDLE_BURST.title": "Needle Burst",
+  
+  
+  
+  "CUSTOMCHARACTERKIRBY-BEAM_WHIP.description": "Deal {Damage:diff()} Damage {Count:diff()} times.",
+  "CUSTOMCHARACTERKIRBY-BEAM_WHIP.title": "Beam Whip",
+
+  "CUSTOMCHARACTERKIRBY-CAPTURE_BEAM.description": "Gain {Block:diff()} [gold]Block[/gold].\n Apply {Power:diff()} [gold]Weak[/gold] and [gold]Vulnarable[/gold].",
+  "CUSTOMCHARACTERKIRBY-CAPTURE_BEAM.title": "Capture Beam",
+
+  "CUSTOMCHARACTERKIRBY-BEAM_BLAST.description": "Deal {Damage:diff()} Damage to ALL enemies {Count:diff()} times.",
+  "CUSTOMCHARACTERKIRBY-BEAM_BLAST.title": "Beam Blast",
+
+  "CUSTOMCHARACTERKIRBY-CYCLE_BEAM.description": "Deal {Damage:diff()} Damage {Count:diff()} times.",
+  "CUSTOMCHARACTERKIRBY-CYCLE_BEAM.title": "Cycle Beam",
+
+  "CUSTOMCHARACTERKIRBY-WAVE_BEAM.description": "Deal {Damage:diff()} Damage to ALL enemies.",
+  "CUSTOMCHARACTERKIRBY-WAVE_BEAM.title": "Wave Beam",
 
 
 
@@ -184,24 +201,6 @@
   "CUSTOMCHARACTERKIRBY-POISON_ESSENCE.description": "Switches your copy ability to the [gold]Poison[/gold] ability.",
   "CUSTOMCHARACTERKIRBY-POISON_ESSENCE.title": "Poison Essence",
   
-  
-  
-
-  "CUSTOMCHARACTERKIRBY-BEAM_WHIP.description": "Deal {Damage:diff()} {Count:diff()} times.",
-  "CUSTOMCHARACTERKIRBY-BEAM_WHIP.title": "Beam Whip",
-
-  "CUSTOMCHARACTERKIRBY-CAPTURE_BEAM.description": "Gain {Block:diff()} [gold]Block[/gold].\n Apply {Power:diff()} [gold]Weak[/gold] and [gold]Vulnarable[/gold].",
-  "CUSTOMCHARACTERKIRBY-CAPTURE_BEAM.title": "Capture Beam",
-
-  "CUSTOMCHARACTERKIRBY-BEAM_BLAST.description": "Deal {Damage:diff()} to ALL enemies {Count:diff()} times.",
-  "CUSTOMCHARACTERKIRBY-BEAM_BLAST.title": "Beam Blast",
-
-  "CUSTOMCHARACTERKIRBY-CYCLE_BEAM.description": "Deal {Damage:diff()} {Count:diff()} times.",
-  "CUSTOMCHARACTERKIRBY-CYCLE_BEAM.title": "Cycle Beam",
-
-  "CUSTOMCHARACTERKIRBY-WAVE_BEAM.description": "Deal {Damage:diff()} to ALL enemies.",
-  "CUSTOMCHARACTERKIRBY-WAVE_BEAM.title": "Wave Beam",
-
 
 
   

@@ -29,6 +29,8 @@ public abstract class AbilityCard(int cost, CardType type, CardRarity rarity, Ta
         new CalculatedBlockVar(ValueProp.Move).WithMultiplier((_, _) => 1)
     ];
 
+    public override bool GainsBlock => DynamicVars.Any(v => v.Value is BlockVar or CalculatedBlockVar && v.Value.BaseValue > 0M);
+
     protected virtual IEnumerable<DynamicVar> OverrideCanonicalVars => [];
 
     protected virtual IEnumerable<DynamicVar> ExtraCanonicalVars => [];
