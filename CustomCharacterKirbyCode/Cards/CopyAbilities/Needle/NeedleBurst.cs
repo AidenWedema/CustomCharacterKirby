@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards.CopyAbilities.Sword;
 
-public class NeedleBurst() : AbilityCard (2, CardType.Attack, CardRarity.Basic, TargetType.AllAllies)
+public class NeedleBurst() : AbilityCard (2, CardType.Attack, CardRarity.Basic, TargetType.AllEnemies)
 {
     protected override IEnumerable<DynamicVar> OverrideCanonicalVars => [
         new DamageVar(4M, ValueProp.Move),
