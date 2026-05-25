@@ -41,6 +41,11 @@
     </ItemGroup>
 
     <ItemGroup>
+        <None Include="Ideas.txt" />
+        <None Include="known bugs.txt" />
+    </ItemGroup>
+
+    <ItemGroup>
         <Compile Remove="CustomCharacterKirby/**"/>
         <Compile Remove="materials/**"/>
         <Compile Remove="shaders/**"/>

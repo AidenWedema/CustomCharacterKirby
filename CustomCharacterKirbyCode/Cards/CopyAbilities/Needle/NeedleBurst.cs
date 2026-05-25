@@ -39,6 +39,8 @@ public class NeedleBurst() : AbilityCard (2, CardType.Attack, CardRarity.Basic, 
         // Deal damage
         await DamageCmd.Attack(DynamicVars.CalculatedDamage.Calculate(cardPlay.Target)).FromCard(card).TargetingAllOpponents(card.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         
+        // Lose Thorns
+        await PowerCmd.Remove<ThornsPower>(card.Owner.Creature);
     }
 
     protected override void OnUpgrade() => DynamicVars.ExtraDamage.UpgradeValueBy(2M);

@@ -26,7 +26,7 @@ public class CustomCharacterKirby : PlaceholderCharacterModel
     public override Color EnergyLabelOutlineColor => new("eb7295");
     
     public override CharacterGender Gender => CharacterGender.Neutral;
-    public override int StartingHp => 70;
+    public override int StartingHp => 65;
 
     public override IEnumerable<CardModel> StartingDeck =>
     [

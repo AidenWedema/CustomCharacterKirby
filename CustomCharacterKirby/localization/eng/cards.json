@@ -71,7 +71,7 @@
 
 
 
-  "CUSTOMCHARACTERKIRBY-MIRROR_BODY.description": "Deal {Damage:diff()} damage to a random enemy.\nGain [gold]Blur[/gold].",
+  "CUSTOMCHARACTERKIRBY-MIRROR_BODY.description": "Gain 4 [gold]Block[/gold].\nDeal damage equal to your [gold]Block[/gold].\nLose all [gold]Block[/gold].",
   "CUSTOMCHARACTERKIRBY-MIRROR_BODY.title": "Mirror Body",
 
   "CUSTOMCHARACTERKIRBY-MIRROR_CUT.description": "Deal {Damage:diff()} damage.\nGain 1 [gold]Dexterity[/gold].",
@@ -97,7 +97,7 @@
   "CUSTOMCHARACTERKIRBY-ICE_STORM.description": "Deal {Damage:diff()} damage.\nGain {Block:diff()} [gold]Block[/gold].",
   "CUSTOMCHARACTERKIRBY-ICE_STORM.title": "Ice Storm",
 
-  "CUSTOMCHARACTERKIRBY-ICE_SCATTER.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeal 2 damage per [gold]Block[/gold].\nLose all [gold]Block[/gold].",
+  "CUSTOMCHARACTERKIRBY-ICE_SCATTER.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeal 2 damage per [gold]Block[/gold].",
   "CUSTOMCHARACTERKIRBY-ICE_SCATTER.title": "Ice Scatter",
 
   "CUSTOMCHARACTERKIRBY-ICE_SPRINKLE.description": "Deal {Damage:diff()} damage to ALL enemies.\nApply 1 [gold]Weak[/gold].\nApply {VulnerableAmount:diff()} [gold]Vulnerable[/gold].",
@@ -117,7 +117,7 @@
   "CUSTOMCHARACTERKIRBY-ROLLING_NEEDLE.description": "Deal {Damage:diff()} Damage to ALL enemies.\nGain {Block:diff()} [gold]Block[/gold].",
   "CUSTOMCHARACTERKIRBY-ROLLING_NEEDLE.title": "Rolling Needle",
 
-  "CUSTOMCHARACTERKIRBY-NEEDLE_BURST.description": "Deal {Damage:diff()} damage.\nDeal {ExtraDamage:diff()} extra damage per [gold]Thorns[/gold].\n(Deal {CalculatedDamage:diff()} damage)",
+  "CUSTOMCHARACTERKIRBY-NEEDLE_BURST.description": "Deal {Damage:diff()} damage.\nDeal {ExtraDamage:diff()} extra damage per [gold]Thorns[/gold].\nLose all [gold]Thorns[/gold].\n(Deal {CalculatedDamage:diff()} damage)",
   "CUSTOMCHARACTERKIRBY-NEEDLE_BURST.title": "Needle Burst",
   
   
@@ -145,7 +145,7 @@
   "CUSTOMCHARACTERKIRBY-PARASOL_SHIELD.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {ParasolShieldPower:diff()} [gold]Parasol Shield[/gold] this turn.",
   "CUSTOMCHARACTERKIRBY-PARASOL_SHIELD.title": "Parasol Shield",
 
-  "CUSTOMCHARACTERKIRBY-CIRCUS_THROW.description": "Deal {Damage:diff()} Damage.\nIf not [gold]fatal[/gold] and another enemy is present, deal another {Damage:diff()} damage to both.",
+  "CUSTOMCHARACTERKIRBY-CIRCUS_THROW.description": "Deal {Damage:diff()} Damage.\nIf not [gold]Fatal[/gold] and another enemy is present, deal another {Damage:diff()} damage to both.",
   "CUSTOMCHARACTERKIRBY-CIRCUS_THROW.title": "Circus Throw",
 
   "CUSTOMCHARACTERKIRBY-PARASOL_DRILL.description": "Deal {Damage:diff()} Damage to ALL enemies.\nGain  {Block:diff()} [gold]Block[/gold].",
@@ -156,19 +156,19 @@
 
 
 
-  "CUSTOMCHARACTERKIRBY-STICKY_TOXIN.description": "Deal {Damage:diff()} Damage.\nApply {ToxinPower:diff()} Toxin.",
+  "CUSTOMCHARACTERKIRBY-STICKY_TOXIN.description": "Deal {Damage:diff()} Damage.\nApply {ToxinPower:diff()} [gold]Toxin[/gold].",
   "CUSTOMCHARACTERKIRBY-STICKY_TOXIN.title": "Sticky Toxin",
 
-  "CUSTOMCHARACTERKIRBY-TOXIC_SMOG.description": "Apply {ToxinPower:diff()} Toxin.",
+  "CUSTOMCHARACTERKIRBY-TOXIC_SMOG.description": "Apply {ToxinPower:diff()} [gold]Toxin[/gold].",
   "CUSTOMCHARACTERKIRBY-TOXIC_SMOG.title": "Toxic Smog",
 
-  "CUSTOMCHARACTERKIRBY-TOXIC_TOWER.description": "Deal {Damage:diff()} Damage {Count:diff()} times.\nApply {ToxinPower:diff()} Toxin.",
+  "CUSTOMCHARACTERKIRBY-TOXIC_TOWER.description": "Deal {Damage:diff()} Damage {Count:diff()} times.\nApply {ToxinPower:diff()} [gold]Toxin[/gold].",
   "CUSTOMCHARACTERKIRBY-TOXIC_TOWER.title": "Toxic Tower",
 
-  "CUSTOMCHARACTERKIRBY-TOXIC_SLIDE.description": "Deal {Damage:diff()} Damage and Apply {ToxinPower:diff()} Toxin to ALL enemies.",
+  "CUSTOMCHARACTERKIRBY-TOXIC_SLIDE.description": "Deal {Damage:diff()} Damage and Apply {ToxinPower:diff()} [gold]Toxin[/gold] to ALL enemies.",
   "CUSTOMCHARACTERKIRBY-TOXIC_SLIDE.title": "Toxic Slide",
 
-  "CUSTOMCHARACTERKIRBY-STICKY_STRIKE.description": "Apply {ToxinPower:diff()} Toxin to ALL enemies.",
+  "CUSTOMCHARACTERKIRBY-STICKY_STRIKE.description": "Apply {ToxinPower:diff()} [gold]Toxin[/gold] to ALL enemies.",
   "CUSTOMCHARACTERKIRBY-STICKY_STRIKE.title": "Sticky Strike",
   
   
@@ -280,7 +280,7 @@
   "CUSTOMCHARACTERKIRBY-DODGE.description": "Double your block.",
   "CUSTOMCHARACTERKIRBY-DODGE.title": "Dodge",
   
-  "CUSTOMCHARACTERKIRBY-DODGE_ROLL.description": "Gain 1 energy for each fully blocked attack.\n{IfUpgraded:show:Gain {Block:diff()} [gold]Block[/gold]|}",
+  "CUSTOMCHARACTERKIRBY-DODGE_ROLL.description": "Gain 1 energy for each fully blocked attack this turn.\n{IfUpgraded:show:Gain {Block:diff()} [gold]Block[/gold]|}",
   "CUSTOMCHARACTERKIRBY-DODGE_ROLL.title": "Dodge Roll",
   
   "CUSTOMCHARACTERKIRBY-KIRBY_CAFE.description": "Gain {ProjectileStarPower:diff()} [gold]{IfUpgraded:show:stars|star}[/gold] per copy essence in your exhaust pile.\n(Gain {CalculatedStars:diff()} stars)",

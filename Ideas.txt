@@ -195,6 +195,9 @@ Kirby Café (2, uncommon, skill): Gain 1 Star for each copy essence in your exha
 
 Call for help (2, uncommon, attack): Deal 6 damage to a random enemy 4 times.
 
+- ??? (2, uncommon, power): gain 1 star at the start of each turn.
+
+
 
 ---
 

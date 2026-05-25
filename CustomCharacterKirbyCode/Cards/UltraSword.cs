@@ -18,6 +18,8 @@ public class UltraSword() : CustomCharacterKirbyCard(3, CardType.Attack, CardRar
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10M, ValueProp.Move), new RepeatVar(3)];
 
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
+    
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         UltraSword card = this;

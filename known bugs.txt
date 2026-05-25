@@ -56,6 +56,12 @@ Awake can be pulled from HAL Room					-	FIXED?
 
 Dream friend damage doesn't scale with vulnerable
 
+multiplayer state divergence after encountering magolor??		
+
+hypernova can't be played in battles with multiple enemies when 1 enemy has over 20% hp
+
+hypernova only targets 1 enemy						-	FIXED?
+
 Things that crash multiplayer:
 - Attack potion???
 - Power potion???
@@ -64,3 +70,7 @@ Things that crash multiplayer:
 - Dream rod								-	FIXED
 - Mix									-	FIXED
 - probably everything that advances RNG
+
+
+Feedback:
+Ice shatter works better as a mirror card instead of an ice card.

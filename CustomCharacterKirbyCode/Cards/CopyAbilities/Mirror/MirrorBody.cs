@@ -10,11 +10,11 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
 
-public class MirrorBody() : AbilityCard(2, CardType.Attack, CardRarity.Basic, TargetType.RandomEnemy)
+public class MirrorBody() : AbilityCard(2, CardType.Attack, CardRarity.Basic, TargetType.AnyEnemy)
 {
     protected override AbilityType abilityType => AbilityType.Forward;
     
-    protected override IEnumerable<DynamicVar> OverrideCanonicalVars => [new DamageVar(6M, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> OverrideCanonicalVars => [new BlockVar(4M, ValueProp.Move)];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<Copy>(), HoverTipFactory.FromPower<BlurPower>()];
 
@@ -22,11 +22,15 @@ public class MirrorBody() : AbilityCard(2, CardType.Attack, CardRarity.Basic, Ta
     {
         MirrorBody card = this;
         
+        // Gain block
+        await CreatureCmd.GainBlock(card.Owner.Creature, DynamicVars.Block, cardPlay);
+        
         // Deal damage
-        await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard((CardModel) card).TargetingRandomOpponents(card.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
+        var blockAmount = card.Owner.Creature.Block;
+        await DamageCmd.Attack(blockAmount).FromCard(card).TargetingRandomOpponents(card.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
 
-        // Apply blur
-        await PowerCmd.Apply<BlurPower>(card.Owner.Creature, 1, card.Owner.Creature, card);
+        // Remove block
+        await CreatureCmd.LoseBlock(card.Owner.Creature, blockAmount);
     }
 
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(3M);

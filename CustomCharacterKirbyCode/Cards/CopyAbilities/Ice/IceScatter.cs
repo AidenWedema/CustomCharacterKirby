@@ -30,8 +30,8 @@ public class IceScatter() : AbilityCard (2, CardType.Skill, CardRarity.Basic, Ta
         var blockAmount = card.Owner.Creature.Block;
         await DamageCmd.Attack(DynamicVars.CalculatedDamage.Calculate((cardPlay.Target))).FromCard(card).TargetingAllOpponents(card.CombatState).Execute(choiceContext);
         
-        // Remove Block
-        await CreatureCmd.LoseBlock(card.Owner.Creature, blockAmount);
+        // // Remove Block
+        // await CreatureCmd.LoseBlock(card.Owner.Creature, blockAmount);
     }
 
     protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);

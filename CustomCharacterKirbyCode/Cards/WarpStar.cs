@@ -23,7 +23,7 @@ public class WarpStar() : CustomCharacterKirbyCard(3, CardType.Skill, CardRarity
         await PowerCmd.Apply<IntangiblePower>(card.Owner.Creature, 1, card.Owner.Creature, card);
         
         // Apply damage next turn (via The Bomb)
-        (await PowerCmd.Apply<TheBombPower>(card.Owner.Creature, 1, card.Owner.Creature, card)).SetDamage(DynamicVars.Damage.BaseValue);
+        (await PowerCmd.Apply<TheBombPower>(card.Owner.Creature, 2, card.Owner.Creature, card)).SetDamage(DynamicVars.Damage.BaseValue);
         
         PlayerCmd.EndTurn(card.Owner, false);
     }

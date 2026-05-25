@@ -44,11 +44,7 @@ public class Hypernova() : CustomCharacterKirbyCard(3, CardType.Skill, CardRarit
     {
         Hypernova card = this;
 
-        var swallowableEnemies = SwallowableEnemies;
-        foreach (var enemy in swallowableEnemies)
-        {
-            await CreatureCmd.Kill(enemy);
-        }
+        await CreatureCmd.Kill(SwallowableEnemies);
     }
 
     protected override void OnUpgrade() => DynamicVars["SwallowPercent"].UpgradeValueBy(10M);

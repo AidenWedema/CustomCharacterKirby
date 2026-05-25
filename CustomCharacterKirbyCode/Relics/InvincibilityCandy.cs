@@ -2,6 +2,7 @@
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
+using MegaCrit.Sts2.Core.Rooms;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Relics;
 
@@ -11,9 +12,11 @@ public class InvincibilityCandy() : CustomCharacterKirbyRelic
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
-    public override async Task BeforeCombatStart()
+    public override async Task AfterRoomEntered(AbstractRoom room)
     {
         InvincibilityCandy relic = this;
+        if (!(room is CombatRoom))
+            return;
         relic.Flash();
         await PowerCmd.Apply<BufferPower>(relic.Owner.Creature, 1, relic.Owner.Creature, null);
     }
