@@ -98,7 +98,8 @@ public abstract class AbilityCard(int cost, CardType type, CardRarity rarity, Ta
         if (affliction != null)
         {
             var newAffliction = (AfflictionModel)affliction.MutableClone();
-            await CardCmd.Afflict(newAffliction, newCard, affliction.Amount);
+            if (newAffliction.CanAfflict(newCard))
+                await CardCmd.Afflict(newAffliction, newCard, affliction.Amount);
         }
         
         // Cary over enchantment
@@ -106,7 +107,8 @@ public abstract class AbilityCard(int cost, CardType type, CardRarity rarity, Ta
         if (enchantment != null)
         {
             var newEnchantment = (EnchantmentModel)enchantment.MutableClone();
-            CardCmd.Enchant(newEnchantment, newCard, enchantment.Amount);
+            if (newEnchantment.CanEnchant(newCard))
+                CardCmd.Enchant(newEnchantment, newCard, enchantment.Amount);
         }
         
         // Transform the card

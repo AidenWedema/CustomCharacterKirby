@@ -168,7 +168,7 @@
   "CUSTOMCHARACTERKIRBY-TOXIC_SLIDE.description": "Deal {Damage:diff()} Damage and Apply {ToxinPower:diff()} [gold]Toxin[/gold] to ALL enemies.",
   "CUSTOMCHARACTERKIRBY-TOXIC_SLIDE.title": "Toxic Slide",
 
-  "CUSTOMCHARACTERKIRBY-STICKY_STRIKE.description": "Apply {ToxinPower:diff()} [gold]Toxin[/gold] to ALL enemies.",
+  "CUSTOMCHARACTERKIRBY-STICKY_STRIKE.description": "Apply {ToxinPower:diff()} [gold]Toxin[/gold]  to ALL enemies.",
   "CUSTOMCHARACTERKIRBY-STICKY_STRIKE.title": "Sticky Strike",
   
   
@@ -288,6 +288,18 @@
 
   "CUSTOMCHARACTERKIRBY-CALL_FOR_HELP.description": "Deal {Damage:diff()} damage to a random enemy {Count:diff()} times.",
   "CUSTOMCHARACTERKIRBY-CALL_FOR_HELP.title": "Call For Help",
+  
+  "CUSTOMCHARACTERKIRBY-FRIEND_HEART.description": "Apply 1 [gold]Vulnerable[/gold].\nIf the enemy is at or below {MaxHP:diff()} HP, make them your friend instead.",
+  "CUSTOMCHARACTERKIRBY-FRIEND_HEART.title": "Friend Heart",
+  
+  "CUSTOMCHARACTERKIRBY-FRIEND_CIRCLE.description": "Deal {Damage:diff()} damage to ALL enemies.\n Deal {Damage:diff()} more damage per friend you have.\n(Deal {CalculatedDamage:diff()} damage)",
+  "CUSTOMCHARACTERKIRBY-FRIEND_CIRCLE.title": "Friend Circle",
+  
+  "CUSTOMCHARACTERKIRBY-FRIEND_STAR.description": "Deal {Damage:diff()} damage to {FriendAmount:diff()} random enemies, then deal {Damage:diff()} damage to ALL enemies.",
+  "CUSTOMCHARACTERKIRBY-FRIEND_STAR.title": "Friend Star",
+  
+  "CUSTOMCHARACTERKIRBY-FRIENDLY_KISS.description": "Heal ALL of your friends by {Heal:diff()} HP.",
+  "CUSTOMCHARACTERKIRBY-FRIENDLY_KISS.title": "FriendlyKiss",
   
   
   

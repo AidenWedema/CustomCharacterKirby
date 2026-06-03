@@ -1,6 +1,6 @@
 Needed: ~85 cards
 
-current: 46 cards (83 total)
+current: 50 cards (87 total)
 
 
 Copy Abilities:
@@ -197,6 +197,20 @@ Call for help (2, uncommon, attack): Deal 6 damage to a random enemy 4 times.
 
 - ??? (2, uncommon, power): gain 1 star at the start of each turn.
 
+Friend Heart (1, common, skill): If the enemy is at or below 20 HP, make them your friend.
+
+Friend Circle (1, uncommon, attack): Deal 5 Damage to ALL enemies. Deal 5 additional damage per friend you have.
+
+Friend Star (1, uncommon, attack): Deal 3 damage to a random enemy 3 times, then deal 3 damage to ALL enemies.
+
+- Friend Bridge (1, uncommon, skill): 
+
+- Friend Train (1, uncommon, skill): 
+
+- Star Allies Sparkler (1, uncommon, skill): 
+
+Friendly Kiss (1, common, skill): Heal ALL friends by 6 HP.
+
 
 
 ---
@@ -230,6 +244,8 @@ Invincibility Candy (rare): start each combat with 1 buffer.
 - Butterfly (event): Change the Act 3 boss...
 
 keeby (uncommon): Deal 6 damage to a random enemy whenever you play a copy essence.
+
+Heart spear (uncommon): The first enemy you defeat each combat becomes your friend.
 
 
 ---

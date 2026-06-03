@@ -26,15 +26,11 @@ public class DreamRod() : CustomCharacterKirbyCard(3, CardType.Power, CardRarity
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         DreamRod card = this;
-
-        await PowerCmd.Apply<DreamRodPower>(card.Owner.Creature, 1, card.Owner.Creature, card);
-
+        
         DreamFriend? friend;
         bool newFriend = true;
 
         var existingFriends = DreamFriendCmd.GetAllPets<DreamFriend>(card.Owner.Creature);
-        
-        MainFile.Logger.LogMessage(LogLevel.Warn, $"player {card.Owner.NetId} has {existingFriends.Count} friends.", 2);
         
         // Check if max is friends reached
         if (existingFriends.Count == FriendPositions.Length)
@@ -63,7 +59,7 @@ public class DreamRod() : CustomCharacterKirbyCard(3, CardType.Power, CardRarity
             var r = card.Owner.RunState.Rng.Niche.NextInt(0, possibleFriends.Count);
             friend = possibleFriends[r];
         }
-        var creature = await DreamFriendCmd.Summon(friend, choiceContext, card.Owner, friend.MaxInitialHp, card, true, false);
+        var creature = await DreamFriendCmd.Summon(friend, card.Owner, friend.MaxInitialHp, true, false);
         
         // Set the new friend to the correct position
         if (newFriend)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckurh4xjtiyq3"
-path="res://.godot/imported/dream_rod.png-91ffa3228cc5b8238969dc5bff9d3873.ctex"
+path="res://.godot/imported/friend_heart.png-14230beddb19f2bc302858363b74a934.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CustomCharacterKirby/images/powers/dream_rod.png"
-dest_files=["res://.godot/imported/dream_rod.png-91ffa3228cc5b8238969dc5bff9d3873.ctex"]
+source_file="res://CustomCharacterKirby/images/powers/friend_heart.png"
+dest_files=["res://.godot/imported/friend_heart.png-14230beddb19f2bc302858363b74a934.ctex"]
 
 [params]
 
