@@ -1,10 +1,14 @@
 ﻿using CustomCharacterKirby.CustomCharacterKirbyCode.Cards;
+using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 
 public class SleepAbility : CopyAbility
 {
+    public override string DisplayName => new LocString("powers", "sleep").GetFormattedText();
+    public override string SpritePath => Path.Join(MainFile.ResPath, "images", "powers", "big", "sleep_ability.png");
+
     public override AbilityCard BasicAttackCard => ModelDb.Card<StrikeKirby>();
 
     public override AbilityCard BasicSkillCard => ModelDb.Card<Inhale>();

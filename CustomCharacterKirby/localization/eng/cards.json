@@ -18,7 +18,7 @@
   "CUSTOMCHARACTERKIRBY-SLIDE.title": "Slide",
   
   "CUSTOMCHARACTERKIRBY-GUARD.description": "Gain {Block:diff()} [gold]Block[/gold].",
-  "CUSTOMCHARACTERKIRBY-GUARD.title": "Guard",
+  "CUSTOMCHARACTERKIRBY-GUARD.title": "Defend",
   
   "CUSTOMCHARACTERKIRBY-JUMP.description": "",
   "CUSTOMCHARACTERKIRBY-JUMP.title": "Jump",
@@ -299,7 +299,7 @@
   "CUSTOMCHARACTERKIRBY-FRIEND_STAR.title": "Friend Star",
   
   "CUSTOMCHARACTERKIRBY-FRIENDLY_KISS.description": "Heal ALL of your friends by {Heal:diff()} HP.",
-  "CUSTOMCHARACTERKIRBY-FRIENDLY_KISS.title": "FriendlyKiss",
+  "CUSTOMCHARACTERKIRBY-FRIENDLY_KISS.title": "Friendly Kiss",
   
   
   
