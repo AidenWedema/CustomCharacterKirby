@@ -7,7 +7,7 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 
 public class ParasolAbility : CopyAbility
 {
-    public override string DisplayName => new LocString("powers", "parasol").GetFormattedText();
+    public override string DisplayName => new LocString("powers", "parasol.title").GetFormattedText();
     public override string SpritePath => Path.Join(MainFile.ResPath, "images", "powers", "big", "parasol_ability.png");
 
     public override AbilityCard BasicAttackCard => ModelDb.Card<ParasolSwing>();

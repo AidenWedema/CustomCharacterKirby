@@ -7,7 +7,7 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 
 public class SwordAbility : CopyAbility
 {
-    public override string DisplayName => new LocString("powers", "sword").GetFormattedText();
+    public override string DisplayName => new LocString("powers", "sword.title").GetFormattedText();
     public override string SpritePath => Path.Join(MainFile.ResPath, "images", "powers", "big", "sword_ability.png");
 
     public override AbilityCard BasicAttackCard => ModelDb.Card<OverheadSlash>();

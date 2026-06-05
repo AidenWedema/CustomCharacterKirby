@@ -7,7 +7,7 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 
 public class BeamAbility : CopyAbility
 {
-    public override string DisplayName => new LocString("powers", "beam").GetFormattedText();
+    public override string DisplayName => new LocString("powers", "beam.title").GetFormattedText();
     public override string SpritePath => Path.Join(MainFile.ResPath, "images", "powers", "big", "beam_ability.png");
     
     public override AbilityCard BasicAttackCard => ModelDb.Card<BeamWhip>();

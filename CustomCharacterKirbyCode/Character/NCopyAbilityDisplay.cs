@@ -1,6 +1,9 @@
 ﻿using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Localization;
+using MegaCrit.Sts2.Core.Nodes.HoverTips;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Character;
 
@@ -15,15 +18,29 @@ public partial class NCopyAbilityDisplay : Control
     
     private Tween? _flashTween;
     
+    private HoverTip? _hoverTip;
+    
     public void SetIcon(TextureRect icon) => _icon = icon;
     public void SetLabel(Label label) => _label = label;
     public void SetPanel(Panel panel) => _panel = panel;
     public void SetPlayer(Player player) => _player = player;
+    public void SetHoverTip(HoverTip hoverTip) => _hoverTip = hoverTip;
 
     public override void _ExitTree()
     {
         CopyAbilityCmd.AbilityChanged -= OnAbilityChanged;
     }
+
+    private void OnHovered()
+    {
+        if (_hoverTip == null)
+            return;
+
+        var hoverOrigin = _panel?.GlobalPosition ?? GlobalPosition;
+        NHoverTipSet.CreateAndShow(this, _hoverTip).GlobalPosition = hoverOrigin + new Vector2(-70f, -200f);
+    }
+
+    private void OnUnhovered() => NHoverTipSet.Remove(this);
     
     public static NCopyAbilityDisplay Create(Player player)
     {
@@ -33,7 +50,7 @@ public partial class NCopyAbilityDisplay : Control
         panel.Name = "Panel";
         panel.Size = new Vector2(96, 96);
         panel.Position = new Vector2(75, 75);
-        panel.MouseFilter = MouseFilterEnum.Pass;
+        panel.MouseFilter = MouseFilterEnum.Stop;
         panel.SelfModulate = new Color(0f, 0f, 0f, 0f);
         panel.PivotOffset = panel.Size * 0.5f;
         control.AddChild(panel);
@@ -44,6 +61,7 @@ public partial class NCopyAbilityDisplay : Control
         icon.SetAnchorsPreset(LayoutPreset.FullRect);
         icon.ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize;
         icon.StretchMode = TextureRect.StretchModeEnum.KeepAspectCentered;
+        icon.MouseFilter = MouseFilterEnum.Ignore;
         panel.AddChild(icon);
 
         var label = new Label();
@@ -58,6 +76,7 @@ public partial class NCopyAbilityDisplay : Control
         label.LabelSettings.FontColor = new("f6f6f6");
         label.LabelSettings.OutlineSize = 12;
         label.LabelSettings.OutlineColor = new("eb7295");
+        label.MouseFilter = MouseFilterEnum.Ignore;
         panel.AddChild(label);
 
         control.SetIcon(icon);
@@ -69,13 +88,18 @@ public partial class NCopyAbilityDisplay : Control
         
         CopyAbilityCmd.AbilityChanged += control.OnAbilityChanged;
         
+        panel.Connect(Control.SignalName.MouseEntered, Callable.From(control.OnHovered));
+        panel.Connect(Control.SignalName.MouseExited, Callable.From(control.OnUnhovered));
+        
         return control;
     }
 
     private void Refresh()
     {
-        var player = _player;
-        if (_icon == null || _label == null || player == null) return;
+        NCopyAbilityDisplay nCopyAbilityDisplay = this;
+        
+        var player = nCopyAbilityDisplay._player;
+        if (nCopyAbilityDisplay._icon == null || nCopyAbilityDisplay._label == null || player == null) return;
         
         var combatState = player.PlayerCombatState;
         if (combatState == null) return;
@@ -84,23 +108,26 @@ public partial class NCopyAbilityDisplay : Control
 
         if (ability == null)
         {
-            Visible = false;
+            nCopyAbilityDisplay.Visible = false;
             return;
         }
 
-        Visible = true;
+        nCopyAbilityDisplay.Visible = true;
 
-        _label.Text = ability.DisplayName;
+        nCopyAbilityDisplay._label.Text = ability.DisplayName;
 
-        _icon.Texture = ResourceLoader.Load<Texture2D>(ability.SpritePath);
+        nCopyAbilityDisplay._icon.Texture = ResourceLoader.Load<Texture2D>(ability.SpritePath);
+        
+        LocString description = new LocString("powers", $"{ability.DisplayName.ToLower()}.description");
+        nCopyAbilityDisplay.SetHoverTip(new HoverTip(new LocString("powers", $"{ability.DisplayName.ToLower()}.title"), description));
     }
     
     private void OnAbilityChanged(PlayerCombatState state, CopyAbility? oldAbility, CopyAbility? newAbility)
     {
-        if (_player?.PlayerCombatState != state || !IsInsideTree())
-            return;
-
         NCopyAbilityDisplay nCopyAbilityDisplay = this;
+        
+        if (nCopyAbilityDisplay._player?.PlayerCombatState != state || !IsInsideTree() || nCopyAbilityDisplay._panel == null)
+            return;
         
         nCopyAbilityDisplay._flashTween?.Kill();
 

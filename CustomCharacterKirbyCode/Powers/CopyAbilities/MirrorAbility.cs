@@ -7,7 +7,7 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 
 public class MirrorAbility : CopyAbility
 {
-    public override string DisplayName => new LocString("powers", "mirror").GetFormattedText();
+    public override string DisplayName => new LocString("powers", "mirror.title").GetFormattedText();
     public override string SpritePath => Path.Join(MainFile.ResPath, "images", "powers", "big", "mirror_ability.png");
 
     public override AbilityCard BasicAttackCard => ModelDb.Card<MirrorCut>();

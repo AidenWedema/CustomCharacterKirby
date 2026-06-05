@@ -7,7 +7,7 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 
 public class NeedleAbility : CopyAbility
 {
-    public override string DisplayName => new LocString("powers", "needle").GetFormattedText();
+    public override string DisplayName => new LocString("powers", "needle.title").GetFormattedText();
     public override string SpritePath => Path.Join(MainFile.ResPath, "images", "powers", "big", "needle_ability.png");
 
     public override AbilityCard BasicAttackCard => ModelDb.Card<NeedleAttack>();

@@ -6,7 +6,7 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 
 public class NormalAbility : CopyAbility
 {
-    public override string DisplayName => new LocString("powers", "normal").GetFormattedText();
+    public override string DisplayName => new LocString("powers", "normal.title").GetFormattedText();
     public override string SpritePath => Path.Join(MainFile.ResPath, "images", "powers", "big", "normal_ability.png");
 
     public override AbilityCard BasicAttackCard => ModelDb.Card<StrikeKirby>();

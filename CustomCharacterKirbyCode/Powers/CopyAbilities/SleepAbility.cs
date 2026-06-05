@@ -6,7 +6,7 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 
 public class SleepAbility : CopyAbility
 {
-    public override string DisplayName => new LocString("powers", "sleep").GetFormattedText();
+    public override string DisplayName => new LocString("powers", "sleep.title").GetFormattedText();
     public override string SpritePath => Path.Join(MainFile.ResPath, "images", "powers", "big", "sleep_ability.png");
 
     public override AbilityCard BasicAttackCard => ModelDb.Card<StrikeKirby>();

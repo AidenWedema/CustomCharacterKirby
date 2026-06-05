@@ -7,7 +7,7 @@ namespace CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 
 public class IceAbility : CopyAbility
 {
-    public override string DisplayName => new LocString("powers", "ice").GetFormattedText();
+    public override string DisplayName => new LocString("powers", "ice.title").GetFormattedText();
     public override string SpritePath => Path.Join(MainFile.ResPath, "images", "powers", "big", "ice_ability.png");
 
     public override AbilityCard BasicAttackCard => ModelDb.Card<IceBreath>();
