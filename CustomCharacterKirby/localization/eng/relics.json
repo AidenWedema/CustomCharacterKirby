@@ -21,5 +21,9 @@
   
   "CUSTOMCHARACTERKIRBY-HEART_SPEAR.description": "The first enemy you defeat each combat becomes your friend.",
   "CUSTOMCHARACTERKIRBY-HEART_SPEAR.flavor": "The first enemy you defeat each combat becomes your friend.",
-  "CUSTOMCHARACTERKIRBY-HEART_SPEAR.title": "Heart Spear"
+  "CUSTOMCHARACTERKIRBY-HEART_SPEAR.title": "Heart Spear",
+
+  "CUSTOMCHARACTERKIRBY-GALAXIA.description": "[gold]Meta Knight[/gold] comes to your aid at the start of your second turn.",
+  "CUSTOMCHARACTERKIRBY-GALAXIA.flavor": "[gold]Meta Knight[/gold] comes to your aid at the start of your second turn.",
+  "CUSTOMCHARACTERKIRBY-GALAXIA.title": "Galaxia"
 }

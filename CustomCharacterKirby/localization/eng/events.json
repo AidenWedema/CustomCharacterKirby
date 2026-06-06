@@ -1,0 +1,15 @@
+﻿{
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT_DUEL.title": "The lone swordsman",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT_DUEL.pages.INITIAL.description": "You come across a lone swordsman practicing his sword swings.\n\n“Hey, you. You look like you can handle yourself in a fight. Would you care for a duel with me?”\n\nHe looks pretty skilled but a duel sounds fun.",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT_DUEL.pages.INITIAL.options.ACCEPT.title": "Accept",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT_DUEL.pages.INITIAL.options.ACCEPT.description": "Agree to the duel",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT_DUEL.pages.INITIAL.options.DECLINE.title": "Decline",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT_DUEL.pages.INITIAL.options.DECLINE.description": "Leave him to his practice",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT_DUEL.pages.ACCEPT.description": "The swordsman nods and takes a battle stance.\n\n“This duel won't be to the death, but I won't hold back. FIGHT ME!”",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT_DUEL.pages.ACCEPT.options.FIGHT.title": "Fight",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT_DUEL.pages.ACCEPT.options.FIGHT.description": "",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT_DUEL.pages.DONE.options.DECLINE.description": "The swordsman nods.\n\n“Very well, run along then.”",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT_DUEL.pages.DEFEAT.description": "“You must train harder to get on my level.”\n\nThe swordsman turns around and walks away.",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT_DUEL.pages.VICTORY.description": "“You fought well. I'll aid you in battle.”\n\nThe swordsman shakes your hand and goes back to practicing.",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT_DUEL.loss": "{character} somehow died during conversation."
+}

@@ -119,5 +119,9 @@
   
   "CUSTOMCHARACTERKIRBY-COPY.description": "This card transforms when using a copy ability.",
   "CUSTOMCHARACTERKIRBY-COPY.smartDescription": "This card transforms when using a copy ability.",
-  "CUSTOMCHARACTERKIRBY-COPY.title": "Copy"
+  "CUSTOMCHARACTERKIRBY-COPY.title": "Copy",
+  
+  "CUSTOMCHARACTERKIRBY-MERCIFUL_POWER.description": "If the creatures attack would be [gold]Fatal[/gold], it ends the fight instead of attacking.",
+  "CUSTOMCHARACTERKIRBY-MERCIFUL_POWER.smartDescription": "If [gold]{OwnerName}'s[/gold] attack would be [gold]Fatal[/gold], [gold]{OwnerName}[/gold] ends the fight instead of attacking.",
+  "CUSTOMCHARACTERKIRBY-MERCIFUL_POWER.title": "Merciful "
 }

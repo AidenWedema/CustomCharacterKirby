@@ -1,5 +1,13 @@
 ﻿{
   "BANDANA_WADDLE_DEE.name": "Bandana Waddle Dee",
   "META_KNIGHT.name": "Meta Knight",
-  "KING_DEDEDE.name": "King Dedede"
+  "KING_DEDEDE.name": "King Dedede",
+
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT.name": "Meta Knight",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT.summon.speakLine1": "Allow me.",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT.moves.TAUNT.speakLine1": "FIGHT ME!",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT.moves.TAUNT.title": "Taunt",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT.moves.BACKHAND_SLASH.title": "Backhand Slash",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT.moves.META_QUADRUPLE_SLASH.title": "Meta Quadruple Slash",
+  "CUSTOMCHARACTERKIRBY-META_KNIGHT.moves.HYPER_RUSH.title": "Hyper Rush"
 }
