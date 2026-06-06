@@ -1,5 +1,6 @@
 ﻿using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 using Godot;
+using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
@@ -26,22 +27,23 @@ public partial class NCopyAbilityDisplay : Control
     public void SetPlayer(Player player) => _player = player;
     public void SetHoverTip(HoverTip hoverTip) => _hoverTip = hoverTip;
 
-    public override void _ExitTree()
-    {
-        CopyAbilityCmd.AbilityChanged -= OnAbilityChanged;
-    }
-
     private void OnHovered()
     {
-        if (_hoverTip == null)
+        NCopyAbilityDisplay nCopyAbilityDisplay = this;
+        
+        if (nCopyAbilityDisplay._hoverTip == null)
             return;
 
-        var hoverOrigin = _panel?.GlobalPosition ?? GlobalPosition;
-        NHoverTipSet.CreateAndShow(this, _hoverTip).GlobalPosition = hoverOrigin + new Vector2(-70f, -200f);
+        var hoverOrigin = nCopyAbilityDisplay._panel?.GlobalPosition ?? GlobalPosition;
+        NHoverTipSet.CreateAndShow(nCopyAbilityDisplay, nCopyAbilityDisplay._hoverTip).GlobalPosition = hoverOrigin + new Vector2(-70f, -200f);
     }
 
-    private void OnUnhovered() => NHoverTipSet.Remove(this);
-    
+    private void OnUnhovered()
+    {
+        NCopyAbilityDisplay nCopyAbilityDisplay = this;
+        NHoverTipSet.Remove(nCopyAbilityDisplay);
+    }
+
     public static NCopyAbilityDisplay Create(Player player)
     {
         var control = new NCopyAbilityDisplay();
@@ -87,9 +89,21 @@ public partial class NCopyAbilityDisplay : Control
         control.Visible = false;
         
         CopyAbilityCmd.AbilityChanged += control.OnAbilityChanged;
+
         
         panel.Connect(Control.SignalName.MouseEntered, Callable.From(control.OnHovered));
         panel.Connect(Control.SignalName.MouseExited, Callable.From(control.OnUnhovered));
+        
+        CombatManager.Instance.CombatEnded += _ =>
+        {
+            CopyAbilityCmd.AbilityChanged -= control.OnAbilityChanged;
+            
+            // Animate out
+            control._flashTween?.Kill();
+            var animOut = control.CreateTween();
+            var hidePos = control.Position + new Vector2(-480f, 128f);
+            animOut.TweenProperty(control, (NodePath) "position", hidePos, 0.6f).SetEase(Tween.EaseType.In).SetTrans(Tween.TransitionType.Back);
+        };
         
         return control;
     }
@@ -126,7 +140,7 @@ public partial class NCopyAbilityDisplay : Control
     {
         NCopyAbilityDisplay nCopyAbilityDisplay = this;
         
-        if (nCopyAbilityDisplay._player?.PlayerCombatState != state || !IsInsideTree() || nCopyAbilityDisplay._panel == null)
+        if (nCopyAbilityDisplay._player?.PlayerCombatState != state || !SaveIsInsideTree(nCopyAbilityDisplay) || nCopyAbilityDisplay._panel == null)
             return;
         
         nCopyAbilityDisplay._flashTween?.Kill();
@@ -145,5 +159,17 @@ public partial class NCopyAbilityDisplay : Control
         nCopyAbilityDisplay._flashTween.TweenProperty(nCopyAbilityDisplay._panel, "scale", Vector2.One * 1.2f, scaleTime).SetEase(Tween.EaseType.InOut);
         // Scale to 1
         nCopyAbilityDisplay._flashTween.TweenProperty(nCopyAbilityDisplay._panel, "scale", Vector2.One, scaleTime * 0.25f).SetEase(Tween.EaseType.In);
+    }
+
+    private static bool SaveIsInsideTree(Node obj)
+    {
+        try
+        {
+            return obj.IsInsideTree();
+        }
+        catch
+        {
+            return false;
+        }
     }
 }
