@@ -1,6 +1,6 @@
 {
   "CUSTOMCHARACTERKIRBY-STRIKE_KIRBY.description": "Deal {Damage:diff()} damage.",
-  "CUSTOMCHARACTERKIRBY-STRIKE_KIRBY.title": "Hit",
+  "CUSTOMCHARACTERKIRBY-STRIKE_KIRBY.title": "Strike",
 
   "CUSTOMCHARACTERKIRBY-DEFEND_KIRBY.description": "Gain {Block:diff()} [gold]Block[/gold].",
   "CUSTOMCHARACTERKIRBY-DEFEND_KIRBY.title": "[gold]Block[/gold]",

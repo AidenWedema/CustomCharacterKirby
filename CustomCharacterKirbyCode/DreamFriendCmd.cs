@@ -39,7 +39,7 @@ public static class DreamFriendCmd
             if (raiseMaxHp)
                 await CreatureCmd.GainMaxHp(existing, hp);
             else
-                await CreatureCmd.Heal(existing,  hp);
+                await CreatureCmd.Heal(existing, hp);
             return existing;
         }
 
@@ -150,4 +150,43 @@ public static class DreamFriendCmd
         
         return creature;
     }
+
+    public static async Task<Creature> Befriend(Player player, MonsterModel monster, bool flipX = true)
+    {
+        // Prevent the HeartSpear relic from also befriending the target when it is killed, which would result in two of the same friend.
+        var heartSpear = player.Relics.FirstOrDefault(r => r is HeartSpear) as  HeartSpear;
+        
+        // Get all existing friends
+        var existingFriends = GetAllPets<MonsterModel>(player.Creature);
+        
+        // Get the positions of all already existing friends
+        var friendPositions = new Dictionary<MonsterModel, Vector2>();
+        foreach (var f in existingFriends)
+        {
+            var node = NCombatRoom.Instance?.GetCreatureNode(f.Creature);
+            friendPositions.Add(f, node.Position);
+        }
+        
+        // Summon the target as a pet
+        var creature = await Summon(monster, player, monster.MaxInitialHp, forceNew: true);
+        heartSpear?.DontBefriendThese.Add(creature);
+        
+        // Position the summoned creature
+        var pos = new Vector2(500f, -50f);
+        SetPositionRelativeToOwner(creature, player, pos);
+        
+        // Re-position all already existing friends
+        foreach (var f in GetAllPets<MonsterModel>(player.Creature))
+            SetPositionRelativeToOwner(f.Creature, player, pos);
+        
+        // Flip the creature to be facing right
+        if (flipX)
+        {
+            var visuals = NCombatRoom.Instance?.GetCreatureNode(creature)?.Visuals;
+            visuals?.SetScale(visuals.GetScale() * new Vector2(-1f, 1f));
+        }
+        
+        return creature;
+    }
+    
 }

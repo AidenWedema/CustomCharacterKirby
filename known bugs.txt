@@ -58,6 +58,8 @@ Dream friend damage doesn't scale with vulnerable
 
 multiplayer state divergence after encountering magolor??		
 
+"the future of potions" event softlocks after giving a potion
+
 hypernova can't be played in battles with multiple enemies when 1 enemy has over 20% hp
 
 hypernova only targets 1 enemy						-	FIXED?

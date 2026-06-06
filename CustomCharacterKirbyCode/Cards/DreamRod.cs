@@ -59,11 +59,12 @@ public class DreamRod() : CustomCharacterKirbyCard(3, CardType.Power, CardRarity
             var r = card.Owner.RunState.Rng.Niche.NextInt(0, possibleFriends.Count);
             friend = possibleFriends[r];
         }
-        var creature = await DreamFriendCmd.Summon(friend, card.Owner, friend.MaxInitialHp, true, false);
         
-        // Set the new friend to the correct position
+        // Summon or heal the friend
         if (newFriend)
-            DreamFriendCmd.SetPositionRelativeToOwner(creature, card.Owner, FriendPositions[existingFriends.Count]);
+            await DreamFriendCmd.Befriend(card.Owner, friend, false);
+        else
+            await DreamFriendCmd.Summon(friend, card.Owner, friend.MaxInitialHp, true, false);
     }
 
     protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);
