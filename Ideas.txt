@@ -183,7 +183,7 @@ Big Switch (2, uncommon, skill): Get a random uncommon card, it is free to play 
 
 Prism Shield (2, common, power): Gain 5 Plating.
 
-Star rod (1, uncommon, attack): Deal 12 damage to ALL enemies. 
+- Star rod (1, common, attack): Deal 6 damage and apply 1 vulnerable to ALL enemies.
 
 Magical Paintbrush (1, uncommon, skill): Gain 12 block.
 
@@ -210,6 +210,10 @@ Friend Star (1, uncommon, attack): Deal 3 damage to a random enemy 3 times, then
 - Star Allies Sparkler (1, uncommon, skill): 
 
 Friendly Kiss (1, common, skill): Heal ALL friends by 6 HP.
+
+- Air puff (1, common attack): Deal 6 damage. If you have Hover, deal 6 damage a second time.
+
+
 
 
 

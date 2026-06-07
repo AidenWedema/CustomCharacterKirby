@@ -229,6 +229,9 @@
   
   "CUSTOMCHARACTERKIRBY-PRISM_SHIELD.description": "Gain {PlatingPower:diff()} [gold]Plating[/gold]",
   "CUSTOMCHARACTERKIRBY-PRISM_SHIELD.title": "Prism Shield",
+
+  "CUSTOMCHARACTERKIRBY-AIR_PUFF.description": "Deal {Damage:diff()} damage.\nIf you have [gold]Hover[/gold], deal {Damage:diff()} damage a second time.",
+  "CUSTOMCHARACTERKIRBY-AIR_PUFF.title": "Air Puff",
   
   
   
@@ -271,7 +274,7 @@
   "CUSTOMCHARACTERKIRBY-BIG_SWITCH.description": "Put a random uncommon card in your hand, it is free to play this turn.",
   "CUSTOMCHARACTERKIRBY-BIG_SWITCH.title": "Big Switch",
   
-  "CUSTOMCHARACTERKIRBY-STAR_ROD.description": "Deal {Damage:diff()} damage to ALL enemies.",
+  "CUSTOMCHARACTERKIRBY-STAR_ROD.description": "Deal {Damage:diff()} damage and apply {VulnerableAmount:diff()} [gold]Vulnerable[/gold] to ALL enemies.",
   "CUSTOMCHARACTERKIRBY-STAR_ROD.title": "Star Rod",
   
   "CUSTOMCHARACTERKIRBY-MAGICAL_PAINTBRUSH.description": "Gain {Block:diff()} [gold]Block[/gold].",
