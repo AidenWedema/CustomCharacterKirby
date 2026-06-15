@@ -233,6 +233,9 @@
   "CUSTOMCHARACTERKIRBY-AIR_PUFF.description": "Deal {Damage:diff()} damage.\nIf you have [gold]Hover[/gold], deal {Damage:diff()} damage a second time.",
   "CUSTOMCHARACTERKIRBY-AIR_PUFF.title": "Air Puff",
   
+  "CUSTOMCHARACTERKIRBY-CANNON_SHOT.description": "Deal {Damage:diff()} damage to ALL enemies.",
+  "CUSTOMCHARACTERKIRBY-CANNON_SHOT.title": "Cannon Shot",
+  
   
   
   "CUSTOMCHARACTERKIRBY-HAL_ROOM.description": "Choose 1 of 3 random copy essences to add into your hand, it is free to play this turn.",

@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Acts;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Encounters;
 using MegaCrit.Sts2.Core.Models.Events;
@@ -22,6 +23,8 @@ public class MetaKnightDuel() : CustomEventModel()
     public override EncounterModel CanonicalEncounter => ModelDb.Encounter<MetaKnightEventEncounter>();
 
     public override bool IsShared => true;
+
+    public override ActModel[] Acts => [ModelDb.Act<Hive>()];
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
 

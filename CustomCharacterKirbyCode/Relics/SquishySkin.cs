@@ -13,7 +13,9 @@ public class SquishySkin() : CustomCharacterKirbyRelic
     public override RelicRarity Rarity => RelicRarity.Starter;
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [new HpLossVar("HpLossReduction", 2M)];
-    
+
+    public override RelicModel? GetUpgradeReplacement() => ModelDb.Relic<CushionySkin>();
+
     public override Decimal ModifyHpLostAfterOsty(Creature target, Decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)
     {
         return target != this.Owner.Creature ? amount : Math.Max(0M, amount - this.DynamicVars["HpLossReduction"].BaseValue);
