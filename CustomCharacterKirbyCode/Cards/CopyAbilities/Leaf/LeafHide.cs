@@ -23,7 +23,7 @@ public class LeafHide() : AbilityCard(1, CardType.Skill, CardRarity.Basic, Targe
     {
         LeafHide card = this;
         // Gain leaf
-        await PowerCmd.Apply<LeafPower>(card.Owner.Creature, DynamicVars["LeafGain"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<LeafPower>(choiceContext, card.Owner.Creature, DynamicVars["LeafGain"].BaseValue, card.Owner.Creature, card);
         // Gain block
         await CreatureCmd.GainBlock(card.Owner.Creature, DynamicVars.Block, cardPlay);
     }

@@ -28,7 +28,7 @@ public class ReflectGuard() : AbilityCard(2, CardType.Skill, CardRarity.Basic, T
         await CreatureCmd.GainBlock(card.Owner.Creature, DynamicVars.Block, cardPlay);
         
         // Give Reflect
-        await PowerCmd.Apply<ReflectPower>(card.Owner.Creature, 1, card.Owner.Creature, card);
+        await PowerCmd.Apply<ReflectPower>(choiceContext, card.Owner.Creature, 1, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => DynamicVars.Block.UpgradeValueBy(3M);

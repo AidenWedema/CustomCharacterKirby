@@ -34,7 +34,7 @@ public class UpwardSlash() : AbilityCard (1, CardType.Attack, CardRarity.Basic, 
         await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).WithHitCount(card.DynamicVars.Repeat.IntValue).FromCard((CardModel) card).Targeting(play.Target).WithHitVfxNode((Func<Creature, Node2D>) (_ => (Node2D) NShivThrowVfx.Create(card.Owner.Creature, play.Target, Colors.Pink))).Execute(choiceContext);
         
         // Apply the Upward Slash Power
-        await PowerCmd.Apply<UpwardSlashPower>(card.Owner.Creature, 1, card.Owner.Creature, card);
+        await PowerCmd.Apply<UpwardSlashPower>(choiceContext, card.Owner.Creature, 1, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(2M);

@@ -73,7 +73,7 @@ public abstract class AbilityCard(int cost, CardType type, CardRarity rarity, Ta
 
     protected abstract AbilityType abilityType { get; }
 
-    public async Task OnAbilityChanged(CombatState combatState, Player owner, CopyAbility ability)
+    public async Task OnAbilityChanged(ICombatState combatState, Player owner, CopyAbility ability)
     {
         AbilityCard newCard = abilityType switch
         {

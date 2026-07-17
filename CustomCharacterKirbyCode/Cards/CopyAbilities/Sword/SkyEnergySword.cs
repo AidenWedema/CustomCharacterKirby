@@ -21,7 +21,7 @@ public class SkyEnergySword() : AbilityCard (1, CardType.Skill, CardRarity.Basic
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         SkyEnergySword cardSource = this;
-        await PowerCmd.Apply<SkyEnergySwordPower>(cardSource.Owner.Creature, 1M, cardSource.Owner.Creature, (CardModel) cardSource);
+        await PowerCmd.Apply<SkyEnergySwordPower>(choiceContext, cardSource.Owner.Creature, 1M, cardSource.Owner.Creature, (CardModel) cardSource);
     }
 
     protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);

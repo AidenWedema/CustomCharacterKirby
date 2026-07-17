@@ -56,7 +56,7 @@ public static class DreamFriendCmd
 
             var node = SetPositionRelativeToOwner(existing, summoner, new Vector2(0f, -1000f));
 
-            await PowerCmd.Apply<FriendHeartPower>(existing, 1M, null, null);
+            await PowerCmd.Apply<FriendHeartPower>(new ThrowingPlayerChoiceContext(), existing, 1M, null, null);
             node?.TrackBlockStatus(summoner.Creature);
             node?.ToggleIsInteractable(true);
         }

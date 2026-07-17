@@ -44,6 +44,7 @@ public class Mix() : CopyEssenceCard(1, CardType.Skill, CardRarity.Common, Targe
         
         // Apply the copy ability to the player
         await PowerCmd.Apply(
+            choiceContext, 
             powerModel,                         // power to apply
             Owner.Creature,    // creature to apply the power to
             1,                           // amount

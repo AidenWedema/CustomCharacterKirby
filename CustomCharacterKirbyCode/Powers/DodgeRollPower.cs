@@ -19,7 +19,7 @@ public class DodgeRollPower : CustomCharacterKirbyPower
         DodgeRollPower power = this;
         if (target != power.Owner || result.UnblockedDamage > 0) return;
         power.Flash();
-        await PowerCmd.Apply<EnergyNextTurnPower>(power.Owner, power.Amount, power.Owner, null);
+        await PowerCmd.Apply<EnergyNextTurnPower>(choiceContext, power.Owner, power.Amount, power.Owner, null);
     }
 
     public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)

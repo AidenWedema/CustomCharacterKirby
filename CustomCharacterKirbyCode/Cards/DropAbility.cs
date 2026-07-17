@@ -31,7 +31,7 @@ public class DropAbility() : CopyEssenceCard(1, CardType.Skill, CardRarity.Commo
         base.OnPlay(choiceContext, play);
         
         // Gain projectile stars
-        await PowerCmd.Apply<ProjectileStarPower>(card.Owner.Creature, DynamicVars["ProjectileStarGain"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<ProjectileStarPower>(choiceContext, card.Owner.Creature, DynamicVars["ProjectileStarGain"].BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade()

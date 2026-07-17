@@ -29,7 +29,7 @@ public class LeafUppercut() : AbilityCard (1, CardType.Attack, CardRarity.Basic,
         // Deal damage
         await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard((CardModel) card).Targeting(play.Target).WithHitVfxNode((Func<Creature, Node2D>) (_ => (Node2D) NShivThrowVfx.Create(card.Owner.Creature, play.Target, Colors.Pink))).Execute(choiceContext);
         // Gain leaf
-        await PowerCmd.Apply<LeafPower>(card.Owner.Creature, 1, card.Owner.Creature, card);
+        await PowerCmd.Apply<LeafPower>(choiceContext, card.Owner.Creature, 1, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(4M);

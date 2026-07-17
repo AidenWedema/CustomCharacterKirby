@@ -32,9 +32,9 @@ public class IceSprinkle() : AbilityCard (1, CardType.Attack, CardRarity.Basic, 
         foreach (var enemy in card.CombatState.HittableEnemies)
         {
             // Apply Weak
-            await PowerCmd.Apply<WeakPower>(enemy, DynamicVars["WeakAmount"].BaseValue, card.Owner.Creature, card);
+            await PowerCmd.Apply<WeakPower>(choiceContext, enemy, DynamicVars["WeakAmount"].BaseValue, card.Owner.Creature, card);
             // Apply Vulnerable
-            await PowerCmd.Apply<VulnerablePower>(enemy, DynamicVars["VulnerableAmount"].BaseValue, card.Owner.Creature, card);
+            await PowerCmd.Apply<VulnerablePower>(choiceContext, enemy, DynamicVars["VulnerableAmount"].BaseValue, card.Owner.Creature, card);
         }
     }
 

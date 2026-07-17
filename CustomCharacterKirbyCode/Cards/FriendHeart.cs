@@ -34,7 +34,7 @@ public class FriendHeart() : CustomCharacterKirbyCard(1, CardType.Skill, CardRar
         // Check if enemy HP is over max hp
         if (target.CurrentHp > DynamicVars["MaxHP"].IntValue)
         {
-            await PowerCmd.Apply<VulnerablePower>(target, 1, card.Owner.Creature, card);
+            await PowerCmd.Apply<VulnerablePower>(choiceContext, target, 1, card.Owner.Creature, card);
             return;
         }
 

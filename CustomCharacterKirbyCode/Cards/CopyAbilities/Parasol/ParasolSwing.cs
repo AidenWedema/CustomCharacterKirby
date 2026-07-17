@@ -27,7 +27,7 @@ public class ParasolSwing() : AbilityCard(1, CardType.Attack, CardRarity.Basic, 
         await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard(card).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         
         // Apply Dexterity this turn
-        await PowerCmd.Apply<SpeedPotionPower>(card.Owner.Creature, DynamicVars.Power<SpeedPotionPower>().BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<SpeedPotionPower>(choiceContext, card.Owner.Creature, DynamicVars.Power<SpeedPotionPower>().BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade()

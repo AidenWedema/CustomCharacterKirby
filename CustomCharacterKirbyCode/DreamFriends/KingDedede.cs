@@ -11,8 +11,8 @@ public sealed class KingDedede : DreamFriend
     public override int MaxInitialHp => 20;
 
     private const int Damage = 8;
-
-    public override async Task BeforeHandDraw(Player player, PlayerChoiceContext choiceContext, CombatState combatState)
+    
+    public override async Task BeforeHandDraw(Player player, PlayerChoiceContext choiceContext, ICombatState combatState)
     {
         if (player != Creature.PetOwner || Creature.IsDead) return;
         

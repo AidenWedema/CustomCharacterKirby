@@ -34,7 +34,7 @@ public class ReflectForce() : AbilityCard (2, CardType.Attack, CardRarity.Basic,
         var amount = await CreatureCmd.GainBlock(card.Owner.Creature, DynamicVars.Block, cardPlay);
         
         // Give Block next turn
-        await PowerCmd.Apply<BlockNextTurnPower>(card.Owner.Creature, amount, card.Owner.Creature, card);
+        await PowerCmd.Apply<BlockNextTurnPower>(choiceContext, card.Owner.Creature, amount, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => DynamicVars.Block.UpgradeValueBy(3M);

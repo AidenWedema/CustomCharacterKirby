@@ -29,7 +29,7 @@ public class MirrorBodySky() : AbilityCard (2, CardType.Attack, CardRarity.Basic
         await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).WithHitCount(DynamicVars.Repeat.IntValue).FromCard((CardModel) card).TargetingAllOpponents(card.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
 
         // Apply blur
-        await PowerCmd.Apply<BlurPower>(card.Owner.Creature, 1, card.Owner.Creature, card);
+        await PowerCmd.Apply<BlurPower>(choiceContext, card.Owner.Creature, 1, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(1M);

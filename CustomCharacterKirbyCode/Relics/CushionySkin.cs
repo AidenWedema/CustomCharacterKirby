@@ -4,6 +4,7 @@ using CustomCharacterKirby.CustomCharacterKirbyCode.Relics;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Relics;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
@@ -36,6 +37,6 @@ public class CushionySkin() : CustomCharacterKirbyRelic
         if (room is not CombatRoom)
             return;
         // In combat, silently apply the normal ability
-        NormalAbility normalAbility = await PowerCmd.Apply<NormalAbility>(squishySkin.Owner.Creature, 1, squishySkin.Owner.Creature, (CardModel) null);
+        NormalAbility normalAbility = await PowerCmd.Apply<NormalAbility>(new ThrowingPlayerChoiceContext(), squishySkin.Owner.Creature, 1, squishySkin.Owner.Creature, (CardModel) null);
     }
 }

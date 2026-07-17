@@ -1,5 +1,6 @@
 ﻿using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -24,7 +25,7 @@ public class CircusThrow() : AbilityCard (1, CardType.Attack, CardRarity.Basic, 
         // Deal damage
         var attackCommand = await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard(card).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
 
-        var isFatal = attackCommand.Results.Any(r => r.WasTargetKilled);
+        var isFatal = attackCommand.Results.Any(r => r.Any(result => result is DamageResult { WasTargetKilled: true }));
         if (isFatal) return;
         
         // If the target survives, check if there is another enemy

@@ -22,7 +22,7 @@ public class WallStick() : AbilityCard(1, CardType.Skill, CardRarity.Basic, Targ
     {
         WallStick card = this;
         // Apply Thorns
-        await PowerCmd.Apply<ThornsPower>(card.Owner.Creature, DynamicVars.Power<ThornsPower>().BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<ThornsPower>(choiceContext, card.Owner.Creature, DynamicVars.Power<ThornsPower>().BaseValue, card.Owner.Creature, card);
         // Apply Block
         await CreatureCmd.GainBlock(card.Owner.Creature, DynamicVars.Block, cardPlay);
     }

@@ -16,7 +16,7 @@ public class YarnWhip() : CustomCharacterKirbyCard(2, CardType.Attack, CardRarit
         YarnWhip card = this;
         ArgumentNullException.ThrowIfNull((object)cardPlay.Target, "cardPlay.Target");
         
-        AttackContext attackContext = await AttackCommand.CreateContextAsync(card.CombatState, card);
+        AttackContext attackContext = await AttackCommand.CreateContextAsync(card.CombatState, choiceContext, card);
         
         // Deal damage to the target
         var damageResults = await CreatureCmd.Damage(choiceContext, cardPlay.Target, card.DynamicVars.Damage, card.Owner.Creature, card);

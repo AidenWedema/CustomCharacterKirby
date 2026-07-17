@@ -19,7 +19,7 @@ public class SleepEssence() : CopyEssenceCard(1, CardType.Skill, CardRarity.Comm
         await base.OnPlay(choiceContext, play);
         
         // Apply the Asleep power
-        await PowerCmd.Apply<SleepPower>(Owner.Creature, 1, Owner.Creature, this);
+        await PowerCmd.Apply<SleepPower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
         
         // End the turn
         PlayerCmd.EndTurn(Owner, false);

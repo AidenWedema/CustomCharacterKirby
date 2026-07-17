@@ -1,5 +1,6 @@
 ﻿using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -12,14 +13,8 @@ public sealed class BandanaWaddleDee : DreamFriend
 
     private const int Damage = 2;
     private const int Repeat = 3;
-    
-    public override async Task BeforeHandDraw(Player player, PlayerChoiceContext choiceContext, CombatState combatState)
-    {
-        // if (player != Creature.PetOwner || Creature.IsDead) return;
-        // IEnumerable<CardModel> inHand = await BandanaWaddleDeeSpear.CreateInHand(Creature.PetOwner, 1, combatState);
-    }
 
-    public override async Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
+    public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
         if (side != CombatSide.Player || Creature.IsDead) return;
         

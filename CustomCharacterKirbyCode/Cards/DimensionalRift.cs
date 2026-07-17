@@ -40,7 +40,7 @@ public class DimensionalRift() : CustomCharacterKirbyCard(2, CardType.Skill, Car
         foreach (var essence in AllEssences)
         {
             await CardCmd.Exhaust(choiceContext, essence);
-            await PowerCmd.Apply<ProjectileStarPower>(card.Owner.Creature, DynamicVars["StarGain"].BaseValue, card.Owner.Creature, card);
+            await PowerCmd.Apply<ProjectileStarPower>(choiceContext, card.Owner.Creature, DynamicVars["StarGain"].BaseValue, card.Owner.Creature, card);
         }
     }
 

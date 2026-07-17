@@ -31,9 +31,9 @@ public class HoverPower : CustomCharacterKirbyPower
         HoverPower power = this;
         if (target != power.Owner || result.UnblockedDamage == 0 || !IsPoweredAttack(props)) return;
         power.Flash();
-        var amount = await PowerCmd.ModifyAmount(power, -1M, null, null);
+        var amount = await PowerCmd.ModifyAmount(choiceContext, power, -1M, null, null);
         if (amount <= 0)
-            await PowerCmd.Apply<StunnedPower>(power.Owner, 1, power.Owner, null);
+            await PowerCmd.Apply<StunnedPower>(choiceContext, power.Owner, 1, power.Owner, null);
     }
 
     private bool IsPoweredAttack(ValueProp props) => props.HasFlag(ValueProp.Move) && !props.HasFlag(ValueProp.Unpowered);

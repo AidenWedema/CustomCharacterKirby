@@ -18,7 +18,7 @@ public class PrismShield() : CustomCharacterKirbyCard(1, CardType.Power, CardRar
     {
         PrismShield card = this;
 
-        await PowerCmd.Apply<PlatingPower>(card.Owner.Creature, DynamicVars.Power<PlatingPower>().BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<PlatingPower>(choiceContext, card.Owner.Creature, DynamicVars.Power<PlatingPower>().BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => DynamicVars.Power<PlatingPower>().UpgradeValueBy(2M);

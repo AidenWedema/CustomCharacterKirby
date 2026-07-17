@@ -40,9 +40,9 @@ public class IceBreath() : AbilityCard(1, CardType.Attack, CardRarity.Basic, Tar
         await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard((CardModel) card).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         
         // Apply Weak
-        await PowerCmd.Apply<WeakPower>(cardPlay.Target, DynamicVars["WeakAmount"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<WeakPower>(choiceContext, cardPlay.Target, DynamicVars["WeakAmount"].BaseValue, card.Owner.Creature, card);
         // Apply Vulnerable
-        await PowerCmd.Apply<VulnerablePower>(cardPlay.Target, DynamicVars["VulnerableAmount"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<VulnerablePower>(choiceContext, cardPlay.Target, DynamicVars["VulnerableAmount"].BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade()

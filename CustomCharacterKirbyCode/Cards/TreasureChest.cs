@@ -22,7 +22,7 @@ public class TreasureChest() : CustomCharacterKirbyCard(1, CardType.Skill, CardR
         if (choice == null)
             return;
         choice.SetToFreeThisTurn();
-        await CardPileCmd.AddGeneratedCardToCombat(choice, PileType.Hand, true);
+        await CardPileCmd.AddGeneratedCardToCombat(choice, PileType.Hand, card.Owner, CardPilePosition.Top);
     }
 
     protected override void OnUpgrade() => RemoveKeyword(CardKeyword.Exhaust);

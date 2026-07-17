@@ -16,7 +16,7 @@ public class Crackler() : CustomCharacterKirbyCard(1, CardType.Power, CardRarity
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         Crackler card = this;
-        var crackler = await PowerCmd.Apply<CracklerPower>(card.Owner.Creature, DynamicVars["TurnAmount"].BaseValue, card.Owner.Creature, card);
+        var crackler = await PowerCmd.Apply<CracklerPower>(choiceContext, card.Owner.Creature, DynamicVars["TurnAmount"].BaseValue, card.Owner.Creature, card);
         crackler?.SetDamage(DynamicVars["CracklerDamage"].BaseValue);
     }
 

@@ -22,7 +22,7 @@ public class BigSwitch() : CustomCharacterKirbyCard(2, CardType.Skill, CardRarit
         if (choice == null)
             return;
         choice.SetToFreeThisTurn();
-        await CardPileCmd.AddGeneratedCardToCombat(choice, PileType.Hand, true);
+        await CardPileCmd.AddGeneratedCardToCombat(choice, PileType.Hand, card.Owner, CardPilePosition.Top);
     }
 
     protected override void OnUpgrade() => RemoveKeyword(CardKeyword.Exhaust);

@@ -26,7 +26,7 @@ public class StarRod() : CustomCharacterKirbyCard(1, CardType.Attack, CardRarity
         await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard(card).TargetingAllOpponents(card.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         
         // Apply Vulnerable
-        await PowerCmd.Apply<VulnerablePower>(card.CombatState.HittableEnemies, card.DynamicVars["VulnerableAmount"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<VulnerablePower>(choiceContext, card.CombatState.HittableEnemies, card.DynamicVars["VulnerableAmount"].BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(5M);

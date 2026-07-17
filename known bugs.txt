@@ -64,6 +64,8 @@ hypernova can't be played in battles with multiple enemies when 1 enemy has over
 
 hypernova only targets 1 enemy						-	FIXED?
 
+copy essence doesn't use the ability display
+
 Things that crash multiplayer:
 - Attack potion???
 - Power potion???

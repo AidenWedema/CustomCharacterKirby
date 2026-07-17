@@ -29,7 +29,7 @@ public class KirbyCafe() : CustomCharacterKirbyCard(2, CardType.Skill, CardRarit
         IEnumerable<CardModel> list = PileType.Exhaust.GetPile(card.Owner).Cards.Where(c => c is CopyEssenceCard && c.Type == CardType.Skill).ToList();
         decimal amount = list.Count();
         
-        await PowerCmd.Apply<ProjectileStarPower>(card.Owner.Creature, amount, card.Owner.Creature, card);
+        await PowerCmd.Apply<ProjectileStarPower>(choiceContext, card.Owner.Creature, amount, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => DynamicVars.Power<ProjectileStarPower>().UpgradeValueBy(1);

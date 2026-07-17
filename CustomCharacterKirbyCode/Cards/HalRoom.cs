@@ -19,7 +19,7 @@ public class HalRoom() : CustomCharacterKirbyCard(2, CardType.Skill, CardRarity.
         if (choice == null)
             return;
         choice.SetToFreeThisTurn();
-        await CardPileCmd.AddGeneratedCardToCombat(choice, PileType.Hand, true);
+        await CardPileCmd.AddGeneratedCardToCombat(choice, PileType.Hand, card.Owner, CardPilePosition.Top);
     }
 
     protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);

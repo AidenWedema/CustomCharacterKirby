@@ -16,7 +16,7 @@ public class StrawberryShortcake() : CustomCharacterKirbyCard(1, CardType.Skill,
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
         StrawberryShortcake card = this;
-        await PowerCmd.Apply<EnergyNextTurnPower>(card.Owner.Creature, card.DynamicVars.Energy.IntValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<EnergyNextTurnPower>(choiceContext, card.Owner.Creature, card.DynamicVars.Energy.IntValue, card.Owner.Creature, card);
 
     }
 

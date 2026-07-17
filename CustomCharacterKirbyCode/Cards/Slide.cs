@@ -38,7 +38,7 @@ public class Slide() : CustomCharacterKirbyCard(1, CardType.Attack, CardRarity.C
 
         // Apply weak to all enemies 
         foreach (var hittableEnemy in card.CombatState.HittableEnemies)
-            await PowerCmd.Apply<WeakPower>(hittableEnemy, card.DynamicVars.Weak.BaseValue, card.Owner.Creature, card);
+            await PowerCmd.Apply<WeakPower>(choiceContext, hittableEnemy, card.DynamicVars.Weak.BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade()

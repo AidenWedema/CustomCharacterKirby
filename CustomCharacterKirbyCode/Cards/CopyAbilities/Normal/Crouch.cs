@@ -46,7 +46,7 @@ public class Crouch() : AbilityCard(1, CardType.Skill, CardRarity.Common, Target
         
         // Gain strength equal to the amount of stars
         var strengthGain = AmountOfStars * DynamicVars["ProjectileStarGain"].BaseValue;
-        await PowerCmd.Apply<StrengthPower>(card.Owner.Creature, strengthGain, card.Owner.Creature, card);
+        await PowerCmd.Apply<StrengthPower>(choiceContext, card.Owner.Creature, strengthGain, card.Owner.Creature, card);
         
         // Remove all stars
         await PowerCmd.Remove(Owner.Creature.GetPower<ProjectileStarPower>());

@@ -1,5 +1,6 @@
 ﻿using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -16,7 +17,7 @@ public class ToxinPower : CustomCharacterKirbyPower
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<PoisonPower>(1M)];
 
-    public override async Task BeforeSideTurnStart(PlayerChoiceContext choiceContext, CombatSide side, CombatState combatState)
+    public override async Task BeforeSideTurnStart(PlayerChoiceContext choiceContext, CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
     {
         // Check if the player turn is about to start
         if (side != CombatSide.Player) return;
@@ -24,6 +25,6 @@ public class ToxinPower : CustomCharacterKirbyPower
         ToxinPower power = this;
         
         // Apply Poison
-        await PowerCmd.Apply<PoisonPower>(power.Owner, power.Amount, null, null);
+        await PowerCmd.Apply<PoisonPower>(choiceContext, power.Owner, power.Amount, null, null);
     }
 }

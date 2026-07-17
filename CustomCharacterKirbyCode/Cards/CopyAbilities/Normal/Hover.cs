@@ -29,7 +29,7 @@ public class Hover() : AbilityCard(1, CardType.Skill, CardRarity.Common, TargetT
         Hover card = this;
         
         // Gain hover
-        await PowerCmd.Apply<HoverPower>(card.Owner.Creature, DynamicVars["HoverGain"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<HoverPower>(choiceContext, card.Owner.Creature, DynamicVars["HoverGain"].BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => DynamicVars["HoverGain"].UpgradeValueBy(1M);

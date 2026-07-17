@@ -26,7 +26,7 @@ public class ToxicSlide() : AbilityCard(2, CardType.Attack, CardRarity.Basic, Ta
         await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard(card).TargetingAllOpponents(card.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         
         // Apply Toxin
-        await PowerCmd.Apply<ToxinPower>(card.CombatState.Enemies, DynamicVars.Power<ToxinPower>().BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<ToxinPower>(choiceContext, card.CombatState.Enemies, DynamicVars.Power<ToxinPower>().BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade()

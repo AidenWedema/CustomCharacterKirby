@@ -27,13 +27,13 @@ public class RobobotArmor() : CustomCharacterKirbyCard(3, CardType.Power, CardRa
         RobobotArmor card = this;
         
         // Give Robobot Armor
-        await PowerCmd.Apply<RobobotArmorPower>(card.Owner.Creature, 1, card.Owner.Creature, card);
+        await PowerCmd.Apply<RobobotArmorPower>(choiceContext, card.Owner.Creature, 1, card.Owner.Creature, card);
         
         // Give strength
-        await PowerCmd.Apply<StrengthPower>(card.Owner.Creature, DynamicVars["StrengthGain"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<StrengthPower>(choiceContext, card.Owner.Creature, DynamicVars["StrengthGain"].BaseValue, card.Owner.Creature, card);
         
         // Give dexterity
-        await PowerCmd.Apply<DexterityPower>(card.Owner.Creature, DynamicVars["DexterityGain"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<DexterityPower>(choiceContext, card.Owner.Creature, DynamicVars["DexterityGain"].BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);

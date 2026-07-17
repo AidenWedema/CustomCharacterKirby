@@ -32,12 +32,12 @@ public class Awake() : CopyEssenceCard(0, CardType.Status, CardRarity.Token, Tar
         await CardPileCmd.Draw(choiceContext, 4M, card.Owner);
     }
     
-    public static async Task<IEnumerable<CardModel>> CreateInHand(Player owner, CombatState combatState)
+    public static async Task<IEnumerable<CardModel>> CreateInHand(Player owner, ICombatState combatState)
     {
         if (CombatManager.Instance.IsOverOrEnding)
             return [];
         List<CardModel> cards = [combatState.CreateCard<Awake>(owner)];
-        IReadOnlyList<CardPileAddResult> combat = await CardPileCmd.AddGeneratedCardsToCombat(cards, PileType.Hand, true);
+        IReadOnlyList<CardPileAddResult> combat = await CardPileCmd.AddGeneratedCardsToCombat(cards, PileType.Hand, null);
         return cards;
     }
 }

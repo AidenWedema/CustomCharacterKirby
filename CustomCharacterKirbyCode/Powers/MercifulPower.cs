@@ -1,7 +1,9 @@
 ﻿using CustomCharacterKirby.CustomCharacterKirbyCode.Encounters;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.MonsterMoves.Intents;
 
 namespace CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
@@ -13,14 +15,14 @@ public class MercifulPower : CustomCharacterKirbyPower
 
     public override bool AllowNegative => false;
 
-    public override async Task AfterSideTurnStart(CombatSide side, CombatState combatState)
+    public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
     {
         MercifulPower power = this;
         if (side == CombatSide.Player) return;
         
         var owner = power.Owner;
         // Get all players
-        var players = combatState.Creatures.Where(creature => creature.Side == CombatSide.Player);
+        var players = CombatState.Creatures.Where(creature => creature.Side == CombatSide.Player);
         var intendedAttack = owner.Monster.NextMove.Intents.OfType<AttackIntent>().FirstOrDefault();
         if (intendedAttack == null) return;
         

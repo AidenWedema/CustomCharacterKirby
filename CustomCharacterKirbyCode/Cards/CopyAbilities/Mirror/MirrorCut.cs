@@ -29,7 +29,7 @@ public class MirrorCut() : AbilityCard(1, CardType.Attack, CardRarity.Basic, Tar
         await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard((CardModel) card).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         
         // Apply dexterity
-        await PowerCmd.Apply<DexterityPower>(card.Owner.Creature, 1, card.Owner.Creature, card);
+        await PowerCmd.Apply<DexterityPower>(choiceContext, card.Owner.Creature, 1, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade()

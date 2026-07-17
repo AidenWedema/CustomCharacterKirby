@@ -7,6 +7,7 @@ using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 using MegaCrit.Sts2.Core.Animation;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
 using MegaCrit.Sts2.Core.Entities.Ascension;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.MonsterMoves.Intents;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -26,7 +27,7 @@ public class MetaKnight : CustomMonsterModel
 
     public override async Task AfterAddedToRoom()
     {
-        await PowerCmd.Apply<MercifulPower>(Creature, 1M, null, null);
+        await PowerCmd.Apply<MercifulPower>(new ThrowingPlayerChoiceContext(), Creature, 1M, null, null);
     }
     
     protected override MonsterMoveStateMachine GenerateMoveStateMachine()

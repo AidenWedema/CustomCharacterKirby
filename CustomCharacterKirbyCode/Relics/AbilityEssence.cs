@@ -2,6 +2,7 @@
 using CustomCharacterKirby.CustomCharacterKirbyCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Relics;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Random;
@@ -43,6 +44,7 @@ public class AbilityEssence() : CustomCharacterKirbyRelic
         
         // Apply the copy ability to the player
         await PowerCmd.Apply(
+            new ThrowingPlayerChoiceContext(), 
             powerModel,                         // power to apply
             Owner.Creature,    // creature to apply the power to
             1,                           // amount

@@ -48,10 +48,10 @@ public class SwordDive() : AbilityCard (2, CardType.Skill, CardRarity.Basic, Tar
         else
         {
             // Apply Weak
-            await PowerCmd.Apply<WeakPower>(play.Target, 1, card.Owner.Creature, card);
+            await PowerCmd.Apply<WeakPower>(choiceContext, play.Target, 1, card.Owner.Creature, card);
             
             // Apply Vulnerable
-            await PowerCmd.Apply<VulnerablePower>(play.Target, 1, card.Owner.Creature, card);
+            await PowerCmd.Apply<VulnerablePower>(choiceContext, play.Target, 1, card.Owner.Creature, card);
         }
     }
 

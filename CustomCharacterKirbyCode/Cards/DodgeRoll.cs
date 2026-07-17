@@ -16,7 +16,7 @@ public class DodgeRoll() : CustomCharacterKirbyCard(2, CardType.Skill, CardRarit
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         DodgeRoll card = this;
-        await PowerCmd.Apply<DodgeRollPower>(card.Owner.Creature, 1, card.Owner.Creature, card);
+        await PowerCmd.Apply<DodgeRollPower>(choiceContext, card.Owner.Creature, 1, card.Owner.Creature, card);
         
         if(DynamicVars.Block.BaseValue > 0)
             await CreatureCmd.GainBlock(card.Owner.Creature, DynamicVars.Block, cardPlay);

@@ -33,7 +33,7 @@ public class LeafAttack() : AbilityCard(1, CardType.Attack, CardRarity.Basic, Ta
         // Deal damage
         AttackCommand attackCommand = await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard((CardModel) card).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         // Gain leaf
-        await PowerCmd.Apply<LeafPower>(card.Owner.Creature, DynamicVars["LeafGain"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<LeafPower>(choiceContext, card.Owner.Creature, DynamicVars["LeafGain"].BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade()

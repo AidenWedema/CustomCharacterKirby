@@ -24,7 +24,7 @@ public class Devour() : CustomCharacterKirbyCard(2, CardType.Skill, CardRarity.U
         var choice = (await CardSelectCmd.FromHand(choiceContext, card.Owner, new CardSelectorPrefs(CardSelectorPrefs.ExhaustSelectionPrompt, 1), null, card)).ToList();
         await CardCmd.Exhaust(choiceContext, choice[0]);
         
-        await PowerCmd.Apply<ProjectileStarPower>(card.Owner.Creature, DynamicVars["StarGain"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<ProjectileStarPower>(choiceContext, card.Owner.Creature, DynamicVars["StarGain"].BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => DynamicVars["StarGain"].UpgradeValueBy(2M);

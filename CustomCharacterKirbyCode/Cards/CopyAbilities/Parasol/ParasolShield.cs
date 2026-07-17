@@ -28,7 +28,7 @@ public class ParasolShield() : AbilityCard(1, CardType.Skill, CardRarity.Basic, 
         await CreatureCmd.GainBlock(card.Owner.Creature, DynamicVars.Block, cardPlay);
         
         // Apply ParasolShieldPower this turn
-        await PowerCmd.Apply<ParasolShieldPower>(card.Owner.Creature, DynamicVars.Power<ParasolShieldPower>().BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<ParasolShieldPower>(choiceContext, card.Owner.Creature, DynamicVars.Power<ParasolShieldPower>().BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => DynamicVars.Block.UpgradeValueBy(3M);

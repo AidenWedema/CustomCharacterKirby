@@ -30,9 +30,9 @@ public class Inhale() : AbilityCard(1, CardType.Skill, CardRarity.Common, Target
         Inhale card = this;
         ArgumentNullException.ThrowIfNull((object)cardPlay.Target, "cardPlay.Target");
         // Apply -1 strength to the target
-        await PowerCmd.Apply<StrengthPower>(cardPlay.Target, -1, card.Owner.Creature, card);
+        await PowerCmd.Apply<StrengthPower>(choiceContext, cardPlay.Target, -1, card.Owner.Creature, card);
         // Gain a projectile star
-        await PowerCmd.Apply<ProjectileStarPower>(card.Owner.Creature, DynamicVars["ProjectileStarGain"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<ProjectileStarPower>(choiceContext, card.Owner.Creature, DynamicVars["ProjectileStarGain"].BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade() => DynamicVars["ProjectileStarGain"].UpgradeValueBy(2M);

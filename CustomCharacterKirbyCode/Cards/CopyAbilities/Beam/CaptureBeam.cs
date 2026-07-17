@@ -30,10 +30,10 @@ public class CaptureBeam() : AbilityCard(1, CardType.Skill, CardRarity.Basic, Ta
         await CreatureCmd.GainBlock(card.Owner.Creature, DynamicVars.Block, cardPlay);
         
         // Apply Weak
-        await PowerCmd.Apply<WeakPower>(cardPlay.Target, DynamicVars["Power"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<WeakPower>(choiceContext, cardPlay.Target, DynamicVars["Power"].BaseValue, card.Owner.Creature, card);
         
         // Apply Vulnerable
-        await PowerCmd.Apply<VulnerablePower>(cardPlay.Target, DynamicVars["Power"].BaseValue, card.Owner.Creature, card);
+        await PowerCmd.Apply<VulnerablePower>(choiceContext, cardPlay.Target, DynamicVars["Power"].BaseValue, card.Owner.Creature, card);
     }
 
     protected override void OnUpgrade()
